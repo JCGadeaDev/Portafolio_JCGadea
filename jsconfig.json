@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",            // indica la raíz del proyecto
+    "paths": {
+      "@/*": ["./*"]           // habilita importaciones como "@/components/Header"
+    }
+  },
+  "include": ["./"]            // incluye todos los archivos del proyecto
+}
