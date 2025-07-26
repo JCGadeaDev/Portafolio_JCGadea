@@ -14,18 +14,14 @@ const Home = () => {
           {/* text */}
           <div className="text-center xl:text-left order-2 xl:order-none  ">
             <span className="text-xl">
-              Frontend Developer - Project Manager - Data Analyst
+              Frontend Developer - Data Analyst - Project Manager
             </span>
             <h1 className="h1">
               Hello I'm <br />{" "}
               <span className="text-accent">Juan Carlos Gadea</span>
             </h1>
-            <p className="max-w-[500px] mb-9 text-white/80">
-              Experienced Frontend Developer, dedicated to transforming concepts
-              into high-quality digital solutions. Proven track record leading
-              projects under agile frameworks like Scrum and Kanban. Skilled in
-              Data Analytics, leveraging insights to optimize user experience
-              and drive informed decisions.
+            <p className="max-w-[500px] mb-9 text-white/80 text-justify">
+              I’m a technology professional focused on building digital solutions that deliver real-world impact, combining front-end development, data analysis, and agile project management. I bring value by integrating technology, design, and strategy to solve business challenges effectively.  I work with HTML, CSS, JavaScript, React, Next.js, Tailwind, Node.js, and Oracle APEX to create clean, user-focused interfaces. I also leverage tools like Python, SQL, and Power BI to automate processes and extract insights that drive smart decision-making.
             </p>
             {/* btns and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
