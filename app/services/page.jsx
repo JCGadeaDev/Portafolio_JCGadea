@@ -53,7 +53,7 @@ const services = [
         </ul>
       </>
     ),
-    href: "",
+    href: "#desarrollo-frontend",
   },
   {
     num: "02",
@@ -105,7 +105,7 @@ const services = [
         </ul>
       </>
     ),
-    href: "",
+    href: "#analisis-datos",
   },
   {
     num: "03",
@@ -143,7 +143,7 @@ const services = [
         </ul>
       </>
     ),
-    href: "",
+    href: "#gestion-agil",
   },
   {
     num: "04",
@@ -180,7 +180,7 @@ const services = [
         </ul>
       </>
     ),
-    href: "",
+    href: "#soluciones-digitales",
   },
   {
     num: "05",
@@ -223,7 +223,7 @@ const services = [
         </ul>
       </>
     ),
-    href: "",
+    href: "#contenido-digital",
   },
 ];
 
@@ -246,6 +246,7 @@ const ServicesPage = () => {
             return (
               <div
                 key={index}
+                id={service.href.substring(1)}
                 className={`
                   flex flex-col justify-between h-full 
                   min-h-[420px] sm:min-h-[480px] md:min-h-[520px] 
