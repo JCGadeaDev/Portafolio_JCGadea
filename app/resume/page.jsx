@@ -10,16 +10,40 @@ import {
   FaPython,
   FaJira,
   FaTrello,
+  FaNode,
+  FaGitAlt,
+  FaGithub,
+  FaAws,
+  FaMicrosoft, // Para el ícono de Excel
 } from "react-icons/fa";
 import {
   SiTailwindcss,
+  SiTypescript,
+  SiAstro,
   SiCanvas,
   SiNotion,
   SiNextdotjs,
   SiMysql,
   SiAsana,
+  SiExpress,
+  SiPostgresql,
+  SiSupabase,
+  SiOracle,
+  SiPrisma,
+  SiPandas,
+  SiNumpy,
+  SiJupyter,
+  SiPostman,
+  SiSwagger,
+  SiVite,
+  SiWebpack,
+  SiGithubactions,
+  SiGooglecolab,
+  SiNetlify,
 } from "react-icons/si";
 import { TbSql } from "react-icons/tb";
+import { VscAzure } from "react-icons/vsc";
+import { IoLogoVercel } from "react-icons/io5";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
@@ -47,7 +71,7 @@ const about = {
     },
     {
       fieldName: "Experience",
-      fieldValue: "6+ Years",
+      fieldValue: "4+ Years",
     },
     {
       fieldName: "Email",
@@ -173,71 +197,82 @@ const education = {
 const skills = {
   title: "My Skills",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam illum nobis officia doloribus optio pariatur ducimus tempore, quos assumenda quae asperiores ullam veritatis, earum ratione ab labore adipisci rerum officiis.",
-  skillList: [
+    "Estoy en constante aprendizaje y abierto a incorporar nuevas tecnologías que aporten valor a cada proyecto. Algunas de las tecnologías que manejo y en las que sigo perfeccionando mis habilidades son:",
+  categories: [
     {
-      icon: <FaHtml5 />,
-      name: "html-5",
+      name: "Frontend",
+      skills: [
+        { icon: <FaJs />, name: "JavaScript" },
+        { icon: <SiTypescript />, name: "TypeScript" },
+        { icon: <FaReact />, name: "React" },
+        { icon: <FaAngular />, name: "Angular" },
+        { icon: <SiNextdotjs />, name: "Next.js" },
+        { icon: <SiAstro />, name: "Astro" },
+        { icon: <FaHtml5 />, name: "HTML" },
+        { icon: <FaCss3 />, name: "CSS" },
+        { icon: <SiTailwindcss />, name: "Tailwind CSS" },
+        { icon: <FaBootstrap />, name: "Bootstrap" },
+        { icon: <SiCanvas />, name: "Canvas" },
+      ],
     },
     {
-      icon: <FaCss3 />,
-      name: "css 3",
+      name: "Backend",
+      skills: [
+        { icon: <FaNode />, name: "Node.js" },
+        { icon: <SiExpress />, name: "Express" },
+      ],
     },
     {
-      icon: <FaBootstrap />,
-      name: "bootstrap",
+      name: "Databases",
+      skills: [
+        { icon: <TbSql />, name: "SQL" },
+        { icon: <SiPostgresql />, name: "PostgreSQL" },
+        { icon: <SiSupabase />, name: "Supabase" },
+        { icon: <SiOracle />, name: "Oracle PL/SQL - APEX" },
+        { icon: <SiMysql />, name: "MySQL" },
+        { icon: <SiPrisma />, name: "Prisma ORM" },
+      ],
     },
     {
-      icon: <FaJs />,
-      name: "javascript",
+      name: "Data & Analytics",
+      skills: [
+        { icon: <FaPython />, name: "Python" },
+        { icon: <SiPandas />, name: "Pandas" },
+        { icon: <SiNumpy />, name: "NumPy" },
+        { icon: <SiJupyter />, name: "Jupyter" },
+        { icon: <SiGooglecolab />, name: "Google Colab" },
+        { icon: <FaMicrosoft />, name: "Advanced Excel" },
+      ],
     },
     {
-      icon: <FaReact />,
-      name: "react",
+      name: "DevOps & Cloud",
+      skills: [
+        { icon: <FaGitAlt />, name: "Git" },
+        { icon: <FaGithub />, name: "GitHub" },
+        { icon: <SiGithubactions />, name: "GitHub Actions" },
+        { icon: <SiVite />, name: "Vite" },
+        { icon: <IoLogoVercel />, name: "Vercel" },
+        { icon: <SiNetlify />, name: "Netlify" },
+        { icon: <SiWebpack />, name: "Webpack" },
+        { icon: <VscAzure />, name: "Azure" },
+        { icon: <FaAws />, name: "AWS" },
+      ],
     },
     {
-      icon: <FaAngular />,
-      name: "angular",
+      name: "API & Testing",
+      skills: [
+        { icon: <SiPostman />, name: "Postman" },
+        { icon: <SiSwagger />, name: "Swagger UI" },
+      ],
     },
     {
-      icon: <FaPython />,
-      name: "python",
-    },
-    {
-      icon: <FaJira />,
-      name: "jira",
-    },
-    {
-      icon: <FaTrello />,
-      name: "trello",
-    },
-    {
-      icon: <SiTailwindcss />,
-      name: "tailwind.css",
-    },
-    {
-      icon: <SiCanvas />,
-      name: "canvas",
-    },
-    {
-      icon: <SiNotion />,
-      name: "notion",
-    },
-    {
-      icon: <SiNextdotjs />,
-      name: "next.js",
-    },
-    {
-      icon: <SiMysql />,
-      name: "mysql",
-    },
-    {
-      icon: <SiAsana />,
-      name: "asana",
-    },
-    {
-      icon: <TbSql />,
-      name: "sql",
+      name: "Agile & Project Management",
+      skills: [
+        { icon: <FaJira />, name: "Jira" },
+        { icon: <FaTrello />, name: "Trello" },
+        { icon: <SiNotion />, name: "Notion" },
+        { icon: <SiAsana />, name: "Asana" },
+      ],
     },
   ],
 };
@@ -332,30 +367,35 @@ const Resume = () => {
               <div className="flex flex-col gap-[30px]">
                 <div className="flex flex-col gap-[30px] xl:text-left">
                   <h3 className="text-4xl font-bold">{skills.title}</h3>
-                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                  <p className="max-w-[800px] text-white/60 mx-auto xl:mx-0 text-justify">
                     {skills.description}
                   </p>
                 </div>
-                <ul className="grid grid-cols2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[30px]">
-                  {skills.skillList.map((skill, index) => {
-                    return (
-                      <li key={index}>
-                        <TooltipProvider delayDuration={100}>
-                          <Tooltip>
-                            <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                              <div className="text-6xl group-hover:text-accent transition-all duration-300">
-                                {skill.icon}
-                              </div>
-                            </TooltipTrigger>
-                            <TooltipContent>
-                              <p className="capitalize">{skill.name}</p>
-                            </TooltipContent>
-                          </Tooltip>
-                        </TooltipProvider>
-                      </li>
-                    );
-                  })}
-                </ul>
+                {skills.categories.map((category, idx) => (
+                  <div key={idx} className="mb-8">
+                    <h4 className="text-2xl font-semibold mb-4 text-accent">
+                      {category.name}
+                    </h4>
+                    <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                      {category.skills.map((skill, index) => (
+                        <li key={index}>
+                          <TooltipProvider delayDuration={100}>
+                            <Tooltip>
+                              <TooltipTrigger className="w-full h-[100px] bg-[#232329] rounded-xl flex justify-center items-center group">
+                                <div className="text-4xl group-hover:text-accent transition-all duration-300">
+                                  {skill.icon}
+                                </div>
+                              </TooltipTrigger>
+                              <TooltipContent>
+                                <p className="capitalize">{skill.name}</p>
+                              </TooltipContent>
+                            </Tooltip>
+                          </TooltipProvider>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
               </div>
             </TabsContent>
             {/* About me */}

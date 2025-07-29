@@ -14,24 +14,36 @@ const Home = () => {
           {/* text */}
           <div className="text-center xl:text-left order-2 xl:order-none  ">
             <span className="text-xl">
-              Frontend Developer - Data Analyst - Project Manager
+              Desarrollador Frontend · Analista de Datos · Gestor de Proyectos ·
+              Redacción de Contenidos
             </span>
             <h1 className="h1">
-              Hello I'm <br />{" "}
-              <span className="text-accent">Juan Carlos Gadea</span>
+              Hola, Soy
+              <br /> <span className="text-accent">Juan Carlos Gadea</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80 text-justify">
-              I’m a technology professional focused on building digital solutions that deliver real-world impact, combining front-end development, data analysis, and agile project management. I bring value by integrating technology, design, and strategy to solve business challenges effectively.  I work with HTML, CSS, JavaScript, React, Next.js, Tailwind, Node.js, and Oracle APEX to create clean, user-focused interfaces. I also leverage tools like Python, SQL, and Power BI to automate processes and extract insights that drive smart decision-making.
+              Soy un profesional multidisciplinario en tecnología, especializado
+              en desarrollo frontend, análisis de datos, gestión ágil de
+              proyectos y creación de contenido estratégico. Combino diseño,
+              tecnología y comunicación para construir soluciones digitales con
+              impacto real, centradas en el usuario y alineadas con los
+              objetivos del negocio. Trabajo con herramientas como React, Angular,
+              Next.js, Tailwind, Node.js y Oracle APEX para crear interfaces
+              modernas y escalables. También aplico Python, SQL y Power BI para
+              automatizar procesos, analizar datos y generar insights clave.
+              Desde la planificación ágil hasta la redacción de contenido
+              persuasivo, aporto una visión integral que conecta estrategia,
+              experiencia de usuario y resultados.
             </p>
             {/* btns and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-             <a href="/CV.pdf" download>
+              <a href="/CV.pdf" download>
                 <Button
                   variant="outline"
                   size="lg"
                   className="uppercase flex items-center gap-2"
                 >
-                  <span>Download CV</span>
+                  <span>Descargar CV</span>
                   <FiDownload className="text-xl" />
                 </Button>
               </a>

@@ -8,23 +8,48 @@ import { motion } from "framer-motion";
 const services = [
   {
     num: "01",
-    title: "Front-End Development",
+    title: "Desarrollo Front-End",
     description: (
       <>
         <p className="mb-1 text-justify">
-          Crafting modern, responsive, and user-centered interfaces using technologies such as HTML, CSS, JavaScript, Typescript, React, Next.js, Tailwind CSS, and Oracle APEX. I focus on clean design, accessibility, and performance to ensure seamless user experiences across devices.
+          Diseño y desarrollo de interfaces modernas, responsivas y centradas en
+          el usuario utilizando tecnologías como HTML, CSS, JavaScript,
+          TypeScript, React, Next.js, Tailwind CSS y Oracle APEX. Me enfoco en
+          una arquitectura limpia, accesibilidad y rendimiento para garantizar
+          experiencias fluidas en todos los dispositivos.
         </p>
-        <span className="block font-semibold text-white/80">Services include:</span>
+        <span className="block font-semibold text-white/80">
+          Servicios incluyen:
+        </span>
         <ul className="list-disc list-inside text-white/80 space-y-1 pl-4">
-          <li>Responsive website &amp; landing page development</li>
-          <li>UI implementation with TailwindCSS, Bootstrap, or custom CSS</li>
-          <li>Single-page applications (SPAs) with React or Angular</li>
-          <li>Oracle APEX UI components and low-code customization</li>
-          <li>Accessibility-first design and semantic HTML</li>
-          <li>Component-based architecture using frameworks like React and Angular</li>
-          <li>Integration with REST APIs and backend services</li>
-          <li>Version control and collaboration with Git and GitHub</li>
-          <li>Cross-browser and cross-device compatibility testing</li>
+          <li>Desarrollo de sitios web responsivos y landing pages</li>
+          <li>
+            Implementación de interfaces con TailwindCSS, Bootstrap o CSS
+            personalizado
+          </li>
+          <li>Componentes UI en Oracle APEX y personalización low-code</li>
+          <li>Diseño accesible desde el inicio y uso de HTML semántico</li>
+          <li>Aplicaciones de una sola página (SPAs) con React o Angular</li>
+          <li>
+            Arquitectura basada en componentes usando frameworks como React y
+            Angular
+          </li>
+          <li>Integración con APIs REST y servicios backend</li>
+          <li>
+            Manejo de peticiones HTTP con Fetch y Axios, incluyendo gestión de
+            errores y transformación de datos
+          </li>
+          <li>
+            Gestión eficiente de estados y efectos secundarios con React Hooks
+          </li>
+          <li>
+            Herramientas de desarrollo con Vite y empaquetado con Webpack y
+            Turbopack
+          </li>
+          <li>
+            Configuración de pipelines CI/CD y automatización con GitHub Actions
+          </li>
+          <li>Control de versiones y colaboración con Git y GitHub</li>
         </ul>
       </>
     ),
@@ -32,24 +57,51 @@ const services = [
   },
   {
     num: "02",
-    title: "Data Analytics & Automation",
+    title: "Análisis de Datos y Automatización",
     description: (
       <>
         <p className="mb-1 text-justify">
-          Transforming raw data into actionable insights through automation, visualization, and reporting. I use Python, Pandas, SQL, Power BI, and Matplotlib to help teams make informed, data-driven decisions.
+          Transformación de datos en bruto en insights accionables a través de
+          automatización, visualización y reportes. Utilizo Python, Pandas, SQL,
+          Power BI y Matplotlib para ayudar a los equipos a tomar decisiones
+          informadas basadas en datos.
         </p>
-        <span className="block font-semibold text-white/80">Services include:</span>
+        <span className="block font-semibold text-white/80">
+          Servicios incluyen:
+        </span>
         <ul className="list-disc list-inside text-white/80 space-y-1 pl-4">
-          <li>Data cleaning and automation with Python</li>
-          <li>SQL-based data extraction and reporting (PostgreSQL, Supabase)</li>
-          <li>Interactive dashboards in Power BI</li>
-          <li>Insight generation for business strategies</li>
-          <li>Data visualization with Matplotlib and Seaborn</li>
-          <li>Data transformation and pipeline building with Pandas</li>
-          <li>Task tracking, manual data analysis, and quick reporting with Microsoft Excel</li>
-          <li>Development of analytics projects using Jupyter Notebooks, in environments such as Anaconda and Google Colab.</li>
-          <li>Integration of external APIs for real-time data consumption</li> 
-          <li>Data storytelling: translating technical analysis into actionable insights for stakeholders</li>        
+          <li>Limpieza y automatización de datos con Python</li>
+          <li>
+            Extracción y generación de reportes con SQL (PostgreSQL, Supabase)
+          </li>
+          <li>Dashboards interactivos en Power BI</li>
+          <li>Generación de insights para estrategias de negocio</li>
+          <li>Visualización de datos con Matplotlib y Seaborn</li>
+          <li>
+            Transformación de datos y construcción de pipelines con Pandas
+          </li>
+          <li>
+            Seguimiento de tareas, análisis manual y reportes rápidos con
+            Microsoft Excel
+          </li>
+          <li>
+            Desarrollo de proyectos analíticos en Jupyter Notebooks, con
+            entornos como Anaconda y Google Colab
+          </li>
+          <li>
+            Integración de APIs externas para consumo de datos en tiempo real
+          </li>
+          <li>
+            Procesos ETL para consolidación de datos desde múltiples fuentes
+          </li>
+          <li>
+            Data storytelling: traducción de análisis técnicos en insights
+            accionables para stakeholders
+          </li>
+          <li>
+            Colaboración con equipos multidisciplinarios para alinear productos
+            de datos con objetivos del negocio
+          </li>
         </ul>
       </>
     ),
@@ -57,21 +109,37 @@ const services = [
   },
   {
     num: "03",
-    title: "Agile Project Management",
+    title: "Gestión de Proyectos Ágiles",
     description: (
       <>
         <p className="mb-1 text-justify">
-          Delivering value through structured agile practices that promote collaboration, adaptability, and continuous improvement. I guide project teams through iterative cycles that align development efforts with business goals, ensuring transparency, accountability, and measurable outcomes.
+          Generación de valor a través de prácticas ágiles estructuradas que
+          fomentan la colaboración, la adaptabilidad y la mejora continua. Guío
+          a los equipos de proyecto mediante ciclos iterativos que alinean el
+          desarrollo con los objetivos del negocio, asegurando transparencia,
+          responsabilidad y resultados medibles.
         </p>
-        <span className="block font-semibold text-white/80">Services include:</span>
+        <span className="block font-semibold text-white/80">
+          Servicios incluyen:
+        </span>
         <ul className="list-disc list-inside text-white/80 space-y-1 pl-4">
-          <li>Scrum-based sprint planning, reviews, and retrospectives</li>
-          <li>Backlog management, prioritization, and refinement sessions</li>
-          <li>Daily stand-ups and team facilitation to remove blockers</li>
-          <li>Stakeholder communication and reporting aligned with KPIs</li>
-          <li>Coordination across cross-functional and distributed teams</li>
-          <li>Project documentation and knowledge sharing using Trello, Notion, Sharepoint, Miro, Jira and Confluence</li>
-          <li>Integration of agile practices into hybrid or remote workflows</li>
+          <li>
+            Planificación de sprints, revisiones y retrospectivas basadas en
+            Scrum
+          </li>
+          <li>Gestión del backlog, priorización y sesiones de refinamiento</li>
+          <li>
+            Daily stand-ups y facilitación del equipo para eliminar bloqueos
+          </li>
+          <li>Comunicación con stakeholders y reportes alineados a KPIs</li>
+          <li>Coordinación entre equipos multidisciplinarios y distribuidos</li>
+          <li>
+            Documentación de proyectos y transferencia de conocimiento con
+            Trello, Notion, Sharepoint, Miro, Jira y Confluence
+          </li>
+          <li>
+            Integración de prácticas ágiles en entornos híbridos o remotos
+          </li>
         </ul>
       </>
     ),
@@ -79,43 +147,79 @@ const services = [
   },
   {
     num: "04",
-    title: "End-to-End Digital Solutions",
+    title: "Soluciones Digitales End-to-End",
     description: (
       <>
         <p className="mb-1 text-justify">
-          Combining front-end, back-end, and data strategy to deliver complete, scalable, and business-driven applications. From concept to deployment, I align technical execution with real-world needs.
+          Combinando frontend, backend y estrategia de datos para entregar
+          aplicaciones completas, escalables y orientadas al negocio. Desde el
+          concepto hasta el despliegue, alineo la ejecución técnica con
+          necesidades reales del entorno empresarial.
         </p>
-        <span className="block font-semibold text-white/80">Services include:</span>
+        <span className="block font-semibold text-white/80">
+          Servicios incluyen:
+        </span>
         <ul className="list-disc list-inside text-white/80 space-y-1 pl-4">
-          <li>Full-stack MVPs using Node.js and Express</li>
-          <li>API integration and testing with Postman and Swagger UI</li>
-          <li>Low-code and rapid prototyping with Oracle APEX</li>
-          <li>Serverless and real-time solutions using Supabase</li>
-          <li>Cloud deployment and infrastructure on Azure and AWS</li>
-          <li>Solution design that bridges business and technology</li>
-          <li>Test automation using Playwright for end-to-end testing workflows</li>
-          <li>Currently exploring Model Context Protocol (MCP) to enable intelligent, modular, and context-aware digital agents.</li>
+          <li>Desarrollo de MVPs full-stack con Node.js y Express</li>
+          <li>
+            Integración y pruebas de APIs con Postman, Soap UI y Swagger UI
+          </li>
+          <li>Prototipado rápido y desarrollo low-code con Oracle APEX</li>
+          <li>Soluciones en tiempo real y sin servidor usando Supabase</li>
+          <li>Despliegue en la nube e infraestructura en Azure y AWS</li>
+          <li>
+            Diseño de soluciones que conectan tecnología con objetivos de
+            negocio
+          </li>
+          <li>Automatización de pruebas end-to-end con Playwright</li>
+          <li>
+            Explorando actualmente el Model Context Protocol (MCP) para
+            habilitar agentes digitales inteligentes, modulares y con conciencia
+            contextual.
+          </li>
         </ul>
       </>
     ),
     href: "",
   },
-   {
+  {
     num: "05",
-    title: "Copywriting & Digital Content Strategy",
+    title: "Redacción y Estrategia de Contenido Digital",
     description: (
       <>
         <p className="mb-1 text-justify">
-          Creating compelling copy and strategic content to boost engagement, visibility, and community alignment. I contributed as a copywriter for WordCamp Nicaragua 2025, crafting targeted messaging across multiple platforms.
+          Creación de copys atractivos y contenido estratégico para aumentar el
+          engagement, la visibilidad y la conexión con la comunidad. Contribuí
+          como copywriter en WordCamp Nicaragua 2025, desarrollando mensajes
+          dirigidos para múltiples plataformas.
         </p>
-        <span className="block font-semibold text-white/80">Services include:</span>
+        <span className="block font-semibold text-white/80">
+          Servicios incluyen:
+        </span>
         <ul className="list-disc list-inside text-white/80 space-y-1 pl-4">
-          <li>Copywriting for social media posts (inbound & outbound focus)</li>
-          <li>Email marketing campaign development using Mailchimp</li>
-          <li>Content strategy for attracting attendees, sponsors, and volunteers</li>
-          <li>Messaging coordination with the organizing team to ensure brand consistency</li>
-          <li>Use of AI tools to automate and optimize content creation</li>
-          <li>Improved campaign efficiency and event reach through strategic automation</li>
+          <li>
+            Redacción de copys para publicaciones en redes sociales (enfoque
+            inbound y outbound)
+          </li>
+          <li>
+            Desarrollo de campañas de email marketing utilizando Mailchimp
+          </li>
+          <li>
+            Estrategia de contenido para atraer asistentes, patrocinadores y
+            voluntarios
+          </li>
+          <li>
+            Coordinación de mensajes con el equipo organizador para asegurar
+            coherencia de marca
+          </li>
+          <li>
+            Uso de herramientas de inteligencia artificial para automatizar y
+            optimizar la creación de contenido
+          </li>
+          <li>
+            Mejora de la eficiencia de campañas y alcance del evento mediante
+            automatización estratégica
+          </li>
         </ul>
       </>
     ),
@@ -148,7 +252,11 @@ const ServicesPage = () => {
                   p-4 sm:p-6 md:p-8 
                   bg-[#18181b] rounded-2xl shadow-lg 
                   group transition-all duration-500
-                  ${isLastCard && isOddTotal ? 'md:col-span-2 md:w-1/2 md:mx-auto' : ''}
+                  ${
+                    isLastCard && isOddTotal
+                      ? "md:col-span-2 md:w-1/2 md:mx-auto"
+                      : ""
+                  }
                 `}
               >
                 {/* top */}
