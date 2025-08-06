@@ -57,33 +57,33 @@ import { motion } from "framer-motion";
 
 //About data
 const about = {
-  title: "About me",
+  title: "Sobre mí",
   description:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quo odio neque fugiat labore. Aliquid minima qui aspernatur laboriosam ipsum doloribus vel sapiente aperiam libero, eum eveniet excepturi ullam vitae?",
   info: [
     {
-      fieldName: "Name",
+      fieldName: "Nombre: ",
       fieldValue: "Juan Carlos Gadea",
     },
     {
-      fieldName: "Phone",
+      fieldName: "Teléfono: ",
       fieldValue: "(+505)85785399 / (+39)3444528131",
     },
     {
-      fieldName: "Experience",
+      fieldName: "Experiencia: ",
       fieldValue: "4+ Years",
     },
     {
-      fieldName: "Email",
+      fieldName: "Correo: ",
       fieldValue: "jcgambeta89@gmail.com",
     },
     {
-      fieldName: "Freelance",
-      fieldValue: "Available",
+      fieldName: "Freelance: ",
+      fieldValue: "Disponible",
     },
     {
-      fieldName: "Languages",
-      fieldValue: "Spanish, English",
+      fieldName: "Idiomas: ",
+      fieldValue: "Español, Inglés",
     },
   ],
 };
@@ -91,7 +91,7 @@ const about = {
 //Experience Data
 const experience = {
   icon: "/assets/resume/badge.svg",
-  title: "My Experience",
+  title: "Mi Experiencia",
   description:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam illum nobis officia doloribus optio pariatur ducimus tempore, quos assumenda quae asperiores ullam veritatis, earum ratione ab labore adipisci rerum officiis.",
   items: [
@@ -131,7 +131,7 @@ const experience = {
 //Education Data
 const education = {
   icon: "/assets/resume/cap.svg",
-  title: "My Education",
+  title: "Mis Estudios",
   description:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam illum nobis officia doloribus optio pariatur ducimus tempore, quos assumenda quae asperiores ullam veritatis, earum ratione ab labore adipisci rerum officiis.",
   items: [
@@ -195,7 +195,7 @@ const education = {
 
 //Skills Data
 const skills = {
-  title: "My Skills",
+  title: "Stack Tecnológico",
   description:
     "Estoy en constante aprendizaje y abierto a incorporar nuevas tecnologías que aporten valor a cada proyecto. Algunas de las tecnologías que manejo y en las que sigo perfeccionando mis habilidades son:",
   categories: [
@@ -292,17 +292,17 @@ const Resume = () => {
           defaultValue="experience"
           className="flex flex-col xl:flex-row gap-[60px]"
         >
-          <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
-            <TabsTrigger value="experience">Experience</TabsTrigger>
-            <TabsTrigger value="education">Education</TabsTrigger>
-            <TabsTrigger value="skills">Skills</TabsTrigger>
-            <TabsTrigger value="about">About me</TabsTrigger>
+          <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6 pt-8">
+            <TabsTrigger value="experience">Experiencia</TabsTrigger>
+            <TabsTrigger value="education">Educación</TabsTrigger>
+            <TabsTrigger value="skills">Stack Tecnológico</TabsTrigger>
+            <TabsTrigger value="about">Sobre</TabsTrigger>
           </TabsList>
           {/* Content */}
           <div className="min-h-[70vh] w-full">
             {/* experience */}
             <TabsContent value="experience" className="w-full">
-              <div className="flex flex-col gap-[30px] text-center xl:text-left">
+              <div className="flex flex-col gap-[30px] text-center xl:text-left pt-8">
                 <h3 className="text-4xl font-bold">{experience.title}</h3>
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {experience.description}
@@ -333,7 +333,7 @@ const Resume = () => {
             </TabsContent>
             {/* education */}
             <TabsContent value="education" className="w-full">
-              <div className="flex flex-col gap-[30px] text-center xl:text-left">
+              <div className="flex flex-col gap-[30px] text-center xl:text-left pt-8">
                 <h3 className="text-4xl font-bold">{education.title}</h3>
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {education.description}
@@ -364,13 +364,14 @@ const Resume = () => {
             </TabsContent>
             {/* skills */}
             <TabsContent value="skills" className="w-full h-full">
-              <div className="flex flex-col gap-[30px]">
-                <div className="flex flex-col gap-[30px] xl:text-left">
+              
+                <div className="flex flex-col gap-[30px] xl:text-left pt-8">
                   <h3 className="text-4xl font-bold">{skills.title}</h3>
                   <p className="max-w-[800px] text-white/60 mx-auto xl:mx-0 text-justify">
                     {skills.description}
                   </p>
                 </div>
+                <div className="flex flex-col gap-[30px]">
                 {skills.categories.map((category, idx) => (
                   <div key={idx} className="mb-8">
                     <h4 className="text-2xl font-semibold mb-4 text-accent">
@@ -403,7 +404,7 @@ const Resume = () => {
               value="about"
               className="w-full text-center xl:text-left"
             >
-              <div className="flex flex-col gap-[30px]">
+              <div className="flex flex-col gap-[30px] text-center xl:text-left pt-8">
                 <h3 className="text-4xl font-bold">{about.title}</h3>
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 ">
                   {about.description}

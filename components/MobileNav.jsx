@@ -9,11 +9,11 @@ import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
 
 const links = [
-  { name: "home", path: "/" },
-  { name: "services", path: "/services" },
-  { name: "resume", path: "/resume" },
-  { name: "work", path: "/work" },
-  { name: "contact", path: "/contact" },
+  { name: "inicio", path: "/" },
+  { name: "servicios", path: "/services" },
+  { name: "curriculum", path: "/resume" },
+  { name: "proyectos", path: "/work" },
+  { name: "contacto", path: "/contact" },
 ];
 
 const MobileNav = () => {
