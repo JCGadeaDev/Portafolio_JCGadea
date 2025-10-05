@@ -8,222 +8,95 @@ import { motion } from "framer-motion";
 const services = [
   {
     num: "01",
-    title: "Desarrollo Front-End",
+    title: "Desarrollo Web y Experiencia de Usuario (UX)",
     description: (
       <>
-        <p className="mb-1 text-justify">
-          Diseño y desarrollo de interfaces modernas, responsivas y centradas en
-          el usuario utilizando tecnologías como HTML, CSS, JavaScript,
-          TypeScript, React, Next.js, Tailwind CSS y Oracle APEX. Me enfoco en
-          una arquitectura limpia, accesibilidad y rendimiento para garantizar
-          experiencias fluidas en todos los dispositivos.
+        <p className="mb-4 text-justify">
+          Transformo tus ideas en aplicaciones web modernas, eficientes y centradas en el usuario. Mi enfoque combina un diseño limpio con una arquitectura robusta para entregar soluciones escalables, desde landing pages hasta sistemas empresariales complejos.
         </p>
-        <span className="block font-semibold text-white/80">
-          Servicios incluyen:
-        </span>
-        <ul className="list-disc list-inside text-white/80 space-y-1 pl-4">
-          <li>Desarrollo de sitios web responsivos y landing pages</li>
+        <ul className="list-disc list-inside text-white/80 space-y-2">
           <li>
-            Implementación de interfaces con TailwindCSS, Bootstrap o CSS
-            personalizado
-          </li>
-          <li>Componentes UI en Oracle APEX y personalización low-code</li>
-          <li>Diseño accesible desde el inicio y uso de HTML semántico</li>
-          <li>Aplicaciones de una sola página (SPAs) con React o Angular</li>
-          <li>
-            Arquitectura basada en componentes usando frameworks como React y
-            Angular
-          </li>
-          <li>Integración con APIs REST y servicios backend</li>
-          <li>
-            Manejo de peticiones HTTP con Fetch y Axios, incluyendo gestión de
-            errores y transformación de datos
+            <strong>Aplicaciones Full-Stack:</strong> Desarrollo End-to-End con JavaScript, TypeScript, React, Next.js, Angular y Node.js.
           </li>
           <li>
-            Gestión eficiente de estados y efectos secundarios con React Hooks
+            <strong>Soluciones CMS y E-commerce:</strong> Creación y personalización de sitios en WordPress y Wix Studio, optimizados para la autogestión.
           </li>
           <li>
-            Herramientas de desarrollo con Vite y empaquetado con Webpack y
-            Turbopack
+            <strong>Optimización de Rendimiento:</strong> Interfaces rápidas y responsivas con un enfoque en Core Web Vitals y la mejor experiencia de usuario.
           </li>
-          <li>
-            Configuración de pipelines CI/CD y automatización con GitHub Actions
-          </li>
-          <li>Control de versiones y colaboración con Git y GitHub</li>
         </ul>
       </>
     ),
-    href: "#desarrollo-frontend",
+    href: "#desarrollo-web-ux",
   },
   {
     num: "02",
-    title: "Análisis de Datos y Automatización",
+    title: "SEO, SEM y Estrategia Digital",
     description: (
       <>
-        <p className="mb-1 text-justify">
-          Transformación de datos en bruto en insights accionables a través de
-          automatización, visualización y reportes. Utilizo Python, Pandas, SQL,
-          Power BI y Matplotlib para ayudar a los equipos a tomar decisiones
-          informadas basadas en datos.
+        <p className="mb-4 text-justify">
+          Aumento tu visibilidad online y atraigo tráfico cualificado a tu sitio web. Diseño e implemento estrategias de posicionamiento orgánico (SEO) y campañas de pago (SEM) que convierten visitantes en clientes.
         </p>
-        <span className="block font-semibold text-white/80">
-          Servicios incluyen:
-        </span>
-        <ul className="list-disc list-inside text-white/80 space-y-1 pl-4">
-          <li>Limpieza y automatización de datos con Python</li>
+        <ul className="list-disc list-inside text-white/80 space-y-2">
           <li>
-            Extracción y generación de reportes con SQL (PostgreSQL, Supabase)
-          </li>
-          <li>Dashboards interactivos en Power BI</li>
-          <li>Generación de insights para estrategias de negocio</li>
-          <li>Visualización de datos con Matplotlib y Seaborn</li>
-          <li>
-            Transformación de datos y construcción de pipelines con Pandas
+            <strong>Auditoría SEO On-Page y Técnica:</strong> Optimización de estructura, velocidad, y contenido para cumplir con las mejores prácticas de Google.
           </li>
           <li>
-            Seguimiento de tareas, análisis manual y reportes rápidos con
-            Microsoft Excel
+            <strong>Estrategia de Contenidos:</strong> Investigación de palabras clave y redacción de copys persuasivos que conectan con tu audiencia.
           </li>
           <li>
-            Desarrollo de proyectos analíticos en Jupyter Notebooks, con
-            entornos como Anaconda y Google Colab
-          </li>
-          <li>
-            Integración de APIs externas para consumo de datos en tiempo real
-          </li>
-          <li>
-            Procesos ETL para consolidación de datos desde múltiples fuentes
-          </li>
-          <li>
-            Data storytelling: traducción de análisis técnicos en insights
-            accionables para stakeholders
-          </li>
-          <li>
-            Colaboración con equipos multidisciplinarios para alinear productos
-            de datos con objetivos del negocio
+            <strong>Campañas y Analítica:</strong> Gestión de campañas en Google Ads y configuración de Google Analytics para medir el impacto y optimizar el ROI, integraciones de etiquetas y pixeles a los web sites.
           </li>
         </ul>
       </>
     ),
-    href: "#analisis-datos",
+    href: "#seo-estrategia-digital",
   },
   {
     num: "03",
-    title: "Gestión de Proyectos Ágiles",
+    title: "Análisis de Datos e Inteligencia de Negocio",
     description: (
       <>
-        <p className="mb-1 text-justify">
-          Generación de valor a través de prácticas ágiles estructuradas que
-          fomentan la colaboración, la adaptabilidad y la mejora continua. Guío
-          a los equipos de proyecto mediante ciclos iterativos que alinean el
-          desarrollo con los objetivos del negocio, asegurando transparencia,
-          responsabilidad y resultados medibles.
+        <p className="mb-4 text-justify">
+          Convierto datos complejos en decisiones estratégicas. Utilizo Python, SQL y herramientas de visualización para automatizar reportes, analizar KPIs y generar insights que impulsan la eficiencia y el crecimiento de tu negocio.
         </p>
-        <span className="block font-semibold text-white/80">
-          Servicios incluyen:
-        </span>
-        <ul className="list-disc list-inside text-white/80 space-y-1 pl-4">
+        <ul className="list-disc list-inside text-white/80 space-y-2">
           <li>
-            Planificación de sprints, revisiones y retrospectivas basadas en
-            Scrum
-          </li>
-          <li>Gestión del backlog, priorización y sesiones de refinamiento</li>
-          <li>
-            Daily stand-ups y facilitación del equipo para eliminar bloqueos
-          </li>
-          <li>Comunicación con stakeholders y reportes alineados a KPIs</li>
-          <li>Coordinación entre equipos multidisciplinarios y distribuidos</li>
-          <li>
-            Documentación de proyectos y transferencia de conocimiento con
-            Trello, Notion, Sharepoint, Miro, Jira y Confluence
+            <strong>Dashboards Interactivos:</strong> Creación de paneles en Power BI y Looker Studio para una visualización clara de tus datos.
           </li>
           <li>
-            Integración de prácticas ágiles en entornos híbridos o remotos
+            <strong>Automatización de Reportes:</strong> Desarrollo de scripts en Python (Pandas) para limpiar, procesar y generar informes de forma automática.
+          </li>
+          <li>
+            <strong>Procesos ETL y SQL:</strong> Extracción y transformación de datos desde múltiples fuentes para consolidar una única fuente de verdad.
+          </li>
+        </ul>
+      </>
+    ),
+    href: "#analisis-datos-bi",
+  },
+  {
+    num: "04",
+    title: "Gestión Ágil de Proyectos Tecnológicos",
+    description: (
+      <>
+        <p className="mb-4 text-justify">
+          Aseguro que tus proyectos tecnológicos se entreguen a tiempo, dentro del presupuesto y alineados con tus objetivos. Lidero equipos utilizando metodologías ágiles (Scrum y Kanban) para garantizar transparencia, colaboración y entrega continua de valor.
+        </p>
+        <ul className="list-disc list-inside text-white/80 space-y-2">
+          <li>
+            <strong>Planificación y Roadmap:</strong> Definición de objetivos, cronogramas y recursos, gestionando el backlog para maximizar el impacto.
+          </li>
+          <li>
+            <strong>Liderazgo de Equipos:</strong> Coordinación de equipos multidisciplinarios y facilitación de ceremonias ágiles para eliminar bloqueos.
+          </li>
+          <li>
+            <strong>Comunicación y Reporte:</strong> Uso de Jira, Planner, Trello y Notion para un seguimiento transparente y la generación de reportes para stakeholders.
           </li>
         </ul>
       </>
     ),
     href: "#gestion-agil",
-  },
-  {
-    num: "04",
-    title: "Soluciones Digitales End-to-End",
-    description: (
-      <>
-        <p className="mb-1 text-justify">
-          Combinando frontend, backend y estrategia de datos para entregar
-          aplicaciones completas, escalables y orientadas al negocio. Desde el
-          concepto hasta el despliegue, alineo la ejecución técnica con
-          necesidades reales del entorno empresarial.
-        </p>
-        <span className="block font-semibold text-white/80">
-          Servicios incluyen:
-        </span>
-        <ul className="list-disc list-inside text-white/80 space-y-1 pl-4">
-          <li>Desarrollo de MVPs full-stack con Node.js y Express</li>
-          <li>
-            Integración y pruebas de APIs con Postman, Soap UI y Swagger UI
-          </li>
-          <li>Prototipado rápido y desarrollo low-code con Oracle APEX</li>
-          <li>Soluciones en tiempo real y sin servidor usando Supabase</li>
-          <li>Despliegue en la nube e infraestructura en Azure y AWS</li>
-          <li>
-            Diseño de soluciones que conectan tecnología con objetivos de
-            negocio
-          </li>
-          <li>Automatización de pruebas end-to-end con Playwright</li>
-          <li>
-            Explorando actualmente el Model Context Protocol (MCP) para
-            habilitar agentes digitales inteligentes, modulares y con conciencia
-            contextual.
-          </li>
-        </ul>
-      </>
-    ),
-    href: "#soluciones-digitales",
-  },
-  {
-    num: "05",
-    title: "Redacción y Estrategia de Contenido Digital",
-    description: (
-      <>
-        <p className="mb-1 text-justify">
-          Creación de copys atractivos y contenido estratégico para aumentar el
-          engagement, la visibilidad y la conexión con la comunidad. Contribuí
-          como copywriter en WordCamp Nicaragua 2025, desarrollando mensajes
-          dirigidos para múltiples plataformas.
-        </p>
-        <span className="block font-semibold text-white/80">
-          Servicios incluyen:
-        </span>
-        <ul className="list-disc list-inside text-white/80 space-y-1 pl-4">
-          <li>
-            Redacción de copys para publicaciones en redes sociales (enfoque
-            inbound y outbound)
-          </li>
-          <li>
-            Desarrollo de campañas de email marketing utilizando Mailchimp
-          </li>
-          <li>
-            Estrategia de contenido para atraer asistentes, patrocinadores y
-            voluntarios
-          </li>
-          <li>
-            Coordinación de mensajes con el equipo organizador para asegurar
-            coherencia de marca
-          </li>
-          <li>
-            Uso de herramientas de inteligencia artificial para automatizar y
-            optimizar la creación de contenido
-          </li>
-          <li>
-            Mejora de la eficiencia de campañas y alcance del evento mediante
-            automatización estratégica
-          </li>
-        </ul>
-      </>
-    ),
-    href: "#contenido-digital",
   },
 ];
 
@@ -276,17 +149,19 @@ const ServicesPage = () => {
                 <h2 className="text-xl sm:text-2xl md:text-[32px] font-bold leading-tight text-white group-hover:text-accent transition-all duration-500 mb-2 text-center min-h-[60px] sm:min-h-[70px] md:min-h-[80px] flex items-center justify-center">
                   {service.title}
                 </h2>
-                {/* description*/}
+                {/* description */}
                 <div className="text-white/80 text-justify flex-1 flex flex-col justify-between text-sm sm:text-base">
                   {service.description}
                 </div>
-                {/*border */}
+                {/* border */}
                 <div className="border-b border-white/20 w-full mt-6"></div>
               </div>
             );
           })}
         </motion.div>
       </div>
+
+       <Footer />
     </section>
   );
 };

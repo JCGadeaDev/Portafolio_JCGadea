@@ -19,6 +19,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import { MdNavigateBefore, MdNavigateNext } from "react-icons/md";
+import Footer from "@/components/Footer";
 
 const projects = [
   {
@@ -66,6 +67,7 @@ const Work = () => {
   };
 
   return (
+    <> 
     <motion.section
       initial={{ opacity: 0 }}
       animate={{
@@ -167,6 +169,8 @@ const Work = () => {
         </div>
       </div>
     </motion.section>
+    <Footer />
+     </>
   );
 };
 

@@ -16,8 +16,8 @@ const jetbrainsMono = JetBrains_Mono({
 
 
 export const metadata = {
-  title: "Portafolio JCGadeaDev",
-  description: "Portafolio Personal",
+  title: 'Juan Carlos Gadea | Desarrollador Full Stack & Analista de Datos',
+  description: 'Portafolio profesional de Juan Carlos Gadea, especialista en desarrollo web (React, Next.js), análisis de datos, SEO y gestión de proyectos.',
 };
 
 export default function RootLayout({ children }) {

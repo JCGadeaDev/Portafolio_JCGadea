@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
-import Nav from './Nav'
-import MobileNav from './MobileNav'
+import Nav from "./Nav";
+import MobileNav from "./MobileNav";
 
 const Header = () => {
   return (
@@ -17,16 +17,16 @@ const Header = () => {
         {/* Desktop Nav & Hire me button */}
         <div className="hidden xl:flex items-center gap-8">
           <Nav />
-          <Link href="/contact">
-            <Button>Hire me</Button>
-          </Link>
+          {/* CAMBIO AQUÍ: Se usa <a> con mailto: en lugar de <Link> */}
+          <a href="mailto:jcgambeta89@gmail.com?subject=Propuesta%20de%20Trabajo%20desde%20tu%20Portafolio">
+            <Button>Contáctame</Button>
+          </a>
         </div>
 
         {/*Mobile nav */}
         <div className="xl:hidden">
-          <MobileNav/>
+          <MobileNav />
         </div>
-
       </div>
     </header>
   );

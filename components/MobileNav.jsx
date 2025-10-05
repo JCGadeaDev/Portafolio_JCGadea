@@ -7,11 +7,12 @@ import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
+import { Button } from "./ui/button"; // <-- 1. Importar el componente Button
 
 const links = [
   { name: "inicio", path: "/" },
   { name: "servicios", path: "/services" },
-  { name: "curriculum", path: "/resume" },
+  { name: "sobre mí", path: "/resume" },
   { name: "proyectos", path: "/work" },
   { name: "contacto", path: "/contact" },
 ];
@@ -29,7 +30,7 @@ const MobileNav = () => {
       </SheetTrigger>
 
       <SheetContent className="flex flex-col">
-        {/* Accessibility: hidden title and description for screen readers */}
+        {/* Accessibility */}
         <VisuallyHidden>
           <DialogTitle>Mobile navigation menu</DialogTitle>
           <DialogDescription>
@@ -38,7 +39,7 @@ const MobileNav = () => {
         </VisuallyHidden>
 
         {/* Logo */}
-        <div className="mt-32 mb-40 text-center text-2xl">
+        <div className="mt-32 mb-20 text-center text-2xl"> {/* Reducido el margen inferior */}
           <Link href="/" onClick={handleLinkClick}>
             <h1 className="text-4xl font-semibold">
               JCGadeaDev <span className="text-accent">.</span>
@@ -63,6 +64,16 @@ const MobileNav = () => {
             </Link>
           ))}
         </nav>
+
+        {/* 2. Añadir el botón "Contratar" aquí abajo */}
+        <a
+          href="mailto:jcgambeta89@gmail.com?subject=Propuesta%20de%20Trabajo%20desde%20tu%20Portafolio"
+          className="mt-12 text-center" // Añadido margen superior
+          onClick={handleLinkClick} // Para cerrar el menú al hacer clic
+        >
+          <Button>Contáctame</Button>
+        </a>
+
       </SheetContent>
     </Sheet>
   );

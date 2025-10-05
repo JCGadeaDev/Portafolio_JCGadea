@@ -13,29 +13,43 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { FaWhatsapp, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { motion, easeIn } from "framer-motion";
+import Footer from "@/components/Footer";
 
+// --- DATOS ACTUALIZADOS Y EN ESPAÑOL ---
+
+// CAMBIO: Información de contacto en español y con contenido real
 const info = [
   {
-    icon: <FaPhoneAlt />,
-    title: "Phone",
-    description: "(+505)85785399 - (+39)3444528131",
+    icon: <FaWhatsapp />,
+    title: "Teléfono",
+    description: "(+505)85785399 / (+39)3444528131",
   },
   {
     icon: <FaEnvelope />,
-    title: "Email",
-    description: "jcgambeta89@gmail.com - gadeanova070189@hotmail.com",
+    title: "Correo",
+    description: "jcgambeta89@gmail.com",
   },
   {
     icon: <FaMapMarkerAlt />,
-    title: "Address",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    title: "Ubicación",
+    description: "Disponible para trabajo remoto",
   },
 ];
 
+// CAMBIO: Servicios alineados con tu sección de servicios
+const services = [
+    { value: "desarrollo-web", label: "Desarrollo Web y Experiencia de Usuario (UX)" },
+    { value: "seo-sem", label: "SEO, SEM y Estrategia Digital" },
+    { value: "analisis-datos", label: "Análisis de Datos e Inteligencia de Negocio" },
+    { value: "gestion-proyectos", label: "Gestión Ágil de Proyectos Tecnológicos" },
+];
+
+
 const Contact = () => {
   return (
+    <>  
     <motion.section
       initial={{ opacity: 0 }}
       animate={{
@@ -46,49 +60,65 @@ const Contact = () => {
     >
       <div className="container mx-auto px-4">
         <div className="flex flex-col xl:flex-row gap-10">
-          {/* form block */}
+          
+          {/* --- FORMULARIO ACTUALIZADO --- */}
           <div className="w-full xl:w-[54%] order-2 xl:order-none">
-            <form className="flex flex-col gap-6 p-6 md:p-8 bg-[#27272c] rounded-xl">
+            {/* CAMBIO IMPORTANTE: Para que el formulario funcione, necesitas un servicio externo.
+              He añadido los atributos 'action' y 'method'. 
+              Solo tienes que reemplazar "TU_URL_DE_FORMSPREE" por tu propio enlace.
+              Te explico cómo obtenerlo más abajo.
+            */}
+            <form 
+              action="https://formspree.io/f/xzzjggjy"
+              method="POST"
+              className="flex flex-col gap-6 p-6 md:p-8 bg-[#27272c] rounded-xl"
+            >
               <h3 className="text-3xl md:text-4xl text-accent">
-                Let's work together
+                Trabajemos juntos
               </h3>
               <p className="text-white/60 text-sm md:text-base">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
-                debitis soluta, asperiores facilis rerum corporis accusantium
-                temporibus sed placeat et distinctio veritatis alias ex nobis
-                est nesciunt unde deserunt excepturi?
+                Si tienes una pregunta, una propuesta o simplemente quieres saludar, no dudes en completar el formulario. ¡Me encantaría saber de ti!
               </p>
+              
+              {/* CAMBIO: Placeholders y campos en español */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <Input type="text" placeholder="Firstname" />
-                <Input type="text" placeholder="Lastname" />
-                <Input type="email" placeholder="Email address" />
-                <Input type="tel" placeholder="Phone number" />
+                <Input type="text" name="nombre" placeholder="Nombre" required />
+                <Input type="text" name="apellido" placeholder="Apellido" required />
+                <Input type="email" name="email" placeholder="Correo electrónico" required />
+                <Input type="tel" name="telefono" placeholder="Número de teléfono" />
               </div>
-              <Select>
+              
+              {/* CAMBIO: Select con servicios actualizados */}
+              <Select name="servicio">
                 <SelectTrigger className="w-full">
-                  <SelectValue placeholder="Select a service" />
+                  <SelectValue placeholder="Selecciona un servicio de interés" />
                 </SelectTrigger>
-                <SelectContent>
+                <SelectContent className="bg-[#27272c] border-accent text-white">
                   <SelectGroup>
-                    <SelectLabel>Services</SelectLabel>
-                    <SelectItem value="web-dev">Web Development</SelectItem>
-                    <SelectItem value="app-dev">App Development</SelectItem>
-                    <SelectItem value="design">UI/UX Design</SelectItem>
-                    <SelectItem value="consulting">Consulting</SelectItem>
+                    <SelectLabel>Mis Servicios</SelectLabel>
+                    {services.map(service => (
+                      <SelectItem key={service.value} value={service.value}>
+                        {service.label}
+                      </SelectItem>
+                    ))}
                   </SelectGroup>
                 </SelectContent>
               </Select>
+              
               <Textarea
+                name="mensaje"
                 className="h-[160px]"
-                placeholder="Type your message here."
+                placeholder="Escribe tu mensaje aquí..."
+                required
               />
-              <Button size="md" className="max-w-40">
-                Send message
+              
+              <Button type="submit" size="md" className="max-w-40">
+                Enviar mensaje
               </Button>
             </form>
           </div>
 
-          {/* info block */}
+          {/* --- BLOQUE DE INFORMACIÓN (YA ESTABA BIEN) --- */}
           <div className="flex-1 flex items-center justify-start xl:justify-end order-1 xl:order-none mb-8 xl:mb-0">
             <ul className="flex flex-col gap-8 w-full">
               {info.map((item, index) => (
@@ -102,7 +132,7 @@ const Contact = () => {
                     <p className="text-white/60 text-sm md:text-base">
                       {item.title}
                     </p>
-                    <h3 className="text-lg md:text-xl">
+                    <h3 className="text-lg md:text-xl break-words">
                       {item.description}
                     </h3>
                   </div>
@@ -110,10 +140,15 @@ const Contact = () => {
               ))}
             </ul>
           </div>
+
         </div>
       </div>
     </motion.section>
+     <Footer />
+    </>
+   
   );
 };
 
 export default Contact;
+
