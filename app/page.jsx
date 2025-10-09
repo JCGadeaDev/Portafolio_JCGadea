@@ -34,7 +34,7 @@ const Home = () => {
               - Aumentamos el tamaño de la fuente para pantallas grandes con 'lg:text-2xl'.
             */}
             <span className="text-xl lg:text-2xl">
-              Front-End Developer | Data Analyst | SEO Specialist | Project Manager
+              Full-Stack Developer | Data Analyst | SEO Specialist | Project Manager
             </span>
             <h1 className="h1">
               Hola, Soy

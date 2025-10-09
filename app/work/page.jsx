@@ -21,45 +21,79 @@ import Image from "next/image";
 import { MdNavigateBefore, MdNavigateNext } from "react-icons/md";
 import Footer from "@/components/Footer";
 
+// --- PROYECTOS SELECCIONADOS DE TU GITHUB ---
 const projects = [
   {
     num: "01",
-    category: "frontend",
-    title: "project 1",
+    category: "Frontend y Backend",
+    title: "NicCoders Web",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ipsa illo veniam non deleniti consectetur aliquid labore! Iusto sint dolor mollitia et quas at iure ea, similique laboriosam? Debitis, ratione?.",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-    image: "/assets/work/thumb1.png",
-    live: "",
-    github: "",
+      "Desarrollo de la landing page para NicCoders, startup tecnológica, enfocada en posicionar su marca y captar clientes. Se construyó un MVP de alto rendimiento con Next.js 14 para optimización y velocidad. La interfaz, responsiva y personalizable, fue creada con Tailwind CSS y Framer Motion. El formulario de contacto opera mediante una API con Node.js y Nodemailer, sentando las bases de una arquitectura robusta y escalable",
+    stack: [
+      { name: "Next.js" },
+      { name: "React" },
+      { name: "JavaScript" },
+      { name: "Tailwind CSS" },
+      { name: "NodeJs" },
+      { name: "Nodemailer" },
+      { name: "Express" },
+    ],
+    image: "/assets/work/NicCoders.webp", 
+    live: "https://niccoders.com/",
+    github: "https://github.com/JCGadeaDev/NicCoders_Site",
   },
   {
     num: "02",
-    category: "fullstack",
-    title: "project 2",
+    category: "Frontend",
+    title: "Rastreador de Issues de GitHub",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ipsa illo veniam non deleniti consectetur aliquid labore! Iusto sint dolor mollitia et quas at iure ea, similique laboriosam? Debitis, ratione?.",
-    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }, { name: "Node.js" }],
-    image: "/assets/work/thumb2.png",
-    live: "",
-    github: "",
+      "Una aplicación que utiliza la API de GitHub para buscar, filtrar y mostrar issues. Implementa estado global con Zustand y fetching de datos asíncrono con React Query.",
+    stack: [
+      { name: "React" },
+      { name: "Vite" },
+      { name: "Zustand" },
+      { name: "React Query" },
+    ],
+    image: "/assets/work/thumb-issues.png", // Reemplazar con la imagen de tu proyecto
+    live: "https://react-query-issues-jc.netlify.app/",
+    github: "https://github.com/JCGadeaDev/react-query-issues-zustand",
   },
   {
     num: "03",
-    category: "frontend",
-    title: "project 3",
+    category: "Análisis de Datos",
+    title: "Proyectos de Análisis de Datos",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ipsa illo veniam non deleniti consectetur aliquid labore! Iusto sint dolor mollitia et quas at iure ea, similique laboriosam? Debitis, ratione?.",
-    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }],
-    image: "/assets/work/thumb3.png",
-    live: "",
-    github: "",
+      "Colección de notebooks de Jupyter que demuestran la limpieza, manipulación, análisis y visualización de datos utilizando librerías como Pandas, NumPy y Matplotlib en diversos datasets.",
+    stack: [
+      { name: "Python" },
+      { name: "Pandas" },
+      { name: "Jupyter" },
+      { name: "Matplotlib" },
+    ],
+    image: "/assets/work/thumb-data.png", // Reemplazar con la imagen de tu proyecto
+    live: "", // No hay enlace en vivo para este tipo de proyecto
+    github: "https://github.com/JCGadeaDev/Data-analysis-with-python",
+  },
+  {
+    num: "04",
+    category: "Frontend",
+    title: "Portafolio Personal",
+    description:
+      "Mi portafolio personal (el que estás viendo ahora), diseñado y construido con Next.js y Tailwind CSS, con un enfoque en diseño responsivo y animaciones suaves con Framer Motion.",
+    stack: [
+      { name: "Next.js" },
+      { name: "Tailwind CSS" },
+      { name: "Framer Motion" },
+    ],
+    image: "/assets/work/thumb-portfolio.png", // Reemplazar con la imagen de tu proyecto
+    live: "https://jc-gadea-dev-portfolio.vercel.app/",
+    github: "https://github.com/JCGadeaDev/portfolio-v1",
   },
 ];
 
 const Work = () => {
   const [project, setProject] = useState(projects[0]);
-  const swiperRef = useRef();
+  const swiperRef = useRef(null);
 
   const handleSlideChange = (swiper) => {
     const currentIndex = swiper.activeIndex;
@@ -67,110 +101,114 @@ const Work = () => {
   };
 
   return (
-    <> 
-    <motion.section
-      initial={{ opacity: 0 }}
-      animate={{
-        opacity: 1,
-        transition: { delay: 2.4, duration: 0.4, ease: easeIn },
-      }}
-      className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
-    >
-      <div className="container mx-auto">
-        <div className="flex flex-col xl:flex-row xl:gap-[30px]">
-          <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
-            <div className="flex flex-col gap-[30px] h-[50%]">
-              <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
-                {project.num}
-              </div>
-              <h2 className="text-[42px] font-bold leading-none text-white capitalize">
-                {project.category} project
-              </h2>
-              <p className="text-white/60">{project.description}</p>
-              <ul className="flex gap-4">
-                {project.stack.map((item, index) => (
-                  <li key={index} className="text-xl text-accent">
-                    {item.name}
-                    {index !== project.stack.length - 1 && ","}
-                  </li>
-                ))}
-              </ul>
-              <div className="border border-white/20"></div>
-              <div className="flex items-center gap-4">
-                <Link href={project.live}>
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Live project</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
-                <Link href={project.github}>
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsGithub className="text-white text-3xl group-hover:text-accent" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Github repository</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
+    <>
+      <motion.section
+        initial={{ opacity: 0 }}
+        animate={{
+          opacity: 1,
+          transition: { delay: 2.4, duration: 0.4, ease: easeIn },
+        }}
+        className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
+      >
+        <div className="container mx-auto">
+          <div className="flex flex-col xl:flex-row xl:gap-[30px]">
+            <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
+              <div className="flex flex-col gap-[30px] h-[50%]">
+                <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
+                  {project.num}
+                </div>
+                {/* CAMBIO: Título más dinámico y traducido */}
+                <h2 className="text-[42px] font-bold leading-none text-white capitalize">
+                  {project.category}
+                </h2>
+                <p className="text-white/60 text-justify">{project.description}</p>
+                <ul className="flex gap-4 flex-wrap">
+                  {project.stack.map((item, index) => (
+                    <li key={index} className="text-xl text-accent">
+                      {item.name}
+                      {index !== project.stack.length - 1 && ","}
+                    </li>
+                  ))}
+                </ul>
+                <div className="border border-white/20"></div>
+                <div className="flex items-center gap-4">
+                  {/* CAMBIO: Lógica para ocultar el botón si no hay link en vivo */}
+                  {project.live && (
+                    <Link href={project.live} target="_blank" rel="noopener noreferrer">
+                      <TooltipProvider delayDuration={100}>
+                        <Tooltip>
+                          <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                            <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
+                          </TooltipTrigger>
+                          <TooltipContent>
+                            <p>Ver proyecto</p>
+                          </TooltipContent>
+                        </Tooltip>
+                      </TooltipProvider>
+                    </Link>
+                  )}
+                  {/* CAMBIO: Tooltip traducido */}
+                  <Link href={project.github} target="_blank" rel="noopener noreferrer">
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                          <BsGithub className="text-white text-3xl group-hover:text-accent" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Ver repositorio</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="w-full xl:w-[50%]">
-            <Swiper
-              spaceBetween={30}
-              slidesPerView={1}
-              className="xl:h-[520px] mb-4"
-              onSwiper={(swiper) => (swiperRef.current = swiper)}
-              onSlideChange={handleSlideChange}
-            >
-              {projects.map((project, index) => (
-                <SwiperSlide key={index} className="w-full">
-                  <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
-                    <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
-                    <div className="relative w-full h-full">
-                      <Image
-                        src={project.image}
-                        fill
-                        className="object-cover"
-                        alt=""
-                      />
+            <div className="w-full xl:w-[50%]">
+              <Swiper
+                spaceBetween={30}
+                slidesPerView={1}
+                className="xl:h-[520px] mb-4"
+                onSwiper={(swiper) => (swiperRef.current = swiper)}
+                onSlideChange={handleSlideChange}
+              >
+                {projects.map((project, index) => (
+                  <SwiperSlide key={index} className="w-full">
+                    <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
+                      <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
+                      <div className="relative w-full h-full">
+                        <Image
+                          src={project.image}
+                          fill
+                          className="object-cover"
+                          alt={`Imagen del proyecto ${project.title}`}
+                        />
+                      </div>
                     </div>
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
 
-            {/* Custom slider buttons OUTSIDE */}
-            <div className="flex xl:gap-4 mt-2 xl:mt-4 w-full justify-between xl:w-max xl:justify-end">
-              <button
-                className="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
-                onClick={() => swiperRef.current?.slidePrev()}
-              >
-                <MdNavigateBefore className="text-primary text-xl" />
-              </button>
-              <button
-                className="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
-                onClick={() => swiperRef.current?.slideNext()}
-              >
-                <MdNavigateNext className="text-primary text-xl" />
-              </button>
+              <div className="flex xl:gap-4 mt-2 xl:mt-4 w-full justify-between xl:w-max xl:justify-end">
+                <button
+                  className="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
+                  onClick={() => swiperRef.current?.slidePrev()}
+                >
+                  <MdNavigateBefore className="text-primary text-xl" />
+                </button>
+                <button
+                  className="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
+                  onClick={() => swiperRef.current?.slideNext()}
+                >
+                  <MdNavigateNext className="text-primary text-xl" />
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </motion.section>
-    <Footer />
-     </>
+      </motion.section>
+      <Footer />
+    </>
   );
 };
 
