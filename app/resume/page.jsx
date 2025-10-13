@@ -78,7 +78,7 @@ const about = {
     { fieldName: "Nombre: ", fieldValue: "Juan Carlos Gadea" },
     {
       fieldName: "Teléfono: ",
-      fieldValue: "(+505) 8578 5399 / (+39) 344 452 8131",
+      fieldValue: "(+505)85785399 / (+39)3444528131",
     },
     { fieldName: "Experiencia: ", fieldValue: "4+ Años" },
     { fieldName: "Correo: ", fieldValue: "jcgambeta89@gmail.com" },
@@ -92,70 +92,78 @@ const about = {
 
 //Experience Data
 const experience = {
-  title: "Mi Experiencia",
+  title: "Mi Experiencia Profesional",
   description:
-    "Mi trayectoria abarca desde el desarrollo de software y la gestión de proyectos en entornos corporativos hasta la creación de soluciones full-stack, análisis de datos y estrategias SEO como profesional independiente.",
+    "Mi trayectoria abarca desde el desarrollo de software y la gestión de proyectos en entornos corporativos (Transformación Digital, Finanzas) hasta la creación de soluciones full-stack, análisis de datos y estrategias SEO como profesional independiente.",
   items: [
     {
       company: "inVicta Business Partners",
       position: "Technology Solutions & Analytics Specialist",
-      duration: "Ago 2025 - Actualidad",
+      duration: "Agosto 2025 – Actualidad (En remoto)",
       highlights: [
-        "Evaluación de plataformas tecnológicas para medir y optimizar el impacto en el negocio.",
-        "Desarrollo de sitios y e-commerce con CMS (WordPress, Wix) aplicando estrategias SEO para aumentar la visibilidad y el tráfico.",
-        "Configuración y manejo de plugins en WordPress.",
-        "Implementación de analítica web (Google Analytics, GTM) para el seguimiento de KPIs y optimización de la conversión.",
-        "Diseño de flujos de trabajo basados en datos para identificar mejoras y reducir costos operativos.",
-        "Análisis con Google Analytics, seguimiento con Google Tag Manager y Meta Pixel.",
-        "Gestión de DNS y hosting (GoDaddy).",
-        "Asesoramiento estratégico a la gerencia en la selección e integración de nuevas tecnologías.",
+        "Analizo y evalúo soluciones tecnológicas para optimizar el rendimiento e impacto directo en el negocio.",
+        "Diseño e implemento reportes y dashboards con KPIs clave para medir la efectividad de las soluciones tecnológicas.",
+        "Identifico oportunidades de mejora en procesos e infraestructura, desarrollando flujos de trabajo basados en datos.",
+        "Colaboro con equipos multidisciplinarios en la integración de herramientas y nuevas tecnologías.",
+        "Gestiono el desarrollo web con CMS (WordPress, Wix), aplicando SEO On-Page y Técnico para mejorar el posicionamiento y la analítica (Google Analytics, Google Search Console,  GTM, Meta Pixel)."
       ],
     },
     {
       company: "Profesional Independiente",
       position: "Desarrollador Web Full Stack | Analista de Datos | SEO",
-      duration: "Feb 2025 - Actualidad",
+      duration: "Febrero 2025 – Actualidad (En remoto)",
       highlights: [
-        "Creación de soluciones full-stack eficientes con el stack MERN (React, Node.js, Express).",
-        "Desarrollo de sitios web optimizados para SEO, mejorando la visibilidad y el tráfico orgánico.",
-        "Desarrollo de sitios web con Next.js, Astro, WordPress y Wix.",
-        "Experiencia en web responsive y optimización de rendimiento.",
-        "Automatizacion de flujos con GitHub Actions.",
-        "He desarrollado múltiples proyectos, incluyendo landing pages, sitios corporativos, tiendas ecommerce, portafolios de trabajo, así como soluciones personalizadas en CMS (WordPress y Wix Studio).",
-        "Certificaciones en tecnologías de desarrollo web, y de manera constante me estoy capacitando, creando nuevos proyectos y colaborando con otros desarrolladores para potenciar la innovación y el aprendizaje compartido.",
+        "Lidero el desarrollo Full-Stack, diseñando e implementando REST APIs (endpoints) con Node.js y utilizando servicios de backend como Supabase y Firebase. Creación de Agentes MCP (Machine Critical Processes) para la automatización de tareas críticas.",
+        "Desarrollo de soluciones web escalables (e-commerce, portafolios), incluyendo el consumo eficiente de APIs (utilizando Fetch/Axios) y la integración de pasarelas de pago.",
+        "Implemento métodos de autenticación seguros (OAuth y JWT) en las aplicaciones para garantizar la seguridad del usuario.",
+        "Implemento análisis de datos avanzados con Python (Pandas, NumPy, Matplotlib, Seaborn) y Power BI para optimizar decisiones de negocio.",
+        "Administro bases de datos SQL y PostgreSQL para asegurar la integridad y el rendimiento de las aplicaciones.",
+        "Automatizo flujos CI/CD mediante Git, GitHub y GitHub Actions, mejorando la eficiencia del desarrollo.",
+        "Aplico estrategias de SEO on-page y SEM en WordPress y Wix Studio para aumentar la visibilidad y el tráfico web."
       ],
     },
     {
       company: "Claro Nicaragua",
-      position: "Analista de Sistemas | Proyectos | Programador",
-      duration: "May 2022 - Ene 2025",
+      position: "Analista de Sistemas | Analista de Proyectos | Analista Programador - Transformación Digital",
+      duration: "Mayo 2022 – Enero 2025 (Managua, Nicaragua)",
       highlights: [
-        "Liderazgo en el desarrollo de aplicaciones empresariales con Oracle (SQL, APEX) para automatizar procesos críticos.",
-        "Gestión del ciclo de vida completo de proyectos, desde la planificación hasta el soporte post-implementación.",
-        "Coordinación de pruebas funcionales (SIT, UAT)",
-        "Control de avance y cambios con herramientas ágiles (Jira, Trello) bajo enfoques Scrum y Kanban.",
-        "Generación de reportes ejecutivos para la alta dirección y documentación técnica funcional.",
-        "Liderar el desarrollo de sistemas digitales y garantizar la entrega en tiempo, forma y presupuesto.",
-        "Gestión integral del ciclo de vida deproyectos: análisis, planificación, ejecución, seguimiento y cierre.",
+        "Lideré el desarrollo e implementación de aplicaciones empresariales con Oracle SQL y Oracle APEX, automatizando procesos críticos y mejorando el rendimiento operativo.",
+        "Diseñé estructuras de datos relacionales e interfaces interactivas, garantizando la integración efectiva con plataformas corporativas.",
+        "Gestioné el ciclo de vida completo de proyectos tecnológicos (definición de cronogramas, recursos, objetivos, manejo de Sharepoint, Project) y desarrollé documentación de software (manuales de usuario con Confluence, casos de uso, diagramas de flujo, diagramas de secuencia).",
+        "Coordiné equipos interdepartamentales y stakeholders, supervisando pruebas SIT, UAT y QA; definiendo historias de usuario y criterios de aceptación.",
+        "Administré el avance y los cambios de proyectos utilizando herramientas ágiles (Jira, Trello) bajo Scrum y Kanban.",
+        "Contribuí activamente en procesos de digitalización, automatización y mejora continua en plataformas y canales digitales."
       ],
     },
     {
       company: "Seguros Iniser Nicaragua",
       position: "Programador Informático",
-      duration: "Jul 2018 - Jun 2019",
+      duration: "Julio 2018 – Junio 2019 (Managua, Nicaragua)",
       highlights: [
-        "Desarrollo y mantenimiento de sistemas de información con Oracle PL/SQL, Forms y Reports.",
-        "Diseño e implementación de soluciones de software, incluyendo modelado de bases de datos y lógica de negocio.",
-        "Soporte funcional y técnico a usuarios, y capacitación en nuevas funcionalidades.",
+        "Desarrollé y mantuve sistemas de información con PL/SQL, Oracle Database, Oracle Forms y Reports, adaptándolos a los requerimientos del negocio.",
+        "Diseñé e implementé soluciones desde cero, incluyendo modelado de bases de datos, lógica de negocio y diseño de interfaces.",
+        "Creé reportes personalizados y gestioné portales web internos para consulta y administración de información.",
+        "Brindé soporte funcional y técnico continuo a usuarios, así como capacitaciones para el uso efectivo de los sistemas."
       ],
     },
     {
-      company: "RS Seguridad Digital",
-      position: "Asistente de Operaciones Técnicas",
-      duration: "Mar 2017 - May 2017",
+      company: "Seguros Iniser Nicaragua",
+      position: "Digitador y Analista de Suscripción de Pólizas de Seguros",
+      duration: "Junio 2017 – Julio 2018 (Managua, Nicaragua)",
       highlights: [
-        "Apoyo en la gestión y monitoreo de sistemas de seguridad de la información.",
-        "Asistencia técnica y resolución de incidencias de primer nivel a clientes.",
+        "Gestioné el análisis y la suscripción de pólizas de seguros, asegurando el cumplimiento de políticas y regulaciones.",
+        "Capacité a personal interno y externo sobre productos, procesos y herramientas tecnológicas, incluyendo el uso de tecnología GPS para pólizas agrícolas."
+      ],
+    },
+    {
+      company: "RS SEGURIDAD DIGITAL INTERNACIONAL",
+      position: "Asistente de Operaciones Técnicas",
+      duration: "Marzo 2017 – Mayo 2017 (Managua, Nicaragua)",
+      highlights: [
+        "Realicé mantenimiento preventivo y correctivo de equipos de cómputo y sistemas CCTV.",
+        "Instalé, reparé y configuré hardware y sistemas tecnológicos para asegurar su óptimo funcionamiento.",
+        "Proporcioné soporte técnico presencial y remoto, resolviendo incidencias eficientemente.",
+        "Garantícé la seguridad y continuidad operativa de infraestructuras tecnológicas en tiendas."
       ],
     },
   ],
@@ -529,7 +537,7 @@ const Resume = () => {
               <TabsTrigger value="education" className="w-full">
                 <div className="flex items-center gap-2">
                   <FaGraduationCap />
-                  Formación
+                  Formación y Certificaciones
                 </div>
               </TabsTrigger>
               <TabsTrigger value="skills" className="w-full">
@@ -549,8 +557,8 @@ const Resume = () => {
               {/* experience */}
               <TabsContent value="experience" className="w-full">
                 <div className="flex flex-col gap-[30px] text-center xl:text-left pt-8">
-                  <h3 className="text-4xl font-bold">{experience.title}</h3>
-                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                  <h3 className="text-4xl font-bold text-justify">{experience.title}</h3>
+                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 text-justify">
                     {experience.description}
                   </p>
                   <ScrollArea className="h-[480px]">
@@ -584,8 +592,8 @@ const Resume = () => {
               {/* education */}
               <TabsContent value="education" className="w-full">
                 <div className="flex flex-col gap-[30px] text-center xl:text-left pt-8">
-                  <h3 className="text-4xl font-bold">{education.title}</h3>
-                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                  <h3 className="text-4xl font-bold text-justify">{education.title}</h3>
+                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 text-justify">
                     {education.description}
                   </p>
                   <ScrollArea className="h-[480px] pr-4">
