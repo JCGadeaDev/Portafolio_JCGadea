@@ -19,7 +19,7 @@ const stats = [
     isPercentage: false,
   },
   {
-    num: 5,
+    num: 4,
     text: "Años de Experiencia",
     isPercentage: false,
   },
