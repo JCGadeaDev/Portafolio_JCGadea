@@ -92,7 +92,7 @@ const projects = [
       { name: "Tailwind CSS" },
       { name: "Framer Motion" },
     ],
-    image: "/assets/work/thumb-portfolio.png", // Reemplazar con la imagen de tu proyecto
+    image: "/assets/work/thumb-portfolio.png",
     live: "https://jc-gadea-dev-portfolio.vercel.app/",
     github: "https://github.com/JCGadeaDev/portfolio-v1",
   },
@@ -115,37 +115,48 @@ const Work = () => {
           opacity: 1,
           transition: { delay: 2.4, duration: 0.4, ease: easeIn },
         }}
-        className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
+        className="min-h-[80vh] flex flex-col justify-center py-12 px-4 sm:px-6 lg:px-8 xl:px-0"
       >
         <div className="container mx-auto">
-          <div className="flex flex-col xl:flex-row xl:gap-[30px]">
-            <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
-              <div className="flex flex-col gap-[30px] h-[50%]">
-                <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
+          <div className="flex flex-col xl:flex-row xl:gap-[40px] 2xl:gap-[50px]">
+            {/* SECCIÓN IZQUIERDA - INFORMACIÓN */}
+            <div className="w-full xl:w-[50%] flex flex-col xl:justify-between order-2 xl:order-none mb-8 xl:mb-0">
+              <div className="flex flex-col gap-[20px] md:gap-[25px] xl:gap-[30px] h-full">
+                {/* Número del Proyecto */}
+                <div className="text-6xl sm:text-7xl md:text-8xl lg:text-8xl xl:text-8xl leading-none font-extrabold text-transparent text-outline">
                   {project.num}
                 </div>
-                {/* CAMBIO: Título más dinámico y traducido */}
-                <h2 className="text-[42px] font-bold leading-none text-white capitalize">
+
+                {/* Categoría */}
+                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-5xl font-bold leading-none text-white capitalize">
                   {project.category}
                 </h2>
-                <p className="text-white/60 text-justify">{project.description}</p>
-                <ul className="flex gap-4 flex-wrap">
+
+                {/* Descripción - Con scroll si es necesario */}
+                <p className="text-sm sm:text-base md:text-base lg:text-base xl:text-base text-white/60 text-justify leading-relaxed max-h-[120px] xl:max-h-[140px] overflow-y-auto pr-2">
+                  {project.description}
+                </p>
+
+                {/* Stack Technologies */}
+                <ul className="flex gap-2 flex-wrap">
                   {project.stack.map((item, index) => (
-                    <li key={index} className="text-xl text-accent">
+                    <li key={index} className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-accent font-medium">
                       {item.name}
                       {index !== project.stack.length - 1 && ","}
                     </li>
                   ))}
                 </ul>
+
                 <div className="border border-white/20"></div>
-                <div className="flex items-center gap-4">
-                  {/* CAMBIO: Lógica para ocultar el botón si no hay link en vivo */}
+
+                {/* Botones de Acción - Fijos al final */}
+                <div className="flex items-center gap-3 sm:gap-4 md:gap-4 mt-auto">
                   {project.live && (
                     <Link href={project.live} target="_blank" rel="noopener noreferrer">
                       <TooltipProvider delayDuration={100}>
                         <Tooltip>
-                          <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                            <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
+                          <TooltipTrigger className="w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] md:w-[70px] md:h-[70px] rounded-full bg-white/5 flex justify-center items-center group hover:bg-accent/10 transition-all">
+                            <BsArrowUpRight className="text-white text-2xl sm:text-2xl md:text-3xl group-hover:text-accent transition-colors" />
                           </TooltipTrigger>
                           <TooltipContent>
                             <p>Ver proyecto</p>
@@ -154,12 +165,11 @@ const Work = () => {
                       </TooltipProvider>
                     </Link>
                   )}
-                  {/* CAMBIO: Tooltip traducido */}
                   <Link href={project.github} target="_blank" rel="noopener noreferrer">
                     <TooltipProvider delayDuration={100}>
                       <Tooltip>
-                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                          <BsGithub className="text-white text-3xl group-hover:text-accent" />
+                        <TooltipTrigger className="w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] md:w-[70px] md:h-[70px] rounded-full bg-white/5 flex justify-center items-center group hover:bg-accent/10 transition-all">
+                          <BsGithub className="text-white text-2xl sm:text-2xl md:text-3xl group-hover:text-accent transition-colors" />
                         </TooltipTrigger>
                         <TooltipContent>
                           <p>Ver repositorio</p>
@@ -171,24 +181,26 @@ const Work = () => {
               </div>
             </div>
 
+            {/* SECCIÓN DERECHA - CARRUSEL DE IMÁGENES */}
             <div className="w-full xl:w-[50%]">
               <Swiper
-                spaceBetween={30}
+                spaceBetween={20}
                 slidesPerView={1}
-                className="xl:h-[520px] mb-4"
+                className="xl:h-[520px] mb-3 md:mb-4 lg:mb-4 rounded-lg overflow-hidden"
                 onSwiper={(swiper) => (swiperRef.current = swiper)}
                 onSlideChange={handleSlideChange}
               >
                 {projects.map((project, index) => (
                   <SwiperSlide key={index} className="w-full">
-                    <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
+                    <div className="h-[300px] sm:h-[350px] md:h-[400px] lg:h-[460px] xl:h-[460px] relative group flex justify-center items-center bg-pink-50/20 rounded-lg overflow-hidden">
                       <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                       <div className="relative w-full h-full">
                         <Image
                           src={project.image}
                           fill
-                          className="object-cover"
+                          className="object-cover group-hover:scale-105 transition-transform duration-300"
                           alt={`Imagen del proyecto ${project.title}`}
+                          priority={index === 0}
                         />
                       </div>
                     </div>
@@ -196,18 +208,21 @@ const Work = () => {
                 ))}
               </Swiper>
 
-              <div className="flex xl:gap-4 mt-2 xl:mt-4 w-full justify-between xl:w-max xl:justify-end">
+              {/* Botones de Navegación */}
+              <div className="flex gap-2 sm:gap-3 md:gap-4 w-full justify-between xl:w-max xl:justify-end mt-3 md:mt-4">
                 <button
-                  className="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
+                  className="bg-accent hover:bg-accent-hover text-primary text-lg sm:text-lg md:text-xl lg:text-2xl w-[40px] h-[40px] sm:w-[44px] sm:h-[44px] md:w-[50px] md:h-[50px] flex justify-center items-center transition-all rounded-md hover:scale-110"
                   onClick={() => swiperRef.current?.slidePrev()}
+                  aria-label="Proyecto anterior"
                 >
-                  <MdNavigateBefore className="text-primary text-xl" />
+                  <MdNavigateBefore className="text-primary text-lg sm:text-lg md:text-2xl" />
                 </button>
                 <button
-                  className="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
+                  className="bg-accent hover:bg-accent-hover text-primary text-lg sm:text-lg md:text-xl lg:text-2xl w-[40px] h-[40px] sm:w-[44px] sm:h-[44px] md:w-[50px] md:h-[50px] flex justify-center items-center transition-all rounded-md hover:scale-110"
                   onClick={() => swiperRef.current?.slideNext()}
+                  aria-label="Siguiente proyecto"
                 >
-                  <MdNavigateNext className="text-primary text-xl" />
+                  <MdNavigateNext className="text-primary text-lg sm:text-lg md:text-2xl" />
                 </button>
               </div>
             </div>
