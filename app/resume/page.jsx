@@ -23,6 +23,7 @@ import {
   FaCode,
   FaSearchPlus,
   FaTimes,
+  FaDocker, 
 } from "react-icons/fa";
 import {
   SiTailwindcss,
@@ -50,6 +51,8 @@ import {
   SiWix,
   SiLooker,
   SiGoogleanalytics,
+  SiFirebase,
+  SiGooglecloud,
 } from "react-icons/si";
 import { TbSql } from "react-icons/tb";
 import { VscAzure } from "react-icons/vsc";
@@ -198,6 +201,12 @@ const education = {
         degree: "Curso Profesional de React",
         duration: "2025",
         image: "/assets/certificates/CodigoFacilitoReact.webp"
+      },
+      {
+        institution: "Codigo Facilito",
+        degree: "Curso Profesional de Docker",
+        duration: "2025",
+        image: "/assets/certificates/CodigoFacilitoDocker.webp"
       },
       {
         institution: "Código Facilito",
@@ -448,6 +457,7 @@ const skills = {
         { icon: <FaAngular />, name: "Angular" },
         { icon: <SiNextdotjs />, name: "Next.js" },
         { icon: <SiAstro />, name: "Astro" },
+        { icon: <SiWebpack />, name: "Webpack" },
         { icon: <FaHtml5 />, name: "HTML" },
         { icon: <FaCss3 />, name: "CSS" },
         { icon: <SiTailwindcss />, name: "Tailwind CSS" },
@@ -459,9 +469,11 @@ const skills = {
       skills: [
         { icon: <FaNode />, name: "Node.js" },
         { icon: <SiExpress />, name: "Express" },
+        { icon: <SiSwagger />, name: "Swagger" },
         { icon: <TbSql />, name: "SQL" },
         { icon: <SiPostgresql />, name: "PostgreSQL" },
         { icon: <SiSupabase />, name: "Supabase" },
+        { icon: <SiFirebase />, name: "Firebase" },
         { icon: <SiOracle />, name: "Oracle PL/SQL" },
         { icon: <SiMysql />, name: "MySQL" },
         { icon: <SiPrisma />, name: "Prisma ORM" },
@@ -472,6 +484,9 @@ const skills = {
       skills: [
         { icon: <FaPython />, name: "Python" },
         { icon: <SiPandas />, name: "Pandas" },
+        { icon: <SiNumpy />, name: "Numpy" },
+        { icon: <SiJupyter />, name: "Jupyter Notebook" },
+        { icon: <SiGooglecolab />, name: "Google Colab" },
         { icon: <FaMicrosoft />, name: "Power BI & Excel" },
         { icon: <SiLooker />, name: "Looker Studio" },
         { icon: <SiGoogleanalytics />, name: "Google Analytics" },
@@ -485,11 +500,13 @@ const skills = {
         { icon: <FaGitAlt />, name: "Git" },
         { icon: <FaGithub />, name: "GitHub" },
         { icon: <SiGithubactions />, name: "GitHub Actions" },
+        { icon: <FaDocker />, name: "Docker" },
         { icon: <SiVite />, name: "Vite" },
         { icon: <IoLogoVercel />, name: "Vercel" },
         { icon: <SiNetlify />, name: "Netlify" },
         { icon: <VscAzure />, name: "Azure" },
         { icon: <FaAws />, name: "AWS" },
+        { icon: <SiGooglecloud />, name: "Google Cloud" },
         { icon: <SiPostman />, name: "Postman" },
       ],
     },

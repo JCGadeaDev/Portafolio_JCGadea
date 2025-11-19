@@ -26,7 +26,7 @@ const services = [
             <strong>Arquitectura Empresarial BBDD y Agentes MPC:</strong> Administración de bases de datos SQL, PostgreSQL y MongoDB para asegurar la integridad y el rendimiento, incluyendo la implementación de sistemas con Oracle SQL y Oracle APEX en entornos empresariales y de agentes MCP para optimizar y automatizar procesos críticos en entornos corporativos.
           </li>
           <li>
-            <strong>Automatización de Desarrollo:</strong> Implementación de flujos CI/CD mediante Git, GitHub y GitHub Actions, mejorando la eficiencia y calidad en la entrega del software.
+            <strong>Automatización de Desarrollo:</strong> Implementación de flujos CI/CD mediante Git, GitHub y GitHub Actions, Docker, Docker Compose, mejorando la eficiencia y calidad en la entrega del software. Manejo de entornos de desarrollo y producción en la nube con Azure, AWS y GCP..
           </li>
         </ul>
       </>
@@ -75,7 +75,7 @@ const services = [
             <strong>Análisis Avanzado con Python:</strong> Implementación de análisis y scripting con Python (Pandas, NumPy) para limpieza, procesamiento, automatización de reportes y optimización de decisiones basadas en datos.
           </li>
           <li>
-            <strong>Procesos ETL y SQL:</strong> Diseño e implementación de soluciones de datos, asegurando la Extracción, Transformación y Carga (ETL) de datos desde múltiples fuentes hacia una única fuente de verdad, utilizando SQL y PL/SQL.
+            <strong>Procesos ETL y SQL:</strong> Diseño e implementación de soluciones de datos, asegurando la Extracción, Transformación y Carga (ETL) de datos desde múltiples fuentes hacia una única fuente de verdad, utilizando Azure Data Factory, SQL y PL/SQL.
           </li>
           <li>
             <strong>Modelado de Datos:</strong> Diseño de estructuras de datos relacionales y optimización de consultas avanzadas para la gestión eficiente de grandes volúmenes de información.

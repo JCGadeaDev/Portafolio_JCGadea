@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 
-const NicCodersBackground = () => {
+const PortfolioBackground = () => {
   return (
     <div className="fixed inset-0 w-full h-full -z-10 bg-[#1C1C22] overflow-hidden">
       {/* Capa 1: ondulación lime diagonal */}
@@ -13,7 +13,7 @@ const NicCodersBackground = () => {
         transition={{ duration: 60, repeat: Infinity, ease: 'linear' }}
       />
 
-      {/* Capa 2: ondulación amarilla suave al otro lado */}
+      {/* Capa 2: */}
       <motion.div
         className="absolute bottom-[-30%] right-[-30%] w-[180%] h-[180%] rounded-full bg-gradient-to-bl from-[#00ff99]/20 via-transparent to-transparent"
         initial={{ rotate: 0 }}
@@ -27,4 +27,4 @@ const NicCodersBackground = () => {
   );
 };
 
-export default NicCodersBackground;
+export default PortfolioBackground;
