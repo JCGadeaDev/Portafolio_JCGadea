@@ -21,7 +21,7 @@ const info = [
   {
     icon: <FaWhatsapp />,
     title: "Teléfono",
-    description: "(+505)85785399 / (+39)3444528131",
+    description: "(+505)85785399 / (+39)3513183823",
   },
   {
     icon: <FaEnvelope />,

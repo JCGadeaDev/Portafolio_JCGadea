@@ -81,14 +81,14 @@ const about = {
     { fieldName: "Nombre: ", fieldValue: "Juan Carlos Gadea" },
     {
       fieldName: "Teléfono: ",
-      fieldValue: "(+505)85785399 / (+39)3444528131",
+      fieldValue: "(+505)85785399 / (+39)3513183823",
     },
     { fieldName: "Experiencia: ", fieldValue: "4+ Años" },
     { fieldName: "Correo: ", fieldValue: "jcgambeta89@gmail.com" },
     { fieldName: "Freelance: ", fieldValue: "Disponible" },
     {
       fieldName: "Idiomas: ",
-      fieldValue: "Español (Nativo), Inglés (Intermedio)",
+      fieldValue: "Español (Nativo), Inglés (Intermedio), Italiano (Básico)",
     },
   ],
 };
