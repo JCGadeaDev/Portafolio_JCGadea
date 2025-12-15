@@ -15,15 +15,6 @@ export async function POST(req) {
       );
     }
 
-     // Validate email format
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      return NextResponse.json(
-        { error: 'Formato de email inválido' },
-        { status: 400 }
-      );
-    }
-
     const data = await resend.emails.send({
       from: 'Juan Carlos - Portafolio <sandbox@resend.dev>', // sin dominio verificado funciona
       to,
