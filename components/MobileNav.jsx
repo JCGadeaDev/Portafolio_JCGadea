@@ -7,7 +7,7 @@ import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
-import { Button } from "./ui/button"; // <-- 1. Importar el componente Button
+import { Button } from "./ui/button";
 
 const links = [
   { name: "inicio", path: "/" },
@@ -26,11 +26,12 @@ const MobileNav = () => {
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger className="flex justify-center items-center">
+        {/* El icono de hamburguesa toma el color Cyan */}
         <CiMenuFries className="text-[32px] text-accent" />
       </SheetTrigger>
 
-      <SheetContent className="flex flex-col">
-        {/* Accessibility */}
+      {/* IMPORTANTE: Agregamos 'bg-primary' para que el fondo del menú sea azul oscuro */}
+      <SheetContent className="flex flex-col bg-primary border-r border-slate-800">
         <VisuallyHidden>
           <DialogTitle>Mobile navigation menu</DialogTitle>
           <DialogDescription>
@@ -39,9 +40,9 @@ const MobileNav = () => {
         </VisuallyHidden>
 
         {/* Logo */}
-        <div className="mt-32 mb-20 text-center text-2xl"> {/* Reducido el margen inferior */}
+        <div className="mt-32 mb-20 text-center text-2xl">
           <Link href="/" onClick={handleLinkClick}>
-            <h1 className="text-4xl font-semibold">
+            <h1 className="text-4xl font-semibold text-text-primary">
               JCGadeaDev <span className="text-accent">.</span>
             </h1>
           </Link>
@@ -57,21 +58,22 @@ const MobileNav = () => {
               className={`${
                 link.path === pathname
                   ? "text-accent border-b-2 border-accent"
-                  : ""
-              } text-xl capitalize hover:text-accent transition-all`}
+                  : "text-text-primary hover:text-accent"
+              } text-xl capitalize transition-all`}
             >
               {link.name}
             </Link>
           ))}
         </nav>
 
-        {/* 2. Añadir el botón "Contratar" aquí abajo */}
+        {/* Botón Contratar */}
         <a
           href="mailto:jcgambeta89@gmail.com?subject=Propuesta%20de%20Trabajo%20desde%20tu%20Portafolio"
-          className="mt-12 text-center" // Añadido margen superior
-          onClick={handleLinkClick} // Para cerrar el menú al hacer clic
+          className="mt-12 text-center"
+          onClick={handleLinkClick}
         >
-          <Button>Contáctame</Button>
+          {/* Asegúrate de que tu componente Button soporte variantes o tenga clases por defecto compatibles */}
+          <Button className="bg-accent text-primary hover:bg-accent/80">Contáctame</Button>
         </a>
 
       </SheetContent>

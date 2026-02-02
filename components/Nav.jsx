@@ -36,14 +36,14 @@ const Nav = () => {
                     key={index}
                     className={`relative pb-1 transition-all duration-300 ${
                         pathname === link.path
-                            ? "text-[#00e187]" 
-                            : "text-[#E0E0E0]"  // inactive gray/white
-                    } hover:text-[#00ff99]`}
+                            ? "text-accent"  // Usamos la variable accent
+                            : "text-text-muted hover:text-white" // Usamos slate gray y blanco al hover
+                    }`}
                 >
                     {link.name}
                     {/* Underline effect */}
                     <span
-                        className={`absolute left-0 bottom-0 h-0.5 w-full bg-[#00ff99] transform transition-transform duration-300 ${
+                        className={`absolute left-0 bottom-0 h-0.5 w-full bg-accent transform transition-transform duration-300 ${
                             pathname === link.path ? "scale-x-100" : "scale-x-0"
                         } hover:scale-x-100 origin-left`}
                     />
@@ -52,5 +52,4 @@ const Nav = () => {
         </nav>
     );
 };
-
 export default Nav;

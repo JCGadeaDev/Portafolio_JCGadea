@@ -6,55 +6,53 @@ import Photo from "../components/Photo";
 import Stats from "../components/Stats";
 import Footer from "components/Footer";
 
+// ... imports
+
 const Home = () => {
   return (
     <section className="h-full">
-      {/* CAMBIO PRINCIPAL:
-        - Añadimos 'px-4' para un padding consistente en móviles.
-        - Añadimos 'lg:px-8' para un padding mayor en pantallas grandes.
-        - Eliminamos el 'container mx-auto' que limita el ancho.
-      */}
       <div className="h-full px-4 lg:px-8">
-        {/*
-          CAMBIO 2:
-          - Envolvemos el contenido principal en un nuevo div.
-          - 'container mx-auto' se aplica aquí para centrar el contenido.
-          - 'max-w-7xl' es la clave: le da un ancho máximo mucho mayor, ideal para 1920px.
-        */}
         <div className="container mx-auto max-w-7xl h-full flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
-          
           {/* text */}
-          {/*
-            CAMBIO 3:
-            - Añadimos 'lg:max-w-xl' para darle al texto un poco más de espacio para respirar en pantallas más grandes.
-          */}
           <div className="text-center xl:text-left order-2 xl:order-none lg:max-w-xl">
-            {/*
-              CAMBIO 4:
-              - Aumentamos el tamaño de la fuente para pantallas grandes con 'lg:text-2xl'.
-            */}
-            <span className="text-xl lg:text-2xl">
-              Full-Stack Developer | Data Analyst | SEO Specialist | Project Manager
+            <span className="text-justify text-xl lg:text-2xl text-text-muted font-medium tracking-wide">
+              {/*  */}
+              Full Stack Developer • Project Manager • DevOps Cloud • Data Analytics •
+              SEO Strategy
             </span>
-            <h1 className="h1">
-              Hola, Soy
-              <br /> <span className="text-accent">Juan Carlos Gadea</span>
-            </h1>
-            {/*
-              CAMBIO 5:
-              - Aumentamos el ancho máximo y el tamaño de la fuente del párrafo.
-            */}
-            <p className="max-w-[550px] lg:max-w-[600px] mb-9 text-white/80 text-justify xl:text-left lg:text-lg">
-              Convierto datos en interfaces interactivas y estrategias de negocio en soluciones digitales. Me especializo en crear aplicaciones web eficientes y posicionadas, transformando problemas complejos en experiencias de usuario intuitivas y rentables.
-            </p>
 
+            <h1 className="h1 text-text-primary mt-4 mb-6">
+              Hola, Soy
+              <br />
+              <span className="text-accent drop-shadow-[0_0_25px_rgba(34,211,238,0.4)]">
+                Juan Carlos Gadea
+              </span>
+            </h1>
+
+            {/* Descripción Optimizada */}
+            <p className="text-justify max-w-[550px] lg:max-w-[600px] mb-9 text-text-muted text-justify xl:text-left lg:text-lg leading-relaxed">
+              Ingeniero de Software y Consultor Técnico. Especializado en
+              construir{" "}
+              <span className="text-white font-medium">
+                arquitecturas escalables
+              </span>
+              , optimizar{" "}
+              <span className="text-white font-medium">
+                infraestructura Cloud
+              </span>{" "}
+              y liderar la{" "}
+              <span className="text-accent">transformación digital</span>.
+              Fusiono desarrollo, datos y estrategia para crear soluciones de
+              alto impacto.
+            </p>
             {/* btns and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <a href="/CV.pdf" download>
+                {/* Asegúrate de que tu componente Button use variants que soporten 'accent' u 'outline' con los nuevos colores */}
                 <Button
                   variant="outline"
                   size="lg"
-                  className="uppercase flex items-center gap-2"
+                  className="uppercase flex items-center gap-2 border-accent text-accent hover:bg-accent hover:text-primary transition-all duration-300"
                 >
                   <span>Descargar CV</span>
                   <FiDownload className="text-xl" />
@@ -63,7 +61,8 @@ const Home = () => {
               <div className="mb-8 xl:mb-0">
                 <Social
                   containerStyles="flex gap-6"
-                  iconStyles="w-9 h-9 border border-accent rounded-full flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500"
+                  // Actualizamos los estilos de los iconos para usar accent
+                  iconStyles="w-9 h-9 border border-accent rounded-full flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:shadow-[0_0_20px_rgba(34,211,238,0.6)] transition-all duration-500"
                 />
               </div>
             </div>
@@ -71,6 +70,9 @@ const Home = () => {
 
           {/* photo */}
           <div className="order-1 xl:order-none mb-8 xl:mb-0">
+            {/* Pro-Tip: Si puedes, añade a tu componente Photo un efecto de "glow" 
+               cyan detrás de la imagen para integrarla con el fondo oscuro.
+            */}
             <Photo />
           </div>
         </div>

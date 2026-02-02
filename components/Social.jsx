@@ -1,10 +1,8 @@
 import Link from "next/link";
-// Importamos un icono más específico para el transcript
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { TbDatabase } from 'react-icons/tb';
-import { LuGraduationCap } from "react-icons/lu"; // Ejemplo de un icono alternativo
+import { LuGraduationCap } from "react-icons/lu";
 
-// Array actualizado: más descriptivo y estratégico
 const socials = [
   { 
     icon: <FaGithub />, 
@@ -17,7 +15,7 @@ const socials = [
     name: "LinkedIn" 
   },
   { 
-    icon: <LuGraduationCap />, // Usamos un icono más claro
+    icon: <LuGraduationCap />, 
     path: "https://learn.microsoft.com/en-us/users/juancarlosgadeabrenes-1265/transcript/763egb11l18o6rp?WT.mc_id=ilt_partner_webpage_wwl&ocid=996468&source=learn&redeem=6ZV32N", 
     name: "Microsoft Learn Transcript" 
   },
@@ -27,12 +25,10 @@ const socials = [
     name: "Portafolio de Data Science" 
   },
   { 
-    icon: <FaWhatsapp />, // Icono de WhatsApp
-    path: "https://wa.me/50585785399", // CAMBIO IMPORTANTE: Enlace directo a WhatsApp
+    icon: <FaWhatsapp />, 
+    path: "https://wa.me/50585785399", 
     name: "WhatsApp" 
   },
-  // El enlace a Google Drive se ha eliminado. Su contenido ahora debería vivir
-  // en una sección dedicada de "Certificaciones" o "Formación" en tu web.
 ];
 
 const Social = ({ containerStyles, iconStyles }) => {
@@ -45,8 +41,8 @@ const Social = ({ containerStyles, iconStyles }) => {
             href={item.path} 
             className={iconStyles} 
             target="_blank"
-            rel="noopener noreferrer" // Buena práctica para seguridad y SEO
-            title={item.name} // <-- ¡Aquí está la magia del tooltip!
+            rel="noopener noreferrer"
+            title={item.name}
           >
             {item.icon}
           </Link>

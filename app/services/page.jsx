@@ -1,191 +1,158 @@
 "use client";
 
-import Footer from "@/components/Footer";
-// Se han eliminado las importaciones externas (react-icons, next/link,)
-// que causaban errores de compilación en este entorno de archivo único.
 import { motion } from "framer-motion";
+import Link from "next/link"; 
+import { BsArrowDownRight } from "react-icons/bs"; 
 
-// Definición de los datos de servicios
 const services = [
   {
     num: "01",
-    title: "Desarrollo Full-Stack, Web y Experiencia de Usuario (UX)",
+    title: "Desarrollo Full-Stack, Angular & .NET",
     description: (
       <>
-        <p className="mb-4 text-justify">
-          Transformo conceptos en aplicaciones web modernas, eficientes y centradas en el usuario, aplicando un diseño limpio con una arquitectura robusta. Mi experiencia abarca desde el desarrollo de landing pages y e-commerce hasta la construcción de complejos sistemas empresariales con foco en escalabilidad.
+        <p className="mb-4 text-justify text-text-muted">
+          Construyo ecosistemas digitales robustos. Fusiono la agilidad del frontend moderno con la solidez de backends empresariales bajo estándares de arquitectura limpia.
         </p>
-        <ul className="list-disc list-inside text-white/80 space-y-2">
+        <ul className="list-disc list-inside text-text-muted space-y-2 text-sm">
           <li>
-            <strong>Desarrollo Full-Stack y API Management:</strong> Soluciones End-to-End con React, Next.js, Angular, TypeScript, JavaScript y backend con Node.js/Express, Supabase, Firebase. Incluye el diseño de APIs (Endpoints), su consumo eficiente (Fetch, Axios) e integración de métodos de autenticación (OAuth, JWT).
+            {/* AGREGADO: HTML, CSS, Tailwind, Bootstrap */}
+            <strong className="text-white">Frontend & UI Moderno:</strong> Maquetación pixel-perfect con <span className="text-accent">HTML5, CSS3, Tailwind CSS y Bootstrap</span>. Desarrollo de lógica compleja en SPAs con <span className="text-accent">Angular, React y Next.js. Vite, Typescript, Javascript, C#. Manejeador de estados Zustand</span>.
           </li>
           <li>
-            <strong>Integración E-commerce y Monetización:</strong> Implementación de pasarelas de pago y servicios transaccionales, asegurando la seguridad y fluidez en la experiencia de compra.
+            {/* AGREGADO: ASP.NET Core, Razor, MVC y Patrones */}
+            <strong className="text-white">Arquitectura Backend:</strong> Desarrollo en <span className="text-accent">Nodejs, Express</span> y <span className="text-accent">ASP.NET Core</span> utilizando vistas <strong>Razor</strong> y estructura <strong>MVC</strong>. Implementación de <span className="text-accent">Patrones de Diseño</span> (Singleton, Repository, Factory) para código escalable.
           </li>
           <li>
-            <strong>Arquitectura Empresarial BBDD y Agentes MPC:</strong> Administración de bases de datos SQL, PostgreSQL y MongoDB para asegurar la integridad y el rendimiento, incluyendo la implementación de sistemas con Oracle SQL y Oracle APEX en entornos empresariales y de agentes MCP para optimizar y automatizar procesos críticos en entornos corporativos.
-          </li>
-          <li>
-            <strong>Automatización de Desarrollo:</strong> Implementación de flujos CI/CD mediante Git, GitHub y GitHub Actions, Docker, Docker Compose, mejorando la eficiencia y calidad en la entrega del software. Manejo de entornos de desarrollo y producción en la nube con Azure, AWS y GCP..
+            <strong className="text-white">QA & Herramientas:</strong> Testing exhaustivo de APIs con <span className="text-accent">Postman y SoapUI</span>, desarrollo rápido de soluciones empresariales con  <span className="text-accent">Oracle APEX</span>. Despliegues en <span className="text-accent">Cloudflare, Vercel</span>, DNS, protocolos HTTPS y SSL. 
           </li>
         </ul>
       </>
     ),
-    href: "#desarrollo-fullstack-ux",
+    href: "/work", 
   },
   {
     num: "02",
-    title: "SEO, Estrategia Digital y Analítica Web",
+    title: "DevOps, CI/CD & Cloud Infrastructure",
     description: (
       <>
-        <p className="mb-4 text-justify">
-          Aumento tu visibilidad online y garantizo que el tráfico sea cualificado para maximizar la conversión. Diseño e implemento estrategias integrales que combinan el posicionamiento orgánico con la medición precisa del impacto.
+        <p className="mb-4 text-justify text-text-muted">
+          Garantizo la entrega continua y la estabilidad del software. Automatizo procesos repetitivos y gestiono infraestructuras que escalan automáticamente según la demanda.
         </p>
-        <ul className="list-disc list-inside text-white/80 space-y-2">
+        <ul className="list-disc list-inside text-text-muted space-y-2 text-sm">
           <li>
-            <strong>Posicionamiento Estratégico (SEO/SEM):</strong> Aplicación de estrategias de SEO On-Page y Técnico en plataformas como WordPress y Wix Studio para mejorar el ranking y la autoridad.
+            <strong className="text-white">Automatización & Versionado:</strong> Pipelines de CI/CD con <span className="text-accent">GitHub Actions, Cloud Build, Cloud Run</span> para despliegues automáticos. Gestión de flujos colaborativos avanzados con <span className="text-accent">Git</span>.
           </li>
           <li>
-            <strong>Analítica Avanzada:</strong> Configuración y gestión de herramientas clave (Google Analytics, Google Search Console, GTM, Meta Pixel) para la integración de etiquetas, medición del rendimiento web y optimización del ROI en campañas digitales.
+            <strong className="text-white">Cloud Multi-Entorno:</strong> Administración de recursos en <span className="text-accent">Azure, AWS y Google Cloud</span>. Computación serverless y gestión de almacenamiento.
           </li>
           <li>
-            <strong>Auditoría y Optimización:</strong> Evaluación de estructura, velocidad y contenido para cumplir con las mejores prácticas de Google, junto con la investigación de palabras clave para una estrategia de contenidos efectiva.
-          </li>
-          <li>
-            <strong>Campañas de Pago:</strong> Gestión y optimización de campañas en plataformas como Google Ads, centradas en atraer visitantes con alto potencial de conversión.
+            <strong className="text-white">Containerización:</strong> Estandarización con <span className="text-accent">Docker/Compose</span> y administración de servidores Linux (Ubuntu) con Nginx como proxy inverso. De ambiente local a la nube sin fricciones y viceversa. Administración de servicios, configuraciones de puertos con comandos Shell
           </li>
         </ul>
       </>
     ),
-    href: "#seo-estrategia-digital-analitica",
+    href: "/work",
   },
   {
     num: "03",
-    title: "Análisis de Datos e Inteligencia de Negocio (BI)",
+    title: "Data Intelligence (BI) & SQL Analytics",
     description: (
       <>
-        <p className="mb-4 text-justify">
-          Convierto conjuntos de datos complejos en decisiones estratégicas accionables. Utilizo herramientas avanzadas de programación y visualización para automatizar procesos, analizar KPIs clave y generar insights que impulsan el crecimiento y la eficiencia operativa.
+        <p className="mb-4 text-justify text-text-muted">
+          Transformo datos brutos en historias visuales para la toma de decisiones. Normalizo bases de datos complejas y diseño herramientas analíticas para gerencia y operaciones.
         </p>
-        <ul className="list-disc list-inside text-white/80 space-y-2">
+        <ul className="list-disc list-inside text-text-muted space-y-2 text-sm">
           <li>
-            <strong>Dashboards y Visualización BI:</strong> Creación de paneles de control interactivos en Power BI y Looker Studio para una visualización clara y la evaluación de la efectividad de las soluciones tecnológicas.
+            <strong className="text-white">Dashboards de BI:</strong> Diseño de tableros de control interactivos y estratégicos en <span className="text-accent">Power BI y Looker Studio</span>, visualizando dashboards y KPIs críticos en tiempo real.
           </li>
           <li>
-            <strong>Análisis Avanzado con Python:</strong> Implementación de análisis y scripting con Python (Pandas, NumPy) para limpieza, procesamiento, automatización de reportes y optimización de decisiones basadas en datos.
+            <strong className="text-white">Ingeniería de Datos:</strong> Gestión de BBDD relacionales y NoSQL (<span className="text-accent">SQL Server, PostgreSQL, Oracle, MongoDB, Firebase, Supabase</span>) y optimización de consultas complejas.
           </li>
           <li>
-            <strong>Procesos ETL y SQL:</strong> Diseño e implementación de soluciones de datos, asegurando la Extracción, Transformación y Carga (ETL) de datos desde múltiples fuentes hacia una única fuente de verdad, utilizando Azure Data Factory, SQL y PL/SQL.
-          </li>
-          <li>
-            <strong>Modelado de Datos:</strong> Diseño de estructuras de datos relacionales y optimización de consultas avanzadas para la gestión eficiente de grandes volúmenes de información.
+            <strong className="text-white">Data Science Stack:</strong> Scripting para limpieza y análisis predictivo con Python (Pandas, NumPy, Scikit-learn, Streamlit, Maplolib, Plotly, StastModel) y automatización ETL.
           </li>
         </ul>
       </>
     ),
-    href: "#analisis-datos-bi",
+    href: "/work",
   },
   {
     num: "04",
-    title: "Gestión Ágil de Proyectos y Liderazgo Técnico",
+    title: "Consultoría, Project Management & SEO",
     description: (
       <>
-        <p className="mb-4 text-justify">
-          Aseguro la entrega exitosa de proyectos tecnológicos, alineando los resultados con los objetivos de negocio y manteniendo la eficiencia operativa. Mi enfoque es en el liderazgo técnico y la aplicación de metodologías ágiles para la entrega continua de valor.
+        <p className="mb-4 text-justify text-text-muted">
+          Más allá del código, ofrezco dirección técnica y consultoría estratégica. Desde la planificación de cronogramas hasta la capacitación de equipos, aseguro que el proyecto sea viable, puntual y exitoso.
         </p>
-        <ul className="list-disc list-inside text-white/80 space-y-2">
+        <ul className="list-disc list-inside text-text-muted space-y-2 text-sm">
           <li>
-            <strong>Gestión Integral del Proyecto:</strong> Liderazgo del ciclo de vida completo (definición de roadmap, cronogramas y recursos), coordinando equipos multidisciplinarios y stakeholders.
+            <strong className="text-white">Gestión & Planificación:</strong> Elaboración de <span className="text-accent">cronogramas detallados</span>, hitos y gestión de recursos con metodologías Ágiles (Scrum/Kanban) usando Jira, Trello y Notion.
           </li>
           <li>
-            <strong>Metodologías Ágiles:</strong> Administración del avance y los cambios de proyectos utilizando Scrum y Kanban con herramientas como Jira, Confluence Planner, Notion y Trello, incluyendo el manejo de backlog.
+            <strong className="text-white">Consultoría & Capacitación:</strong> Diseño de arquitectura con <span className="text-accent">Visio/Lucidchart</span> y sesiones de <span className="text-accent">capacitación técnica</span> para potenciar las habilidades del equipo interno.
           </li>
           <li>
-            <strong>Documentación y Calidad:</strong> Desarrollo de documentación de software de alta calidad (manuales de usuario con Confluence, historias de usuario, criterios de aceptación) y supervisión de pruebas SIT, UAT y QA.
-          </li>
-          <li>
-            <strong>Liderazgo y Comunicación:</strong> Habilidad para liderar y coordinar, eliminar bloqueos, y generar reportes ejecutivos transparentes para la toma de decisiones. Contribución activa en procesos de digitalización y mejora continua.
+            <strong className="text-white">SEO Técnico & Estrategia:</strong> Auditoría de rendimiento, optimización Core Web Vitals y estrategia de posicionamiento orgánico. GA, GSC.
           </li>
         </ul>
       </>
     ),
-    href: "#gestion-agil-liderazgo-tecnico",
+    href: "/contact",
   },
 ];
 
-
-const ServicesPage = () => {
+const Services = () => {
   return (
-    <section className="min-h-[80vh] flex flex-col justify-center py-8 sm:py-10 md:py-12 xl:py-0">
-      <div className="container mx-auto px-2 sm:px-4">
+    <section className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0">
+      <div className="container mx-auto px-4">
+        
+        {/* Grid animado */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
             transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
           }}
-          // items-stretch: Clave para que todas las tarjetas en la misma fila tengan la misma altura.
-          className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-[60px] max-w-[90%] md:max-w-none mx-auto items-stretch"
+          className="grid grid-cols-1 md:grid-cols-2 gap-[60px]"
         >
           {services.map((service, index) => {
-            const isLastCard = index === services.length - 1;
-            const isOddTotal = services.length % 2 !== 0;
-
             return (
               <div
                 key={index}
-                id={service.href.substring(1)}
-                className={`
-                  flex flex-col justify-between h-full // h-full es esencial para que la tarjeta llene el espacio del grid
-                  p-4 sm:p-6 md:p-8 
-                  bg-[#18181b] rounded-2xl shadow-lg 
-                  group transition-all duration-500
-                  ${
-                    // Lógica para centrar la última tarjeta si el total es impar
-                    isLastCard && isOddTotal
-                      ? "md:col-span-2 md:w-1/2 md:mx-auto"
-                      : ""
-                  }
-                `}
+                className="flex flex-col justify-center gap-6 group rounded-xl p-2 md:p-0"
               >
-                {/* top */}
-                <div className="w-full flex justify-between items-center mb-4">
-                  <div className="text-4xl sm:text-5xl font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500">
+                {/* Header de la tarjeta */}
+                <div className="w-full flex justify-between items-center">
+                  <div className="text-5xl font-extrabold text-transparent text-outline group-hover:text-outline-hover transition-all duration-500">
                     {service.num}
                   </div>
-                  {/* Se usa 'a' en lugar de 'Link' y se reemplaza el componente de ícono por un carácter Unicode (&rarr; -> '→'), manteniendo la animación de rotación. */}
-                  <a
+                  <Link
                     href={service.href}
-                    className="w-12 h-12 sm:w-[60px] sm:h-[60px] md:w-[70px] md:h-[70px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45"
+                    className="w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45"
                   >
-                    <span className="text-primary text-4xl leading-none font-extrabold rotate-45">
-                      &rarr;
-                    </span>
-                  </a>
+                    <BsArrowDownRight className="text-primary text-3xl" />
+                  </Link>
                 </div>
-                {/* title */}
-                <h2 className="text-xl sm:text-2xl md:text-[32px] font-bold leading-tight text-white group-hover:text-accent transition-all duration-500 mb-2 text-center min-h-[60px] sm:min-h-[70px] md:min-h-[80px] flex items-center justify-center">
+
+                {/* Título */}
+                <h2 className="text-[26px] md:text-[32px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
                   {service.title}
                 </h2>
-                {/* description */}
-                {/* flex-1 asegura que este bloque tome todo el espacio vertical restante, empujando el borde al final */}
-                <div className="text-white/80 text-justify flex-1 flex flex-col justify-between text-sm sm:text-base">
+
+                {/* Descripción y Lista */}
+                <div className="text-text-muted border-l-2 border-white/10 pl-4 group-hover:border-accent/50 transition-colors duration-500">
                   {service.description}
                 </div>
-                {/* border */}
-                <div className="border-b border-white/20 w-full mt-6"></div>
+
+                {/* Borde inferior animado */}
+                <div className="border-b border-white/20 w-full group-hover:border-accent transition-all duration-500"></div>
               </div>
             );
           })}
         </motion.div>
       </div>
-      
-      {/* Se ha eliminado el componente Footer para resolver el error de dependencia. */}
-      <div className="mt-8 text-center text-white/50">
-        <Footer/>
-      </div>
     </section>
   );
 };
 
-export default ServicesPage;
+export default Services;

@@ -4,7 +4,7 @@ import CountUp from "react-countup";
 
 const stats = [
   {
-    num: 30,
+    num: 40,
     text: "Mejora en Perfomance Web (%)",
     isPercentage: true,
   },
@@ -19,12 +19,11 @@ const stats = [
     isPercentage: false,
   },
   {
-    num: 4,
+    num: 5,
     text: "Años de Experiencia",
     isPercentage: false,
   },
 ];
-
 
 const Stats = () => {
   return (
@@ -42,14 +41,15 @@ const Stats = () => {
                     end={item.num}
                     duration={5}
                     delay={2}
-                    className="text-4xl xl:text-6xl font-extrabold"
+                    className="text-4xl xl:text-6xl font-extrabold text-text-primary"
                   />
-                  {/* Añadimos el símbolo '+' o '%' dinámicamente */}
+                  {/* Símbolo en Cyan */}
                   <span className="text-4xl xl:text-6xl font-extrabold text-accent">
                     {item.isPercentage ? "%" : "+"}
                   </span>
                 </div>
-                <p className={`${item.text.length < 15 ? "max-w-[100px]" : "max-w-[150px]"} leading-snug text-white/80`}>
+                {/* Texto descriptivo en Slate Gray */}
+                <p className={`${item.text.length < 15 ? "max-w-[100px]" : "max-w-[150px]"} leading-snug text-text-muted`}>
                   {item.text}
                 </p>
               </div>
