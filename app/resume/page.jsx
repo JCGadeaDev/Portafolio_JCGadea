@@ -93,7 +93,7 @@ const about = {
 const experience = {
   title: "Mi Experiencia Profesional",
   description:
-    "Mi trayectoria combina el liderazgo técnico en proyectos de misión crítica con la consultoría estratégica. Desde la arquitectura de software en banca y gobierno hasta la implementación de soluciones de Business Intelligence y el desarrollo de productos SaaS propios.",
+    "Mi trayectoria combina el liderazgo técnico en proyectos de misión crítica con la consultoría estratégica. Desde la arquitectura de software en banca y gobierno hasta la implementación de soluciones de Business Intelligence y el desarrollo de productos PaaS propios.",
   items: [
     {
       company: "Nexus Consultoría & Servicios",
@@ -109,10 +109,10 @@ const experience = {
     },
     {
       company: "Profesional Independiente",
-      position: "Full Stack Architect (SaaS) | Data Analyst",
+      position: "Full Stack Architect (PaaS) | Data Analyst",
       duration: "Febrero 2025 – Actualidad (Remoto)",
       highlights: [
-        "Arquitectura y desarrollo End-to-End de 'MiBoletoni', una plataforma SaaS de boletería digital construida con Next.js, TypeScript y Tailwind CSS.",
+        "Arquitectura y desarrollo End-to-End de 'MiBoletoni', una plataforma PaaS de boletería digital construida con Next.js, TypeScript y Tailwind CSS.",
         "Implementación de backend robusto con Supabase/Firebase, gestionando autenticación segura (Auth) y bases de datos en tiempo real.",
         "Integración de pasarelas de pago (Stripe/Fygaro) y generación dinámica de tickets con códigos QR validados en tiempo real.",
         "Automatización de despliegues en Vercel/GCP, Dockerización de apps y manejo de estado global con Zustand.",

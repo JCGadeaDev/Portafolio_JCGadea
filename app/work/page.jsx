@@ -23,10 +23,10 @@ const projects = [
   // ... copia el array projects de arriba ...
   {
     num: "01",
-    category: "SaaS Platform & Architecture",
+    category: "PaaS Platform & Architecture",
     title: "MiBoletoni & Boletería Digital",
     description:
-      "Plataforma SaaS completa para la gestión y venta de boletos digitales. Diseñé una arquitectura escalable que maneja picos de tráfico en tiempo real. Incluye generación de códigos QR dinámicos, impresión de boletos para ventas en puntos físicos, Auth y roles de usuarios, integración con pasarelas de pago (Fygaro) y un panel administrativo financiero.",
+      "Plataforma PaaS completa para la gestión y venta de boletos digitales. Diseñé una arquitectura escalable que maneja picos de tráfico en tiempo real. Incluye generación de códigos QR dinámicos, impresión de boletos para ventas en puntos físicos, Auth y roles de usuarios, integración con pasarelas de pago (Fygaro) y un panel administrativo financiero.",
     stack: [
       { name: "Next.js 16" },
       { name: "React" },
