@@ -1,13 +1,11 @@
 "use client";
 
-import { easeIn, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import React, { useState, useRef } from "react";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
-
 import {
   Tooltip,
   TooltipContent,
@@ -17,84 +15,108 @@ import {
 
 import Link from "next/link";
 import Image from "next/image";
-
 import { MdNavigateBefore, MdNavigateNext } from "react-icons/md";
 import Footer from "@/components/Footer";
 
-// --- PROYECTOS SELECCIONADOS DE TU GITHUB ---
+// PEGA AQUÍ EL ARRAY 'projects' ACTUALIZADO (EL QUE TE DI ARRIBA)
 const projects = [
+  // ... copia el array projects de arriba ...
   {
     num: "01",
-    category: "Frontend y Backend",
-    title: "NicCoders Web",
+    category: "SaaS Platform & Architecture",
+    title: "MiBoletoni & Boletería Digital",
     description:
-      "Desarrollo de landing page para NicCoders, startup tecnológica, enfocada en posicionar su marca y captar clientes. Se construyó un MVP de alto rendimiento con Next.js 14 para optimización y velocidad. La interfaz, responsiva y personalizable, fue creada con Tailwind CSS y Framer Motion. El formulario de contacto opera mediante una API con Node.js y Nodemailer, sentando las bases de una arquitectura robusta y escalable",
+      "Plataforma SaaS completa para la gestión y venta de boletos digitales. Diseñé una arquitectura escalable que maneja picos de tráfico en tiempo real. Incluye generación de códigos QR dinámicos, impresión de boletos para ventas en puntos físicos, Auth y roles de usuarios, integración con pasarelas de pago (Fygaro) y un panel administrativo financiero.",
     stack: [
-      { name: "Next.js" },
+      { name: "Next.js 16" },
       { name: "React" },
-      { name: "JavaScript" },
+      { name: "Typescript" },
+      { name: "API Resend" },
+      { name: "Firebase" },
+      { name: "Nodejs" },
+      { name: "Fygaro API" },
       { name: "Tailwind CSS" },
-      { name: "NodeJs" },
-      { name: "Nodemailer" },
-      { name: "Express" },
+      { name: "Shadcn/UI" },
+      { name: "Cloudflare" },
+      { name: "Framer Motion" },
+      { name: "Docker" },
+      { name: "GCP" },
     ],
-    image: "/assets/work/NicCoders.webp", 
-    live: "https://niccoders.com/",
-    github: "https://github.com/JCGadeaDev/NicCoders_Site",
+    image: "/assets/work/Miboleto.webp",
+    live: "https://miboletoni.com/",
+    github: "https://github.com/JCGadeaDev/MiBoletoNi",
   },
   {
     num: "02",
-    category: "Frontend y Análisis de Datos",
-    title: "Real State Website",
+    category: "Real Estate Platform",
+    title: "Propiedades & Analytics",
     description:
-      "Desarrollo de una aplicación web interactiva que permite agentes inmobiliarios y usuarios visualizar propiedades, filtrar opciones, ver análisis de datos y gestionar información de inmuebles de forma intuitiva. La plataforma está optimizada para rendimiento y accesibilidad.",
+      "Aplicación web progresiva (PWA) para el sector inmobiliario. Permite a los agentes gestionar inventario y a los usuarios filtrar propiedades con algoritmos de búsqueda avanzada. Integré mapas interactivos y un módulo de análisis de precios por metro cuadrado.",
     stack: [
-      { name: "React 19" },
-      { name: "React Hook" },
-      { name: "Redux" },
-      { name: "Vite 7" },
-      { name: "ESLint 9" },
-      { name: "Tailwindcss" },
+      { name: "React" },
+      { name: "React Router" },
+      { name: "Redux Toolkit" },
+      { name: "Vite" },
       { name: "Recharts" },
+      { name: "Tailwindcss" },
       { name: "Vercel" },
     ],
-    image: "/assets/work/RealStateWeb.webp", 
+    image: "/assets/work/Realstate.webp",
     live: "https://real-state-website-beige.vercel.app/",
     github: "https://github.com/JCGadeaDev/RealStateWebsite",
   },
   {
     num: "03",
-    category: "Frontend",
-    title: "Menú Digital Restaurante Tentaculo",
+    category: "Corporate & SEO Strategy",
+    title: "TechServices & Soluciones TI", 
     description:
-      "Desarrollo de un menú digital interactivo para el Restaurante Tentaculo, facilitando la visualización y selección de platos a través de una interfaz intuitiva y atractiva. La aplicación mejora la experiencia del cliente consultando el menú a través de un código QR y optimiza la gestión del restaurante.",
+      "Sitio corporativo de alto rendimiento para una agencia de servicios tecnológicos. Diseñé una experiencia de usuario (UX) centrada en la conversión y la velocidad. Implementé prácticas avanzadas de SEO Semántico y optimización de imágenes, logrando tiempos de carga inferiores a 1.5s. La arquitectura modular permite escalar nuevas secciones de servicios sin deuda técnica.",
     stack: [
-      { name: "React 19" },
-      { name: "React Dom" },
-      { name: "Framer-Motion" },
-      { name: "Vite 7" },
-      { name: "ESLint 9" },
-      { name: "Tailwindcss" },
-      { name: "Vercel" },
+      { name: "Next.js 16" },
+      { name: "React" },
+      { name: "React Icons" },
+      { name: "API Fetch" },
+      { name: "Resend" },
+      { name: "Framer Motion" },
+      { name: "SEO Técnico" },
     ],
-    image: "/assets/work/MenuDigital.webp", 
-    live: "https://menu-digital-restaurante-tentaculo.vercel.app/",
-    github: "https://github.com/JCGadeaDev/MenuDigital_RestauranteTentaculo",
-  },
+    image: "/assets/work/TechServices.webp", 
+    live: "https://techservicesweb.vercel.app/",
+    github: "https://github.com/JCGadeaDev/TechServicesWeb", 
+},
   {
     num: "04",
-    category: "Frontend",
-    title: "Portafolio Personal",
+    category: "Fintech & Data Analytics",
+    title: "Nexus Banking Dashboard",
     description:
-      "Mi portafolio personal (el que estás viendo ahora), diseñado y construido con Next.js y Tailwind CSS, con un enfoque en diseño responsivo y animaciones suaves con Framer Motion.",
+      "Solución de Business Intelligence para el sector bancario. Desarrollé un sistema de visualización de datos que procesa transacciones financieras en tiempo real para detectar fraudes y analizar tendencias de crédito. Implementé pipelines de datos con Python y visualizaciones interactivas de alto rendimiento.",
     stack: [
-      { name: "Next.js" },
-      { name: "Tailwind CSS" },
-      { name: "Framer Motion" },
+      { name: "Python" },
+      { name: "Power BI" },
+      { name: "SQL Server" },
+      { name: "Azure Cloud" },
+      { name: "React" },
     ],
-    image: "/assets/work/thumb-portfolio.png",
-    live: "https://jc-gadea-dev-portfolio.vercel.app/",
-    github: "https://github.com/JCGadeaDev/portfolio-v1",
+    image: "/assets/work/BankingDashboard.webp",
+    live: "",
+    github: "",
+  },
+  {
+    num: "05",
+    category: "Real Estate Platform",
+    title: "Propiedades & Analytics",
+    description:
+      "Aplicación web progresiva (PWA) para el sector inmobiliario. Permite a los agentes gestionar inventario y a los usuarios filtrar propiedades con algoritmos de búsqueda avanzada. Integré mapas interactivos y un módulo de análisis de precios por metro cuadrado.",
+    stack: [
+      { name: "React" },
+      { name: "Redux Toolkit" },
+      { name: "Vite" },
+      { name: "Recharts" },
+      { name: "Tailwind" },
+    ],
+    image: "/assets/work/RealStateWeb.webp",
+    live: "https://real-state-website-beige.vercel.app/",
+    github: "https://github.com/JCGadeaDev/RealStateWebsite",
   },
 ];
 
@@ -113,93 +135,123 @@ const Work = () => {
         initial={{ opacity: 0 }}
         animate={{
           opacity: 1,
-          transition: { delay: 2.4, duration: 0.4, ease: easeIn },
+          transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
         }}
         className="min-h-[80vh] flex flex-col justify-center py-12 px-4 sm:px-6 lg:px-8 xl:px-0"
       >
         <div className="container mx-auto">
           <div className="flex flex-col xl:flex-row xl:gap-[40px] 2xl:gap-[50px]">
-            {/* SECCIÓN IZQUIERDA - INFORMACIÓN */}
-            <div className="w-full xl:w-[50%] flex flex-col xl:justify-between order-2 xl:order-none mb-8 xl:mb-0">
-              <div className="flex flex-col gap-[20px] md:gap-[25px] xl:gap-[30px] h-full">
-                {/* Número del Proyecto */}
-                <div className="text-6xl sm:text-7xl md:text-8xl lg:text-8xl xl:text-8xl leading-none font-extrabold text-transparent text-outline">
-                  {project.num}
+            {/* === SECCIÓN IZQUIERDA: INFORMACIÓN === */}
+            <div className="w-full xl:w-[50%] flex flex-col xl:justify-between order-2 xl:order-none mb-8 xl:mb-0 relative">
+              <div className="flex flex-col gap-[20px] h-full relative z-10">
+                {/* Categoría (Badge) */}
+                <div className="w-fit px-4 py-1 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm">
+                  <span className="text-accent text-sm font-semibold uppercase tracking-wider">
+                    {project.category}
+                  </span>
                 </div>
 
-                {/* Categoría */}
-                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-5xl font-bold leading-none text-white capitalize">
-                  {project.category}
+                {/* Título */}
+                <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-white group-hover:text-accent transition-colors">
+                  {project.title}
                 </h2>
 
-                {/* Descripción - Con scroll si es necesario */}
-                <p className="text-sm sm:text-base md:text-base lg:text-base xl:text-base text-white/60 text-justify leading-relaxed max-h-[120px] xl:max-h-[140px] overflow-y-auto pr-2">
+                {/* Número Grande de Fondo (Efecto Diseño) */}
+                <div className="absolute -top-10 -left-6 -z-10 opacity-10 select-none">
+                  <span className="text-[120px] xl:text-[150px] font-extrabold text-transparent text-outline leading-none">
+                    {project.num}
+                  </span>
+                </div>
+
+                {/* Descripción */}
+                <p className="text-white/70 text-base md:text-lg text-justify leading-relaxed">
                   {project.description}
                 </p>
 
-                {/* Stack Technologies */}
-                <ul className="flex gap-2 flex-wrap">
+                {/* Stack Technologies (Estilo Chips) */}
+                <div className="flex flex-wrap gap-2 my-4">
                   {project.stack.map((item, index) => (
-                    <li key={index} className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-accent font-medium">
+                    <span
+                      key={index}
+                      className="px-3 py-1 rounded-full text-sm font-medium bg-accent/10 text-accent border border-accent/20 hover:bg-accent/20 transition-colors cursor-default"
+                    >
                       {item.name}
-                      {index !== project.stack.length - 1 && ","}
-                    </li>
+                    </span>
                   ))}
-                </ul>
+                </div>
 
-                <div className="border border-white/20"></div>
+                <div className="border-t border-white/10 pt-6 mt-auto">
+                  {/* Botones de Acción */}
+                  <div className="flex items-center gap-4">
+                    {project.live && (
+                      <Link
+                        href={project.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <TooltipProvider delayDuration={100}>
+                          <Tooltip>
+                            <TooltipTrigger className="w-[60px] h-[60px] rounded-full bg-white/5 border border-white/10 flex justify-center items-center group hover:bg-accent hover:border-accent transition-all duration-300">
+                              <BsArrowUpRight className="text-white text-2xl group-hover:text-primary transition-colors duration-300" />
+                            </TooltipTrigger>
+                            <TooltipContent>
+                              <p>Ver proyecto en vivo</p>
+                            </TooltipContent>
+                          </Tooltip>
+                        </TooltipProvider>
+                      </Link>
+                    )}
 
-                {/* Botones de Acción - Fijos al final */}
-                <div className="flex items-center gap-3 sm:gap-4 md:gap-4 mt-auto">
-                  {project.live && (
-                    <Link href={project.live} target="_blank" rel="noopener noreferrer">
-                      <TooltipProvider delayDuration={100}>
-                        <Tooltip>
-                          <TooltipTrigger className="w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] md:w-[70px] md:h-[70px] rounded-full bg-white/5 flex justify-center items-center group hover:bg-accent/10 transition-all">
-                            <BsArrowUpRight className="text-white text-2xl sm:text-2xl md:text-3xl group-hover:text-accent transition-colors" />
-                          </TooltipTrigger>
-                          <TooltipContent>
-                            <p>Ver proyecto</p>
-                          </TooltipContent>
-                        </Tooltip>
-                      </TooltipProvider>
-                    </Link>
-                  )}
-                  <Link href={project.github} target="_blank" rel="noopener noreferrer">
-                    <TooltipProvider delayDuration={100}>
-                      <Tooltip>
-                        <TooltipTrigger className="w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] md:w-[70px] md:h-[70px] rounded-full bg-white/5 flex justify-center items-center group hover:bg-accent/10 transition-all">
-                          <BsGithub className="text-white text-2xl sm:text-2xl md:text-3xl group-hover:text-accent transition-colors" />
-                        </TooltipTrigger>
-                        <TooltipContent>
-                          <p>Ver repositorio</p>
-                        </TooltipContent>
-                      </Tooltip>
-                    </TooltipProvider>
-                  </Link>
+                    {project.github && (
+                      <Link
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <TooltipProvider delayDuration={100}>
+                          <Tooltip>
+                            <TooltipTrigger className="w-[60px] h-[60px] rounded-full bg-white/5 border border-white/10 flex justify-center items-center group hover:bg-accent hover:border-accent transition-all duration-300">
+                              <BsGithub className="text-white text-2xl group-hover:text-primary transition-colors duration-300" />
+                            </TooltipTrigger>
+                            <TooltipContent>
+                              <p>Ver código en GitHub</p>
+                            </TooltipContent>
+                          </Tooltip>
+                        </TooltipProvider>
+                      </Link>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
 
-            {/* SECCIÓN DERECHA - CARRUSEL DE IMÁGENES */}
+            {/* === SECCIÓN DERECHA: CARRUSEL === */}
             <div className="w-full xl:w-[50%]">
               <Swiper
                 spaceBetween={20}
                 slidesPerView={1}
-                className="xl:h-[520px] mb-3 md:mb-4 lg:mb-4 rounded-lg overflow-hidden"
+                className="xl:h-[520px] mb-6 rounded-xl overflow-hidden shadow-2xl shadow-cyan-500/5"
                 onSwiper={(swiper) => (swiperRef.current = swiper)}
                 onSlideChange={handleSlideChange}
               >
                 {projects.map((project, index) => (
                   <SwiperSlide key={index} className="w-full">
-                    <div className="h-[300px] sm:h-[350px] md:h-[400px] lg:h-[460px] xl:h-[460px] relative group flex justify-center items-center bg-pink-50/20 rounded-lg overflow-hidden">
-                      <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
-                      <div className="relative w-full h-full">
+                    {/* Contenedor del Slide */}
+                    <div className="h-[300px] sm:h-[400px] md:h-[480px] lg:h-[520px] relative group flex justify-center items-center bg-[#0f172a] rounded-xl overflow-hidden border border-white/5">
+                      {/* Fondo decorativo (opcional, le da un toque 'glow' detrás de la imagen) */}
+                      <div className="absolute inset-0 bg-gradient-to-br from-transparent to-accent/5 opacity-50"></div>
+
+                      {/* Contenedor de la Imagen Relativo */}
+                      <div className="relative w-full h-full p-4 sm:p-8 md:p-10 flex items-center justify-center">
                         <Image
                           src={project.image}
                           fill
-                          className="object-cover group-hover:scale-105 transition-transform duration-300"
-                          alt={`Imagen del proyecto ${project.title}`}
+                          // CAMBIO CLAVE: 'object-contain' muestra la imagen ENTERA sin recortar nada.
+                          className="object-contain drop-shadow-2xl transition-transform duration-700 group-hover:scale-105"
+                          alt={`Preview de ${project.title}`}
+                          // Tamaños optimizados
+                          sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 800px"
+                          quality={90}
                           priority={index === 0}
                         />
                       </div>
@@ -208,21 +260,21 @@ const Work = () => {
                 ))}
               </Swiper>
 
-              {/* Botones de Navegación */}
-              <div className="flex gap-2 sm:gap-3 md:gap-4 w-full justify-between xl:w-max xl:justify-end mt-3 md:mt-4">
+              {/* Controles de Navegación Mejorados */}
+              <div className="flex gap-4 w-full justify-end">
                 <button
-                  className="bg-accent hover:bg-accent-hover text-primary text-lg sm:text-lg md:text-xl lg:text-2xl w-[40px] h-[40px] sm:w-[44px] sm:h-[44px] md:w-[50px] md:h-[50px] flex justify-center items-center transition-all rounded-md hover:scale-110"
+                  className="group bg-transparent border border-accent text-accent hover:bg-accent hover:text-primary w-[50px] h-[50px] flex justify-center items-center transition-all duration-300 rounded-full"
                   onClick={() => swiperRef.current?.slidePrev()}
                   aria-label="Proyecto anterior"
                 >
-                  <MdNavigateBefore className="text-primary text-lg sm:text-lg md:text-2xl" />
+                  <MdNavigateBefore className="text-3xl" />
                 </button>
                 <button
-                  className="bg-accent hover:bg-accent-hover text-primary text-lg sm:text-lg md:text-xl lg:text-2xl w-[40px] h-[40px] sm:w-[44px] sm:h-[44px] md:w-[50px] md:h-[50px] flex justify-center items-center transition-all rounded-md hover:scale-110"
+                  className="group bg-transparent border border-accent text-accent hover:bg-accent hover:text-primary w-[50px] h-[50px] flex justify-center items-center transition-all duration-300 rounded-full"
                   onClick={() => swiperRef.current?.slideNext()}
                   aria-label="Siguiente proyecto"
                 >
-                  <MdNavigateNext className="text-primary text-lg sm:text-lg md:text-2xl" />
+                  <MdNavigateNext className="text-3xl" />
                 </button>
               </div>
             </div>
