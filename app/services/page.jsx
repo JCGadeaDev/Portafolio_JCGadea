@@ -5,9 +5,11 @@ import Link from "next/link";
 import { BsArrowDownRight } from "react-icons/bs"; 
 
 const services = [
-  {
+// SECCIÓN 1: DESARROLLO WEB (Frontend & Backend)
+// SECCIÓN 1: DESARROLLO WEB (Frontend & Backend)
+{
     num: "01",
-    title: "Desarrollo Full-Stack, Angular & .NET",
+    title: "Ingeniería Full-Stack & Arquitectura Web",
     description: (
       <>
         <p className="mb-4 text-justify text-text-muted">
@@ -15,21 +17,28 @@ const services = [
         </p>
         <ul className="list-disc list-inside text-text-muted space-y-2 text-sm">
           <li>
-            {/* AGREGADO: HTML, CSS, Tailwind, Bootstrap */}
-            <strong className="text-white">Frontend & UI Moderno:</strong> Maquetación pixel-perfect con <span className="text-accent">HTML5, CSS3, Tailwind CSS y Bootstrap</span>. Desarrollo de lógica compleja en SPAs con <span className="text-accent">Angular, React y Next.js. Vite, Typescript, Javascript, C#. Manejeador de estados Zustand</span>.
+            <strong className="text-white">Frontend & UI Moderno:</strong> 
+            {" "}Maquetación pixel-perfect con <span className="text-accent">HTML5, CSS3, Tailwind CSS y Bootstrap</span>. 
+            Desarrollo de SPAs con <span className="text-accent">Angular, React y Next.js</span>. 
+            Consumo de APIs y gestión asíncrona mediante <span className="text-accent">Axios y Fetch</span>. 
+            Manejo de estado con Zustand, Vite y Typescript.
           </li>
           <li>
-            {/* AGREGADO: ASP.NET Core, Razor, MVC y Patrones */}
-            <strong className="text-white">Arquitectura Backend:</strong> Desarrollo en <span className="text-accent">Nodejs, Express</span> y <span className="text-accent">ASP.NET Core</span> utilizando vistas <strong>Razor</strong> y estructura <strong>MVC</strong>. Implementación de <span className="text-accent">Patrones de Diseño</span> (Singleton, Repository, Factory) para código escalable.
+            <strong className="text-white">Arquitectura Backend:</strong> 
+            {" "}Soluciones sólidas en <span className="text-accent">ASP.NET Core (C#)</span> implementando arquitectura <span className="text-accent">MVC y vistas Razor</span>. 
+            Desarrollo de APIs escalables con <span className="text-accent">Node.js y Express</span>. 
+            Uso de <span className="text-accent">Patrones de Diseño</span> (Singleton, Repository, Factory).
           </li>
           <li>
-            <strong className="text-white">QA & Herramientas:</strong> Testing exhaustivo de APIs con <span className="text-accent">Postman y SoapUI</span>, desarrollo rápido de soluciones empresariales con  <span className="text-accent">Oracle APEX</span>. Despliegues en <span className="text-accent">Cloudflare, Vercel</span>, DNS, protocolos HTTPS y SSL. 
+            <strong className="text-white">QA & Infraestructura:</strong> 
+            {" "}Testing exhaustivo de APIs con <span className="text-accent">Postman y SoapUI</span>, desarrollo rápido con <span className="text-accent">Oracle APEX</span>. 
+            Despliegues en <span className="text-accent">Cloudflare, Vercel</span>, gestión de DNS y protocolos HTTPS/SSL. 
           </li>
         </ul>
       </>
     ),
-    href: "/work", 
-  },
+    href: "/work",
+},
   {
     num: "02",
     title: "DevOps, CI/CD & Cloud Infrastructure",
@@ -63,19 +72,23 @@ const services = [
         </p>
         <ul className="list-disc list-inside text-text-muted space-y-2 text-sm">
           <li>
-            <strong className="text-white">Dashboards de BI:</strong> Diseño de tableros de control interactivos y estratégicos en <span className="text-accent">Power BI y Looker Studio</span>, visualizando dashboards y KPIs críticos en tiempo real.
+            <strong className="text-white">Dashboards de BI:</strong> 
+            {" "}Diseño de tableros de control interactivos en <span className="text-accent">Power BI y Looker Studio</span>, visualizando KPIs críticos en tiempo real.
           </li>
           <li>
-            <strong className="text-white">Ingeniería de Datos:</strong> Gestión de BBDD relacionales y NoSQL (<span className="text-accent">SQL Server, PostgreSQL, Oracle, MongoDB, Firebase, Supabase</span>) y optimización de consultas complejas.
+            <strong className="text-white">Ingeniería de Datos:</strong> 
+            {" "}Gestión de BBDD relacionales y NoSQL (<span className="text-accent">SQL Server, PostgreSQL, Oracle, MongoDB, Firebase, Supabase</span>) y optimización de consultas complejas.
           </li>
           <li>
-            <strong className="text-white">Data Science Stack:</strong> Scripting para limpieza y análisis predictivo con Python (Pandas, NumPy, Scikit-learn, Streamlit, Maplolib, Plotly, StastModel) y automatización ETL.
+            <strong className="text-white">Data Science Stack:</strong> 
+            {" "}Scripting para limpieza y análisis predictivo con <span className="text-accent">Python</span> (Pandas, NumPy, Scikit-learn, Statsmodels). 
+            Creación de <strong className="text-white">Web Apps de Datos</strong> con <span className="text-accent">Streamlit</span> y visualización avanzada (Matplotlib, Plotly).
           </li>
         </ul>
       </>
     ),
     href: "/work",
-  },
+},
   {
     num: "04",
     title: "Consultoría, Project Management & SEO",
