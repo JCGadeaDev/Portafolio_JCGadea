@@ -42,7 +42,7 @@ const projects = [
       { name: "Docker" },
       { name: "GCP" },
     ],
-    image: "/assets/work/Miboleto.webp",
+    image: "/assets/work/MiBoleto.webp",
     live: "https://miboletoni.com/",
     github: "https://github.com/JCGadeaDev/MiBoletoNi",
   },

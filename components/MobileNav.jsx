@@ -10,11 +10,11 @@ import { CiMenuFries } from "react-icons/ci";
 import { Button } from "./ui/button";
 
 const links = [
-  { name: "inicio", path: "/" },
+  { name: "inicio",    path: "/"         },
   { name: "servicios", path: "/services" },
-  { name: "sobre mí", path: "/resume" },
-  { name: "proyectos", path: "/work" },
-  { name: "contacto", path: "/contact" },
+  { name: "sobre mí",  path: "/resume"   },
+  { name: "proyectos", path: "/work"     },
+  { name: "contacto",  path: "/contact"  },
 ];
 
 const MobileNav = () => {
@@ -25,57 +25,67 @@ const MobileNav = () => {
 
   return (
     <Sheet open={open} onOpenChange={setOpen}>
-      <SheetTrigger className="flex justify-center items-center">
-        {/* El icono de hamburguesa toma el color Cyan */}
-        <CiMenuFries className="text-[32px] text-accent" />
+      <SheetTrigger className="flex justify-center items-center p-1 rounded-lg hover:bg-accent/10 transition-colors duration-200">
+        <CiMenuFries className="text-[28px] text-accent" />
       </SheetTrigger>
 
-      {/* IMPORTANTE: Agregamos 'bg-primary' para que el fondo del menú sea azul oscuro */}
-      <SheetContent className="flex flex-col bg-primary border-r border-slate-800">
+      <SheetContent className="flex flex-col bg-primary border-l border-accent/10">
+        {/* Dot grid texture inside sheet */}
+        <div className="absolute inset-0 dot-grid opacity-50 pointer-events-none" />
+        <div className="absolute inset-0 bg-primary/60 pointer-events-none" />
+
         <VisuallyHidden>
           <DialogTitle>Mobile navigation menu</DialogTitle>
-          <DialogDescription>
-            This dialog contains navigation links for mobile users.
-          </DialogDescription>
+          <DialogDescription>Navigation links for mobile users.</DialogDescription>
         </VisuallyHidden>
 
         {/* Logo */}
-        <div className="mt-32 mb-20 text-center text-2xl">
-          <Link href="/" onClick={handleLinkClick}>
-            <h1 className="text-4xl font-semibold text-text-primary">
-              JCGadeaDev <span className="text-accent">.</span>
-            </h1>
+        <div className="relative mt-24 mb-16 text-center">
+          <Link href="/" onClick={handleLinkClick} className="group inline-flex items-center justify-center gap-1">
+            <span className="text-accent/50 font-mono text-sm select-none">&lt;</span>
+            <h1 className="text-3xl font-semibold text-text-primary">JCGadeaDev</h1>
+            <span className="text-accent text-4xl font-bold leading-none">.</span>
+            <span className="text-accent/50 font-mono text-sm select-none">/&gt;</span>
           </Link>
+          {/* Separator */}
+          <div className="mt-6 h-px bg-gradient-to-r from-transparent via-accent/25 to-transparent" />
         </div>
 
         {/* Navigation Links */}
-        <nav className="flex flex-col justify-center items-center gap-8">
-          {links.map((link, index) => (
-            <Link
-              href={link.path}
-              key={index}
-              onClick={handleLinkClick}
-              className={`${
-                link.path === pathname
-                  ? "text-accent border-b-2 border-accent"
-                  : "text-text-primary hover:text-accent"
-              } text-xl capitalize transition-all`}
-            >
-              {link.name}
-            </Link>
-          ))}
+        <nav className="relative flex flex-col items-center gap-2 px-6">
+          {links.map((link, index) => {
+            const isActive = link.path === pathname;
+            return (
+              <Link
+                href={link.path}
+                key={index}
+                onClick={handleLinkClick}
+                className={`w-full flex items-center justify-between px-4 py-3 rounded-lg text-base font-medium uppercase tracking-widest transition-all duration-300 ${
+                  isActive
+                    ? "text-accent bg-accent/8 border border-accent/20"
+                    : "text-text-muted hover:text-white hover:bg-white/4 border border-transparent"
+                }`}
+              >
+                <span>{link.name}</span>
+                {isActive && (
+                  <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse-glow" />
+                )}
+              </Link>
+            );
+          })}
         </nav>
 
-        {/* Botón Contratar */}
-        <a
-          href="mailto:jcgambeta89@gmail.com?subject=Propuesta%20de%20Trabajo%20desde%20tu%20Portafolio"
-          className="mt-12 text-center"
-          onClick={handleLinkClick}
-        >
-          {/* Asegúrate de que tu componente Button soporte variantes o tenga clases por defecto compatibles */}
-          <Button className="bg-accent text-primary hover:bg-accent/80">Contáctame</Button>
-        </a>
-
+        {/* CTA Button */}
+        <div className="relative mt-auto mb-8 px-6">
+          <div className="h-px bg-gradient-to-r from-transparent via-accent/20 to-transparent mb-6" />
+          <a
+            href="mailto:jcgambeta89@gmail.com?subject=Propuesta%20de%20Trabajo%20desde%20tu%20Portafolio"
+            onClick={handleLinkClick}
+            className="block"
+          >
+            <Button className="w-full glow-accent-sm">Contáctame</Button>
+          </a>
+        </div>
       </SheetContent>
     </Sheet>
   );
