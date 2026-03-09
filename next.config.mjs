@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    qualities: [75, 100], // Permitimos calidad 75 (default) y 100 (tu foto)
+    qualities: [75, 90, 100], // 75 default, 90 proyectos, 100 foto
   },
 };
 
