@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import PageTransition from '../components/PageTransition';
 import StairTransition from '../components/StairTransition';
 import PortfolioBackground from 'components/PortfolioBackground';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 
 const jetbrainsMono = JetBrains_Mono({
@@ -31,7 +32,8 @@ export default function RootLayout({ children }) {
         <PortfolioBackground/>   
         <Header/>
         <StairTransition/>
-        <PageTransition>{children}</PageTransition>      
+        <PageTransition>{children}</PageTransition>
+        <SpeedInsights />
       </body>
     </html>
   );
