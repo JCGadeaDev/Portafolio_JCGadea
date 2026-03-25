@@ -80,7 +80,7 @@ const about = {
     { fieldName: "Nombre", fieldValue: "Juan Carlos Gadea" },
     {
       fieldName: "Teléfonos",
-      fieldValue: "(+505) 8578-5399 / (+39) 351 318 3823",
+      fieldValue: "(+505)8578-5399 / (+39)3513183823",
     },
     // Nota: Las abreviaturas Nic/IT están bien para que quepan en la tarjeta
     { fieldName: "Ubicación", fieldValue: "Managua, Nic / Roma, IT" },
@@ -100,11 +100,14 @@ const experience = {
       position: "Technical Lead & Solutions Architect",
       duration: "Noviembre 2025 – Actualidad (Remoto)",
       highlights: [
-        "Lidero el ciclo de vida completo de desarrollo en proyectos de misión crítica (Banca, Aerolíneas, Electoral) utilizando C# .NET, ASP.NET Core y Razor Pages.",
-        "Arquitectura y despliegue en Azure: Gestión de entornos Cloud y ejecución de migraciones complejas de Nube a On-Premise (Local) y viceversa.",
-        "Consultoría Tecnológica Integral: Elaboración de propuestas, estimación de costos, definición de alcances, cronogramas y fichas técnicas para licitaciones.",
-        "Implementación de soluciones de Business Intelligence y Analítica con Power BI (Dashboards ejecutivos), Python y Streamlit.",
-        "Dirección de equipos ágiles (Scrum), gestión diaria con clientes (Stakeholders), documentación técnica y capacitación especializada.",
+        "Arquitectura Full-Stack: Diseño y desarrollo de sistemas escalables y cloud-native con .NET 8, ASP.NET Core y Blazor WebAssembly, orientados a alta disponibilidad en sectores críticos (aerolíneas, banca y procesos electorales).",
+        "Modernización de Sistemas: Migración de aplicaciones legacy a arquitectura web en Azure, habilitando acceso multi-dispositivo y eliminando dependencia on-premise.",
+        "Cloud & DevOps (Azure): Implementación de soluciones en Azure (App Service, Azure SQL, Service Bus, VPN Gateway, Entra ID) con enfoque en seguridad, disponibilidad y optimización de costos.",
+        "Arquitectura de Datos (Medallion): Diseño e implementación de modelo Bronze–Silver–Gold para estructuración de datos, mejorando la calidad, trazabilidad y consumo analítico en soluciones de BI.",
+        "Arquitectura Resiliente: Implementación de soluciones event-driven con Azure Service Bus y Worker Services, asegurando continuidad operativa y procesamiento confiable de transacciones críticas.",
+        "Liderazgo Técnico & Scrum: Dirección de equipos de desarrollo, gestión de stakeholders y planificación de proyectos (SOW, estimaciones y roadmap) bajo metodologías ágiles.",
+        "Consultoría Estratégica: Análisis de requerimientos, diseño de soluciones a medida y asesoría en transformación digital para clientes en sectores regulados.",
+        "Data & Analytics: Desarrollo de soluciones analíticas con Python (Streamlit) y Power BI para soporte a la toma de decisiones estratégicas."
       ],
     },
     {
@@ -194,6 +197,18 @@ const education = {
   certifications: {
     title: "Certificaciones y Formación Continua",
     items: [
+      {
+        institution: "Codigo Facilito",
+        degree: "Bootcamp Ingeniero de Datos en Microsoft Fabric",
+        duration: "2026",
+        image: "/assets/certificates/BootcampDatosFabric.webp",
+      },
+        {
+        institution: "BIG School",
+        degree: "Iniciación de Desarrollo con IA",
+        duration: "2026",
+        image: "/assets/certificates/DesarrolloConIA.webp",
+      },
       {
         institution: "Codigo Facilito",
         degree: "Curso Profesional de React",
