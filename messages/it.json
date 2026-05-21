@@ -1,0 +1,673 @@
+{
+  "nav": {
+    "home": "home",
+    "services": "servizi",
+    "resume": "chi sono",
+    "work": "progetti",
+    "contact": "contatti",
+    "hire": "Contattami"
+  },
+  "home": {
+    "specializations": "Technical Lead | Solutions Architect | Full Stack Developer, Data Analytics & Cloud Engineer",
+    "greeting": "Ciao, Sono",
+    "description": "Cloud Solutions Architect e Technical Lead con oltre 5 anni di esperienza nella progettazione di ecosistemi mission-critical. Specializzato in <b>sviluppo full-stack & architetture scalabili cloud-native</b>, <c>Data Engineering, Analytics & Business Intelligence</c> e <a>trasformazione digitale end-to-end</a>. Unisco ingegneria del software, analisi strategica dei dati e leadership tecnica per consegnare soluzioni ad alto impatto in ambito bancario, governativo, comerciale, finanziario e operativo.",
+    "downloadCV": "Scarica CV"
+  },
+  "stats": {
+    "performance": "Miglioramento Performance Web",
+    "automation": "Processi Automatizzati",
+    "clients": "Clienti Potenziati",
+    "experience": "Anni di Esperienza"
+  },
+  "footer": {
+    "rights": "Tutti i diritti riservati."
+  },
+  "resume": {
+    "tabs": {
+      "experience": "Esperienza",
+      "education": "Formazione e Certificazioni",
+      "skills": "Stack Tecnologico",
+      "about": "Chi Sono"
+    },
+    "experience": {
+      "title": "La Mia Esperienza Professionale",
+      "description": "Oltre 5 anni combinando leadership tecnica su progetti mission-critical con consulenza strategica di alto livello. Dalle architetture cloud-native in ambito bancario, governativo, vendite, finanza e operazioni, all'implementazione di Data Lake, piattaforme di Business Intelligence e prodotti SaaS proprietari distribuiti in produzione.",
+      "items": [
+        {
+          "company": "Nexus Consultoría & Servicios",
+          "position": "Technical Lead & Solutions Architect | Software Application Developer",
+          "duration": "Novembre 2025 – Presente · Remoto",
+          "highlights": [
+            "Architettura Cloud & Full-Stack: Leadership nella progettazione e sviluppo di sistemi cloud-native con .NET 8, Blazor WebAssembly, Azure Service Bus e Worker Services. Gestione integrale dell'infrastruttura Azure (App Service, SQL, VPN Gateway, Entra ID) garantendo alta disponibilità, sicurezza e ottimizzazione dei costi.",
+            "Data Engineering & Analytics: Progettazione e implementazione di ecosistemi dati con architettura Medallion (Bronze–Silver–Gold) su SQL Server. Orchestrazione di oltre 148 pacchetti SSIS per trasformare 70+ tabelle di vendita in progetti Data Lake enterprise, riducendo drasticamente i cicli analitici del team BI.",
+            "Business Intelligence: Consegna end-to-end di piattaforme BI con Power BI, Python (Streamlit), modellazione DAX avanzata, DirectQuery e schema a stella. Soluzioni distribuite per ministeri governativi, istituti bancari e aziende retail/logistica.",
+            "Modernizzazione dei Sistemi: Migrazione completa di applicazioni legacy on-premise verso architetture cloud-native su Azure, eliminando dipendenze obsolete e abilitando l'accesso multi-dispositivo con continuità operativa garantita.",
+            "Consulenza Strategica & Gare d'Appalto: Elaborazione di SOW, roadmap tecniche, dimensionamento infrastrutturale e classificazione dei rischi per tier di supporto in settori regolamentati: bancario, governativo, aeronautico e telecomunicazioni.",
+            "Leadership Tecnica & Scrum: Direzione di squad di sviluppo agile, gestione di stakeholder executive e allineamento strategico tra unità di business e team IT in progetti ad alto impatto."
+          ]
+        },
+        {
+          "company": "Professionista Indipendente",
+          "position": "Full Stack Architect (SaaS) & Data Analyst",
+          "duration": "Febbraio 2025 – Presente · Remoto",
+          "highlights": [
+            "Sviluppo Full-Stack & Architettura SaaS: Progettazione e consegna di soluzioni web complete per clienti internazionali — piattaforme e-commerce, landing page e sistemi ERP. Stack moderno: React, Next.js, Angular, TypeScript, Tailwind CSS su frontend; Node.js, Express, REST API, PostgreSQL, Supabase e Firebase su backend.",
+            "MiBoletoni (PaaS/SaaS): Architettura end-to-end e deploy su Google Cloud di una piattaforma di biglietteria digitale. Integrazione di gateway di pagamento (Stripe/Fygaro), validazione accessi offline-first con codici QR, pannelli di amministrazione finanziaria multi-ruolo e gestione autenticazione sicura.",
+            "DevOps, CI/CD & Sicurezza: Automazione del ciclo di vita del software con GitHub Actions verso Vercel e Google Cloud (Cloud Run, Cloud Build). Containerizzazione Docker, manutenzione deploy SSISDB e risoluzione di vulnerabilità critiche in Firebase Cloud Storage.",
+            "Data Science & Analytics: Analisi avanzata con Python (Pandas, NumPy, Matplotlib, Seaborn) e Power BI per trasformare dati in insight strategici a supporto delle decisioni complesse per clienti in ambito vendite, finanza e operazioni."
+          ]
+        },
+        {
+          "company": "InVicta Business Partners",
+          "position": "Technology Solutions & Analytics Specialist",
+          "duration": "Agosto 2025 – Gennaio 2026 · Remoto",
+          "highlights": [
+            "Analisi di Business & Miglioramento dei Processi: Valutazione strategica e implementazione di soluzioni tecnologiche orientate all'ottimizzazione delle performance finanziarie. Identificazione di colli di bottiglia e progettazione di flussi di lavoro data-driven per rafforzare l'infrastruttura operativa.",
+            "Data Visualization & BI: Progettazione e implementazione di dashboard interattive con KPI critici in Power BI, per misurare l'efficacia e il ROI delle soluzioni implementate a supporto delle decisioni strategiche.",
+            "Marketing Tech & Analytics Digitale: Gestione dello sviluppo web con CMS (WordPress, Wix Studio). Strategie di SEO Tecnico e integrazione completa dello stack analitico: Google Analytics 4, Google Search Console, Google Tag Manager e Meta Pixel per il tracciamento preciso di eventi e conversioni."
+          ]
+        },
+        {
+          "company": "Claro Nicaragua",
+          "position": "Analista di Sistemi & Progetti | Trasformazione Digitale",
+          "duration": "Maggio 2022 – Gennaio 2025 · Managua, Nicaragua",
+          "highlights": [
+            "Trasformazione Digitale & Oracle APEX: Leadership tecnica nello sviluppo e deploy di applicazioni enterprise con Oracle SQL e Oracle APEX, automatizzando con successo processi operativi critici per la divisione Trasformazione Digitale di uno dei principali operatori TLC dell'America Centrale.",
+            "Gestione SDLC & Qualità: Controllo completo del ciclo di vita del software — progettazione di diagrammi architetturali, documentazione tecnica standardizzata in Confluence e supervisione esaustiva delle fasi di test SIT, UAT e QA per garantire la qualità e la fattibilità del prodotto.",
+            "Agile & Allineamento Strategico: Coordinamento di team interfunzionali con Scrum e Kanban tramite Jira. Interfaccia tecnica chiave tra le unità di business e i team IT, traducendo requisiti complessi in deliverable chiari e misurabili."
+          ]
+        },
+        {
+          "company": "Seguros Iniser Nicaragua",
+          "position": "Sviluppatore Software · Oracle & PL/SQL",
+          "duration": "Luglio 2018 – Giugno 2019 · Managua, Nicaragua",
+          "highlights": [
+            "Sviluppo Core & Manutenzione Evolutiva: Sviluppo e manutenzione di sistemi informativi per il settore assicurativo con PL/SQL, Oracle Forms e Oracle Reports.",
+            "Gestione Dati Transazionali: Amministrazione di grandi volumi di dati transazionali garantendo integrità, sicurezza e conformità alla logica di business tramite query avanzate e ottimizzazione dei processi."
+          ]
+        },
+        {
+          "company": "Seguros Iniser Nicaragua",
+          "position": "Analista di Sottoscrizione Polizze",
+          "duration": "Giugno 2017 – Luglio 2018 · Managua, Nicaragua",
+          "highlights": [
+            "Gestione e analisi della sottoscrizione di polizze assicurative. Operazione di sistemi specializzati di underwriting e formazione del personale sulla tecnologia GPS applicata alle polizze agricole."
+          ]
+        },
+        {
+          "company": "RS Seguridad Digital Internacional",
+          "position": "Assistente Operazioni Tecniche",
+          "duration": "Marzo 2017 – Maggio 2017 · Managua, Nicaragua",
+          "highlights": [
+            "Manutenzione preventiva e correttiva dell'hardware, amministrazione di sistemi CCTV e supporto tecnico in loco e da remoto per garantire la continuità operativa in ambienti retail."
+          ]
+        }
+      ]
+    },
+    "education": {
+      "title": "La Mia Formazione",
+      "description": "Ingegnere dei Sistemi di formazione, con aggiornamento tecnico continuo e certificazioni specializzate nelle discipline più richieste dal mercato. La mia base accademica in architettura del software e sistemi è potenziata da una formazione avanzata in Cloud Computing (Azure, AWS, GCP), Data Engineering, Data Science e Agile Leadership supportata da programmi di istituzioni come Google, Microsoft, Cisco, PMI e Coursera.",
+      "formal": {
+        "title": "Formazione Universitaria",
+        "items": [
+          {
+            "institution": "Universidad Nacional de Ingeniería (UNI-IES)",
+            "degree": "Ingegneria dei Sistemi (Laureato)",
+            "duration": "2010 - 2016",
+            "image": "/assets/certificates/TituloUniversidad.webp"
+          },
+          {
+            "institution": "Universidad Centroamericana (UCA)",
+            "degree": "Amministrazione Aziendale (3° anno)",
+            "duration": "2007 - 2010",
+            "image": null
+          }
+        ]
+      },
+      "certifications": {
+        "title": "Certificazioni e Formazione Continua",
+        "items": [
+          {
+            "institution": "Codigo Facilito",
+            "degree": "Introduzione al Machine Learning",
+            "duration": "2026",
+            "image": "/assets/certificates/IntroduccionMachineLearning.webp"
+          },
+          {
+            "institution": "Codigo Facilito",
+            "degree": "Bootcamp Ingegnere dei Dati in Microsoft Fabric",
+            "duration": "2026",
+            "image": "/assets/certificates/BootcampDatosFabric.webp"
+          },
+          {
+            "institution": "BIG School",
+            "degree": "Avvio allo Sviluppo con IA",
+            "duration": "2026",
+            "image": "/assets/certificates/DesarrolloConIA.webp"
+          },
+          {
+            "institution": "Codigo Facilito",
+            "degree": "Corso Professionale di React",
+            "duration": "2025",
+            "image": "/assets/certificates/CodigoFacilitoReact.webp"
+          },
+          {
+            "institution": "Codigo Facilito",
+            "degree": "Corso Professionale di Docker",
+            "duration": "2025",
+            "image": "/assets/certificates/CodigoFacilitoDocker.webp"
+          },
+          {
+            "institution": "Código Facilito",
+            "degree": "Consumo di API con JavaScript Fetch",
+            "duration": "2025",
+            "image": "/assets/certificates/CodigoFacilitoFetch.webp"
+          },
+          {
+            "institution": "Código Facilito",
+            "degree": "Corso Professionale di JavaScript",
+            "duration": "2025",
+            "image": "/assets/certificates/CodigoFacilitoJavaScript.webp"
+          },
+          {
+            "institution": "Código Facilito",
+            "degree": "Bootcamp di GitHub Actions",
+            "duration": "2025",
+            "image": "/assets/certificates/CodigoFacilitoGithubActions.webp"
+          },
+          {
+            "institution": "Código Facilito",
+            "degree": "Corso Professionale di Database",
+            "duration": "2025",
+            "image": "/assets/certificates/CodigoFacilitoBasedeDatos.webp"
+          },
+          {
+            "institution": "Código Facilito",
+            "degree": "Corso Fondamenti di Microsoft Azure",
+            "duration": "2025",
+            "image": "/assets/certificates/CodigoFacilitoAzure.webp"
+          },
+          {
+            "institution": "Código Facilito",
+            "degree": "Fondamenti e Concetti della Data Science",
+            "duration": "2025",
+            "image": "/assets/certificates/CodigoFacilitoCienciaDeDatos.webp"
+          },
+          {
+            "institution": "Código Facilito",
+            "degree": "Introduzione all'Analisi dei Dati con Python",
+            "duration": "2025",
+            "image": "/assets/certificates/CodigoFacilitoIntroduccionAnalisisPython.webp"
+          },
+          {
+            "institution": "Microsoft Partner",
+            "degree": "Developing Solutions for Microsoft Azure",
+            "duration": "2025",
+            "image": "/assets/certificates/DevelopingSolutions.webp"
+          },
+          {
+            "institution": "Desafío Latam",
+            "degree": "React in Azione: Da Zero a Esperto",
+            "duration": "2025",
+            "image": "/assets/certificates/ReactAccion.webp"
+          },
+          {
+            "institution": "Desafío Latam",
+            "degree": "Padroneggia l'Analisi con SQL",
+            "duration": "2025",
+            "image": "/assets/certificates/DominaAnalisisSQL.webp"
+          },
+          {
+            "institution": "Desafío Latam",
+            "degree": "Introduzione all'Analisi dei Dati con Python",
+            "duration": "2025",
+            "image": "/assets/certificates/DesafioLatamIntroduccionPython.webp"
+          },
+          {
+            "institution": "Desafío Latam",
+            "degree": "Impara Power BI da Zero",
+            "duration": "2025",
+            "image": "/assets/certificates/AprendePowerBI.webp"
+          },
+          {
+            "institution": "Santander Open Academy",
+            "degree": "Introduzione alla Data Science",
+            "duration": "2025",
+            "image": "/assets/certificates/SantanderCienciaDeDatos.webp"
+          },
+          {
+            "institution": "Alura Latam",
+            "degree": "IA: Potenziale dell'Intelligenza Artificiale Generativa",
+            "duration": "2025",
+            "image": "/assets/certificates/IAAluralatam.webp"
+          },
+          {
+            "institution": "Alura Latam",
+            "degree": "Immersione nell'IA con Google Gemini",
+            "duration": "2025",
+            "image": "/assets/certificates/IAGemini.webp"
+          },
+          {
+            "institution": "Google",
+            "degree": "Fondamenti della Gestione dei Progetti",
+            "duration": "2025",
+            "image": "/assets/certificates/FundamentosGestionProyectosGoogle.webp"
+          },
+          {
+            "institution": "PMI / Linkedin",
+            "degree": "Fondamenti della Gestione dei Progetti",
+            "duration": "2025",
+            "image": "/assets/certificates/FundamentosGestionProyectosPMI.webp"
+          },
+          {
+            "institution": "Linkedin Learning",
+            "degree": "Corso Impara JIRA",
+            "duration": "2025",
+            "image": "/assets/certificates/AprendeJira.webp"
+          },
+          {
+            "institution": "CoderHouse",
+            "degree": "Programma CoderCamp di Occupabilità",
+            "duration": "2025",
+            "image": "/assets/certificates/CoderEmpleabilidad.webp"
+          },
+          {
+            "institution": "Hashtag Treinamentos",
+            "degree": "Excel Avanzato",
+            "duration": "2025",
+            "image": "/assets/certificates/SemanaExcel.webp"
+          },
+          {
+            "institution": "Linkedin Learning",
+            "degree": "Fondamenti del Networking Professionale",
+            "duration": "2025",
+            "image": "/assets/certificates/FundamentosNetworking.webp"
+          },
+          {
+            "institution": "Novacomp",
+            "degree": "Webinar: Azure + GenAI",
+            "duration": "2025",
+            "image": "/assets/certificates/WebinarAzureIAGenerativa.webp"
+          },
+          {
+            "institution": "Net4Skills",
+            "degree": "Report Potenti con Analytics di Power BI",
+            "duration": "2025",
+            "image": "/assets/certificates/SeminarioReportePowerBI.webp"
+          },
+          {
+            "institution": "Net4Skills",
+            "degree": "Ridurre i Costi Implementando l'Infrastruttura Azure",
+            "duration": "2025",
+            "image": "/assets/certificates/SeminarioReduceCostos.webp"
+          },
+          {
+            "institution": "Net4Skills",
+            "degree": "VMware Cloud Foundation",
+            "duration": "2025",
+            "image": "/assets/certificates/SeminarioVWwareCloudFormation.webp"
+          },
+          {
+            "institution": "Net4Skills",
+            "degree": "Disciplined Agile",
+            "duration": "2025",
+            "image": "/assets/certificates/SeminarioDisciplinedAgile.webp"
+          },
+          {
+            "institution": "Net4Skills",
+            "degree": "AWS Data Analytics Fundamentals",
+            "duration": "2025",
+            "image": "/assets/certificates/SeminarioAWSDataAnalytics.webp"
+          },
+          {
+            "institution": "Net4Skills",
+            "degree": "AWS Data Analytics",
+            "duration": "2025",
+            "image": "/assets/certificates/SeminarioAWSAnaliticaDatos.webp"
+          },
+          {
+            "institution": "Netec",
+            "degree": "IA Generativa: Automatizza e Innova",
+            "duration": "2025",
+            "image": "/assets/certificates/IAGenerativaAutomatiza.webp"
+          },
+          {
+            "institution": "Terraform Specialist",
+            "degree": "Infrastructure as Code in AWS",
+            "duration": "2023",
+            "image": "/assets/certificates/TerraformSpecialist.webp"
+          },
+          {
+            "institution": "Edu Claro",
+            "degree": "Norma ISO 45001",
+            "duration": "2023",
+            "image": "/assets/certificates/NormaISO45001.webp"
+          },
+          {
+            "institution": "Security First",
+            "degree": "Formazione sulla Metodologia di Sviluppo Sicuro",
+            "duration": "2023",
+            "image": "/assets/certificates/DesarrolloSeguro.webp"
+          },
+          {
+            "institution": "Centro Nac. Tec.",
+            "degree": "AWS Cloud Practitioner",
+            "duration": "2022",
+            "image": "/assets/certificates/AWSPractitioner.webp"
+          },
+          {
+            "institution": "Cloud Computing Nic.",
+            "degree": "Practical AWS Course for Beginners",
+            "duration": "2022",
+            "image": "/assets/certificates/AWSCloudNicaragua.webp"
+          },
+          {
+            "institution": "FreeCodeCamp",
+            "degree": "Responsive Web Design",
+            "duration": "2022",
+            "image": "/assets/certificates/ResponsiveWebDesign.webp"
+          },
+          {
+            "institution": "Google Actívate",
+            "degree": "Introduction to Web Development: HTML & CSS",
+            "duration": "2022",
+            "image": "/assets/certificates/IntroduccionDesarrolloWeb.webp"
+          },
+          {
+            "institution": "Cisco",
+            "degree": "IT Essentials: Technical Support & OS",
+            "duration": "2016-2017",
+            "image": "/assets/certificates/CiscoITEssentials.webp"
+          }
+        ]
+      }
+    },
+    "skills": {
+      "title": "Stack Tecnologico",
+      "description": "Oltre 5 anni nella costruzione di soluzioni enterprise con uno stack multidisciplinare che abbraccia Frontend moderno, Backend enterprise, Cloud Architecture, Data Engineering e Project Leadership. Ogni tecnologia è stata applicata in progetti reali ad alto impatto in ambito bancario, vendite, finanza e operazioni garantendo soluzioni robuste, scalabili e allineate agli obiettivi di business."
+    },
+    "about": {
+      "title": "Profilo Professionale",
+      "description": "Cloud Solutions Architect e Technical Lead con oltre 5 anni nella progettazione di ecosistemi digitali mission critical. Il mio approccio multidisciplinare fonde ingegneria del software enterprise, architettura cloud-native e analisi strategica dei dati per costruire piattaforme che non si limitano a funzionare ma scalano, ottimizzano i costi e generano un impatto reale sul business. Ho guidato progetti end-to-end in settori regolamentati come bancario, governativo, telecomunicazioni, vendite, finanza e operazioni, traducendo requisiti complessi in soluzioni robuste, misurabili e allineate agli obiettivi strategici di ogni organizzazione.",
+      "info": [
+        { "fieldName": "Nome", "fieldValue": "Juan Carlos Gadea" },
+        {
+          "fieldName": "Telefono",
+          "fieldValue": "(+505) 8578-5399 / (+39) 351 318 3823"
+        },
+        {
+          "fieldName": "Posizione",
+          "fieldValue": "Managua, Nicaragua / Roma, Italia"
+        },
+        {
+          "fieldName": "Esperienza",
+          "fieldValue": "+5 anni · Full-Stack, Cloud & Data"
+        },
+        { "fieldName": "Email", "fieldValue": "jcgambeta89@gmail.com" },
+        {
+          "fieldName": "Disponibilità",
+          "fieldValue": "Remoto · LATAM, Spagna e Unione Europea"
+        },
+        {
+          "fieldName": "Lingue",
+          "fieldValue": "Spagnolo (Madrelingua) · Inglese (B2) · Italiano (B1)"
+        }
+      ]
+    }
+  },
+  "work": {
+    "liveTooltip": "Visualizza progetto live",
+    "githubTooltip": "Visualizza codice su GitHub",
+    "prevProject": "Progetto precedente",
+    "nextProject": "Progetto successivo",
+    "projects": [
+      {
+        "num": "01",
+        "category": "PaaS Platform & Architecture",
+        "title": "MiBoletoni & Biglietteria Digitale",
+        "description": "Piattaforma PaaS completa per la gestione e vendita di biglietti digitali. Ho progettato un'architettura scalabile che gestisce picchi di traffico in tempo reale. Include generazione dinamica di codici QR, stampa di biglietti per vendite in punti fisici, Auth e ruoli utente, integrazione con gateway di pagamento (Fygaro) e un pannello amministrativo finanziario.",
+        "stack": [
+          "Next.js 16",
+          "React",
+          "Typescript",
+          "API Resend",
+          "Firebase",
+          "Nodejs",
+          "Fygaro API",
+          "Tailwind CSS",
+          "Shadcn/UI",
+          "Cloudflare",
+          "Framer Motion",
+          "Docker",
+          "GCP"
+        ],
+        "image": "/assets/work/MiBoletoni.webp",
+        "live": "https://miboletoni.com/",
+        "github": "https://github.com/JCGadeaDev/MiBoletoNi"
+      },
+      {
+        "num": "02",
+        "category": "Real Estate Platform",
+        "title": "Proprietà & Analytics",
+        "description": "Applicazione web progressiva (PWA) per il settore immobiliare. Permette agli agenti di gestire l'inventario e agli utenti di filtrare proprietà con algoritmi di ricerca avanzata. Ho integrato mappe interattive e un modulo di analisi dei prezzi al metro quadro.",
+        "stack": [
+          "React",
+          "React Router",
+          "Redux Toolkit",
+          "Vite",
+          "Recharts",
+          "Tailwindcss",
+          "Vercel"
+        ],
+        "image": "/assets/work/Realstate.webp",
+        "live": "https://real-state-website-beige.vercel.app/",
+        "github": "https://github.com/JCGadeaDev/RealStateWebsite"
+      },
+      {
+        "num": "03",
+        "category": "Corporate & SEO Strategy",
+        "title": "TechServices & Soluzioni IT",
+        "description": "Sito web aziendale ad alte prestazioni per un'agenzia di servizi tecnologici. Ho progettato una UX orientata alla conversione e alla velocità. Implementate pratiche avanzate di SEO Semantico e ottimizzazione delle immagini, raggiungendo tempi di caricamento inferiori a 1,5s. L'architettura modulare consente di scalare nuove sezioni di servizi senza debito tecnico.",
+        "stack": [
+          "Next.js 16",
+          "React",
+          "React Icons",
+          "API Fetch",
+          "Resend",
+          "Framer Motion",
+          "SEO Tecnico"
+        ],
+        "image": "/assets/work/TechServices.webp",
+        "live": "https://techservicesweb.vercel.app/",
+        "github": "https://github.com/JCGadeaDev/TechServicesWeb"
+      },
+      {
+        "num": "04",
+        "category": "E-Commerce SPA",
+        "title": "City Pizzeria",
+        "description": "Applicazione e-commerce Single Page Application (SPA). Ho progettato un'architettura di stato centralizzato nativa con React 19, ottimizzando il flusso di dati senza dipendere da librerie esterne. Il sistema integra un motore carrello in tempo reale, calcolo dinamico delle imposte (GST) e un pipeline di checkout a 3 fasi con validazione rigorosa tramite moduli controllati. Interfaccia completamente responsiva con React Bootstrap.",
+        "stack": [
+          "React 19",
+          "Bootstrap 5",
+          "JavaScript",
+          "CSS3",
+          "Web Vitals",
+          "Jest Testing"
+        ],
+        "image": "/assets/work/CityPizzeria.webp",
+        "live": "https://citypizzeria.vercel.app/",
+        "github": "https://github.com/JCGadeaDev/CityPizzeria"
+      },
+      {
+        "num": "05",
+        "category": "Real Estate Platform",
+        "title": "Proprietà & Analytics",
+        "description": "Applicazione web progressiva (PWA) per il settore immobiliare. Permette agli agenti di gestire l'inventario e agli utenti di filtrare proprietà con algoritmi di ricerca avanzata. Ho integrato mappe interattive e un modulo di analisi dei prezzi al metro quadro.",
+        "stack": ["React", "Redux Toolkit", "Vite", "Recharts", "Tailwind"],
+        "image": "/assets/work/Realstate.webp",
+        "live": "https://real-state-website-beige.vercel.app/",
+        "github": "https://github.com/JCGadeaDev/RealStateWebsite"
+      }
+    ]
+  },
+  "services": {
+    "sectionLabel": "Servizi",
+    "heading": "Ciò che trasformo",
+    "headingAccent": "in risultati per il tuo business",
+    "items": [
+      {
+        "num": "01",
+        "title": "Ingegneria Full-Stack & Architettura Web",
+        "href": "/work",
+        "intro": "Progetto e sviluppo piattaforme digitali ad alte prestazioni dalle moderne SPA alle architetture enterprise più complesse. Ogni soluzione è concepita secondo i principi della Clean Architecture, orientata a scalare, mantenere e generare valore fin dal primo deploy.",
+        "bullets": [
+          {
+            "label": "Frontend & UI ad Alta Fedeltà:",
+            "text": "Interfacce pixel-perfect con HTML, CSS, React, Next.js, Angular e TypeScript su Tailwind CSS, Shadcn e Bootstrap. Gestione avanzata dello stato con TanStack Query e Zustand. Applicazioni che combinano velocità, accessibilità ed esperienza utente di livello executive."
+          },
+          {
+            "label": "Backend Enterprise:",
+            "text": "API robuste e scalabili con .NET 8 (C#/ASP.NET Core), Spring Boot, Node.js ed Express, applicando i pattern Singleton, Repository e Factory. Integrazione con Azure Service Bus e Worker Services per soluzioni event-driven su transazioni critiche."
+          },
+          {
+            "label": "QA, Sicurezza & Deploy:",
+            "text": "Test esaustivi con Postman e SoapUI. Deploy su Cloudflare, Vercel e Azure App Service con gestione DNS, SSL/HTTPS e audit di sicurezza. Esperienza comprovata nella risoluzione di vulnerabilità critiche in ambienti di produzione."
+          }
+        ]
+      },
+      {
+        "num": "02",
+        "title": "Architettura Cloud & Soluzioni Scalabili",
+        "href": "/work",
+        "intro": "Progetto architetture cloud mission-critical che supportano alta disponibilità, tolleranza ai guasti e crescita sostenuta. Traduco i requisiti di business in infrastrutture resilienti su Azure, AWS e Google Cloud ottimizzate per costo, sicurezza e prestazioni.",
+        "bullets": [
+          {
+            "label": "Architettura Cloud & Alta Disponibilità:",
+            "text": "Progettazione di architetture multi-livello su Azure (App Service, SQL, Service Bus, VPN Gateway, Entra ID), AWS (EC2, S3, RDS) e GCP (Cloud Run). Pattern event-driven, microservizi e soluzioni serverless per ambienti ad alta domanda in ambito bancario, governativo, sistemi elettorali e aviazione."
+          },
+          {
+            "label": "Migrazione & Modernizzazione:",
+            "text": "Migrazione di sistemi legacy on-premise verso architetture cloud-native, eliminando dipendenze obsolete e riducendo i costi operativi. Esperienza in migrazioni complete in settori regolamentati con continuità operativa garantita."
+          },
+          {
+            "label": "Dimensionamento & Proposte Tecniche:",
+            "text": "Elaborazione di proposte architetturali, sizing infrastrutturale e classificazione dei rischi per tier di supporto. Documentazione tecnica executive per gare d'appalto e stakeholder in progetti enterprise ad alto impatto."
+          }
+        ]
+      },
+      {
+        "num": "03",
+        "title": "DevOps, CI/CD & Infrastructure as Code",
+        "href": "/work",
+        "intro": "Elimino la frizione tra il codice e la produzione. Automatizzo il ciclo di vita completo del software tramite pipeline robuste, containerizzazione e gestione riproducibile dell'infrastruttura garantendo rilasci continui, stabili e verificabili.",
+        "bullets": [
+          {
+            "label": "Pipeline CI/CD & Automazione:",
+            "text": "Cicli di consegna continua con GitHub Actions, Cloud Build e Cloud Run verso Vercel e Azure. Flussi collaborativi avanzati con Git/Gitflow in team distribuiti e multidisciplinari."
+          },
+          {
+            "label": "Containerizzazione & Server:",
+            "text": "Standardizzazione con Docker/Compose. Amministrazione di server Linux (Ubuntu) con Nginx come reverse proxy. Infrastructure as Code con Terraform. Dall'ambiente locale alla produzione cloud senza frizioni, in entrambe le direzioni."
+          },
+          {
+            "label": "Sicurezza & Audit DevSecOps:",
+            "text": "Integrazione di pratiche di sicurezza nella pipeline: audit di vulnerabilità, gestione dei segreti e risoluzione di bug critici in ambienti produttivi. Deploy SSISDB e manutenzione di pacchetti ETL in infrastruttura enterprise."
+          }
+        ]
+      },
+      {
+        "num": "04",
+        "title": "Data Intelligence (BI) & Data Engineering",
+        "href": "/work",
+        "intro": "Trasformo dati dispersi in asset strategici. Progetto architetture dati end-to-end dall'ingestione grezza fino al dashboard executive garantendo qualità, tracciabilità e velocità analitica per decisioni informate.",
+        "bullets": [
+          {
+            "label": "Dashboard Executive & BI:",
+            "text": "Cruscotti interattivi in Power BI con modellazione avanzata in DAX, DirectQuery e schema a stella. Visualizzazioni orientate ai KPI di business che accorciano il ciclo decisionale manageriale. Esperienza nella consegna di piattaforme BI per ministeri, istituti bancari e retail."
+          },
+          {
+            "label": "Data Engineering & Architettura Medallion:",
+            "text": "Implementazione di Data Lake con il modello Bronze–Silver–Gold su SQL Server, SSIS e Python. Orchestrazione di oltre 148 pacchetti ETL in progetti enterprise. Esperienza con Microsoft Fabric, Data Warehouse, Data Mart e ambienti Big Data."
+          },
+          {
+            "label": "Data Science & Applicazioni Dati:",
+            "text": "Python (Pandas, NumPy, Scikit-learn, Statsmodels) per analisi predittiva e modellazione finanziaria. Sviluppo di Web App dati con Streamlit e Plotly, distribuite in produzione come strumenti di supporto decisionale per team executive."
+          }
+        ]
+      },
+      {
+        "num": "05",
+        "title": "Consulenza Strategica, Project Management & SEO Tecnico",
+        "href": "/contact",
+        "intro": "Oltre il codice: offro direzione tecnica di alto livello. Traduco requisiti di business in architetture realizzabili, gestisco processi di gara complessi e garantisco che ogni progetto venga consegnato con impatto misurabile, nei tempi e nel budget previsto.",
+        "bullets": [
+          {
+            "label": "Consulenza & Architettura delle Soluzioni:",
+            "text": "Elaborazione di SOW, roadmap tecniche e proposte di dimensionamento infrastrutturale per settori regolamentati. Progettazione di architetture con Visio/Lucidchart/Eraser e formazione tecnica di team interni. Esperienza diretta con BCN, MEF Panama, Dicegsa Nicaragua, La Costeña Airlines e operatori di telecomunicazioni."
+          },
+          {
+            "label": "Project Management Agile:",
+            "text": "Direzione di squad di sviluppo con Scrum e Kanban tramite Jira, Trello, Planner e Notion. Gestione di stakeholder executive, controllo completo del ciclo SDLC e allineamento tra unità di business e team IT in progetti ad alto impatto."
+          },
+          {
+            "label": "SEO Tecnico & Performance Web:",
+            "text": "Audit delle prestazioni e ottimizzazione dei Core Web Vitals. Strategia di posizionamento organico con Google Analytics 4, Google Search Console, Google Tag Manager e Meta Pixel. Integrazione dello stack analitico per il tracciamento preciso di eventi e conversioni."
+          }
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Lavoriamo insieme",
+    "subtitle": "Se hai una domanda, proposta o progetto, compila il modulo e ti risponderò.",
+    "form": {
+      "firstName": "Nome",
+      "lastName": "Cognome",
+      "email": "Indirizzo email",
+      "phone": "Numero di telefono",
+      "selectService": "Seleziona un servizio di interesse",
+      "selectLabel": "I Miei Servizi",
+      "message": "Scrivi il tuo messaggio qui...",
+      "submit": "Invia messaggio",
+      "sending": "Invio in corso...",
+      "success": "Messaggio inviato con successo",
+      "error": "Errore nell'invio del messaggio. Riprova."
+    },
+    "services": [
+      {
+        "value": "fullstack-arquitectura",
+        "label": "Sviluppo Full-Stack & Architettura Web"
+      },
+      {
+        "value": "cloud-arquitectura",
+        "label": "Architettura Cloud & Soluzioni Scalabili"
+      },
+      {
+        "value": "devops-cicd",
+        "label": "DevOps, CI/CD & Infrastructure as Code"
+      },
+      {
+        "value": "data-bi",
+        "label": "Data Engineering, Analytics & Business Intelligence"
+      },
+      {
+        "value": "consultoria-pm",
+        "label": "Consulenza Strategica, Project Management & SEO Tecnico"
+      },
+      { "value": "otro", "label": "Altro / Richiesta Generale" }
+    ],
+    "info": [
+      {
+        "title": "Telefono / WhatsApp",
+        "description": "(+505)8578-5399 · (+39)351-318-3823"
+      },
+      { "title": "Email", "description": "jcgambeta89@gmail.com" },
+      {
+        "title": "Posizione",
+        "description": "Disponibile per lavoro remoto globale"
+      }
+    ],
+    "availability": "Disponibile per nuovi progetti",
+    "responseTime": "risposta in < 24h"
+  }
+}

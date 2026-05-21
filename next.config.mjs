@@ -1,8 +1,12 @@
+import createNextIntlPlugin from 'next-intl/plugin';
+
+const withNextIntl = createNextIntlPlugin('./i18n/request.js');
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    qualities: [75, 90, 100], // 75 default, 90 proyectos, 100 foto
+    qualities: [75, 90, 100],
   },
 };
 
-export default nextConfig;
+export default withNextIntl(nextConfig);

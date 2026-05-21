@@ -26,7 +26,7 @@ const socials = [
   },
   { 
     icon: <FaWhatsapp />, 
-    path: "https://wa.me/50585785399", 
+    path: "https://wa.me/393513183823", 
     name: "WhatsApp" 
   },
 ];
