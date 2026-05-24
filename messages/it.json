@@ -500,13 +500,21 @@
       },
       {
         "num": "05",
-        "category": "Real Estate Platform",
-        "title": "Proprietà & Analytics",
-        "description": "Applicazione web progressiva (PWA) per il settore immobiliare. Permette agli agenti di gestire l'inventario e agli utenti di filtrare proprietà con algoritmi di ricerca avanzata. Ho integrato mappe interattive e un modulo di analisi dei prezzi al metro quadro.",
-        "stack": ["React", "Redux Toolkit", "Vite", "Recharts", "Tailwind"],
-        "image": "/assets/work/Realstate.webp",
-        "live": "https://real-state-website-beige.vercel.app/",
-        "github": "https://github.com/JCGadeaDev/RealStateWebsite"
+        "category": "Blog Platform & Content Marketing",
+        "title": "EmprenFactor — Blog sull'Imprenditoria",
+        "description": "Piattaforma di contenuti full-stack orientata agli imprenditori di lingua spagnola. Sviluppata con React + Vite, include un motore di ricerca articoli in tempo reale, filtro dinamico per categorie (Finanza, Produttività, Marketing Digitale, Idee di Business), sezione post in evidenza, modulo di contatto con validazione e navigazione responsive. Backend alimentato da Firebase (Firestore + regole di sicurezza personalizzate). Integrata con Google Search Console per la tracciabilità SEO e distribuita in produzione tramite Vercel.",
+        "stack": [
+          "React",
+          "Vite",
+          "Tailwind CSS",
+          "Firebase",
+          "Firestore",
+          "JavaScript",
+          "Google Search Console"
+        ],
+        "image": "/assets/work/EmprenFactor.webp",
+        "live": "https://emprenfactor.vercel.app/",
+        "github": "https://github.com/JCGadeaDev/Blogspot-de-Emprendimiento"
       }
     ]
   },

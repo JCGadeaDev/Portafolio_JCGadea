@@ -500,13 +500,21 @@
       },
       {
         "num": "05",
-        "category": "Real Estate Platform",
-        "title": "Properties & Analytics",
-        "description": "Progressive Web App (PWA) for the real estate sector. Allows agents to manage inventory and users to filter properties with advanced search algorithms. Integrated interactive maps and a price-per-square-meter analysis module.",
-        "stack": ["React", "Redux Toolkit", "Vite", "Recharts", "Tailwind"],
-        "image": "/assets/work/Realstate.webp",
-        "live": "https://real-state-website-beige.vercel.app/",
-        "github": "https://github.com/JCGadeaDev/RealStateWebsite"
+        "category": "Blog Platform & Content Marketing",
+        "title": "EmprenFactor — Entrepreneurship Blog",
+        "description": "Full-stack content platform aimed at Spanish-speaking entrepreneurs. Built with React + Vite, it features a real-time article search engine, dynamic filtering by categories (Finance, Productivity, Digital Marketing, Business Ideas), featured posts section, validated contact form and responsive navigation. Backend powered by Firebase (Firestore + custom security rules). Integrated with Google Search Console for SEO traceability and deployed in production via Vercel.",
+        "stack": [
+          "React",
+          "Vite",
+          "Tailwind CSS",
+          "Firebase",
+          "Firestore",
+          "JavaScript",
+          "Google Search Console"
+        ],
+        "image": "/assets/work/Emprenfactor.webp",
+        "live": "https://emprenfactor.vercel.app/",
+        "github": "https://github.com/JCGadeaDev/Blogspot-de-Emprendimiento"
       }
     ]
   },
