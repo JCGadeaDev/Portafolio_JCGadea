@@ -439,7 +439,13 @@
           "Cloudflare",
           "Framer Motion",
           "Docker",
-          "GCP"
+          "GCP",
+          "Google Cloud Run",
+          "Google Cloud Build",
+          "Firebase Cloud Storage",
+          "Firebase Authentication",
+          "Google Authentication",
+          "Google Search Console"
         ],
         "image": "/assets/work/MiBoletoni.webp",
         "live": "https://miboletoni.com/",
@@ -510,11 +516,33 @@
           "Firebase",
           "Firestore",
           "JavaScript",
-          "Google Search Console"
+          "Google Search Console",
+          "Vercel"
         ],
         "image": "/assets/work/Emprenfactor.webp",
         "live": "https://emprenfactor.vercel.app/",
         "github": "https://github.com/JCGadeaDev/Blogspot-de-Emprendimiento"
+      },
+      {
+        "num": "06",
+        "category": "FinTech Dashboard & Data Visualization",
+        "title": "Panel Finanza Inteligente",
+        "description": "Dashboard financiero profesional con integración en tiempo real a Google Sheets como backend dinámico. Construido con Next.js 15, TypeScript y Tailwind CSS, implementa sincronización automática cada 5 segundos, gráficos interactivos de evolución histórica (Recharts), distribución de gastos por categoría, tabla de transacciones con búsqueda y filtrado avanzado, y modal de registro rápido con escritura directa a Google Sheets. UI premium con diseño glassmorphism, gradientes y animaciones fluidas con Framer Motion. Gestión de estado global con Zustand y arquitectura App Router de Next.js 15.",
+        "stack": [
+          "Next.js 15",
+          "TypeScript",
+          "Tailwind CSS",
+          "Recharts",
+          "Zustand",
+          "Framer Motion",
+          "Google Sheets API",
+          "Lucide React",
+          "Google Cloud API",
+          "Vercel"
+        ],
+        "image": "/assets/work/PanelFinanzas.webp",
+        "live": "https://panelfinanzahome.vercel.app/",
+        "github": "https://github.com/JCGadeaDev/PanelFinanzaInteligente"
       }
     ]
   },

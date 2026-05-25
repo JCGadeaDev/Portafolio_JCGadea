@@ -439,7 +439,13 @@
           "Cloudflare",
           "Framer Motion",
           "Docker",
-          "GCP"
+          "GCP",
+          "Google Cloud Run",
+          "Google Cloud Build",
+          "Firebase Cloud Storage",
+          "Firebase Authentication",
+          "Google Authentication",
+          "Google Search Console"
         ],
         "image": "/assets/work/MiBoletoni.webp",
         "live": "https://miboletoni.com/",
@@ -515,6 +521,27 @@
         "image": "/assets/work/EmprenFactor.webp",
         "live": "https://emprenfactor.vercel.app/",
         "github": "https://github.com/JCGadeaDev/Blogspot-de-Emprendimiento"
+      },
+      {
+        "num": "06",
+        "category": "FinTech Dashboard & Data Visualization",
+        "title": "Panel Finanza Inteligente",
+        "description": "Dashboard finanziaria professionale con integrazione in tempo reale a Google Sheets come backend dinamico. Sviluppata con Next.js 15, TypeScript e Tailwind CSS, implementa sincronizzazione automatica ogni 5 secondi, grafici interattivi di evoluzione storica (Recharts), distribuzione delle spese per categoria, tabella transazioni con ricerca e filtro avanzato, e modal di registrazione rapida con scrittura diretta su Google Sheets. UI premium con design glassmorphism, gradienti vivaci e animazioni fluide con Framer Motion. Gestione dello stato globale con Zustand e architettura App Router di Next.js 15.",
+        "stack": [
+          "Next.js 15",
+          "TypeScript",
+          "Tailwind CSS",
+          "Recharts",
+          "Zustand",
+          "Framer Motion",
+          "Google Sheets API",
+          "Lucide React",
+          "Google Cloud API",
+          "Vercel"
+        ],
+        "image": "/assets/work/PanelFinanzas.webp",
+        "live": "https://panelfinanzahome.vercel.app/",
+        "github": "https://github.com/JCGadeaDev/PanelFinanzaInteligente"
       }
     ]
   },
