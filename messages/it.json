@@ -424,7 +424,7 @@
   {
     "num": "01",
     "category": "PaaS Platform & Architecture",
-    "title": "MiBoletoni — Piattaforma di Biglietteria Digitale",
+    "title": "MiBoletoni & Piattaforma di Biglietteria Digitale",
     "description": "Piattaforma PaaS completa per la gestione e la vendita di biglietti digitali. Ho progettato un'architettura scalabile in grado di gestire picchi di traffico in tempo reale. Include generazione di codici QR dinamici, stampa di biglietti per punti vendita fisici, Auth e ruoli utente, integrazione con gateway di pagamento (Fygaro) e un pannello di amministrazione finanziaria.",
     "stack": [
       "Next.js 16", "React", "Typescript", "API Resend", "Firebase", "Nodejs",
@@ -440,7 +440,7 @@
   {
     "num": "02",
     "category": "Full-Stack CRUD & API REST",
-    "title": "Movie Vault — Gestore di Film",
+    "title": "Movie Vault & Gestore di Film",
     "description": "Applicazione full-stack con architettura frontend/backend disaccoppiata per la gestione personale di collezioni di film. Backend in Node.js + Express distribuito su Render, con API RESTful protetta da Firebase Auth e sistema di ruoli (Admin: CRUD completo / Viewer: sola lettura). Integrazione con TMDB API per ricerca in tempo reale, poster, sinossi, regista, cast e valutazioni. Persistenza dati su MongoDB Atlas. Frontend in React 19 con design dark stile Netflix, filtri avanzati, ordinamento multi-criterio, valutazione personale a stelle, note private per film e animazioni skeleton. Deploy indipendente: frontend su Vercel, backend su Render.",
     "stack": [
       "React 19", "Node.js", "Express", "MongoDB Atlas",
@@ -506,7 +506,7 @@
   {
     "num": "07",
     "category": "Blog Platform & Content Marketing",
-    "title": "EmprenFactor — Blog sull'Imprenditoria",
+    "title": "EmprenFactor & Blog sull'Imprenditoria",
     "description": "Piattaforma di contenuti full-stack orientata agli imprenditori di lingua spagnola. Sviluppata con React + Vite, include un motore di ricerca articoli in tempo reale, filtro dinamico per categorie (Finanza, Produttività, Marketing Digitale, Idee di Business), sezione post in evidenza, modulo di contatto con validazione e navigazione responsive. Backend alimentato da Firebase (Firestore + regole di sicurezza personalizzate). Integrata con Google Search Console per la tracciabilità SEO e distribuita in produzione tramite Vercel.",
     "stack": [
       "React", "Vite", "Tailwind CSS", "Firebase", "Firestore",

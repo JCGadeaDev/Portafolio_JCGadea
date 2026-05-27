@@ -424,7 +424,7 @@
   {
     "num": "01",
     "category": "PaaS Platform & Architecture",
-    "title": "MiBoletoni — Digital Ticketing Platform",
+    "title": "MiBoletoni & Digital Ticketing Platform",
     "description": "Complete PaaS platform for digital ticket management and sales. I designed a scalable architecture that handles real-time traffic spikes. Features dynamic QR code generation, ticket printing for physical point-of-sale, Auth and user roles, payment gateway integration (Fygaro) and a financial administration panel.",
     "stack": [
       "Next.js 16", "React", "Typescript", "API Resend", "Firebase", "Nodejs",
@@ -440,7 +440,7 @@
   {
     "num": "02",
     "category": "Full-Stack CRUD & REST API",
-    "title": "Movie Vault — Movie Manager",
+    "title": "Movie Vault & Movie Manager",
     "description": "Full-stack application with decoupled frontend/backend architecture for personal movie collection management. Backend built with Node.js + Express deployed on Render, with a RESTful API secured by Firebase Auth and a role-based access system (Admin: full CRUD / Viewer: read-only). TMDB API integration for real-time movie search, posters, synopsis, director, cast and ratings. Data persistence on MongoDB Atlas. React 19 frontend with Netflix-style dark design, advanced filters, multi-criteria sorting, personal star ratings, private notes per movie and skeleton animations. Independent deployment: frontend on Vercel, backend on Render.",
     "stack": [
       "React 19", "Node.js", "Express", "MongoDB Atlas",
@@ -506,7 +506,7 @@
   {
     "num": "07",
     "category": "Blog Platform & Content Marketing",
-    "title": "EmprenFactor — Entrepreneurship Blog",
+    "title": "EmprenFactor & Entrepreneurship Blog",
     "description": "Full-stack content platform aimed at Spanish-speaking entrepreneurs. Built with React + Vite, it features a real-time article search engine, dynamic filtering by categories (Finance, Productivity, Digital Marketing, Business Ideas), featured posts section, validated contact form and responsive navigation. Backend powered by Firebase (Firestore + custom security rules). Integrated with Google Search Console for SEO traceability and deployed in production via Vercel.",
     "stack": [
       "React", "Vite", "Tailwind CSS", "Firebase", "Firestore",

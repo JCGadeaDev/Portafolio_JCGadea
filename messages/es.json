@@ -454,7 +454,7 @@
       {
         "num": "02",
         "category": "Full-Stack CRUD & API REST",
-        "title": "Movie Vault — Gestor de Películas",
+        "title": "Movie Vault & Gestor de Películas",
         "description": "Aplicación full-stack con arquitectura frontend/backend desacoplada para la gestión personal de colecciones de películas. Backend en Node.js + Express desplegado en Render, con API RESTful protegida por Firebase Auth y sistema de roles (Admin: CRUD completo / Viewer: solo lectura). Integración con TMDB API para búsqueda en tiempo real, pósters, sinopsis, director, reparto y ratings. Persistencia en MongoDB Atlas. Frontend en React 19 con diseño dark Netflix-style, filtros avanzados, ordenamiento múltiple, calificación personal por estrellas, notas privadas por película y animaciones skeleton. Deploy independiente: frontend en Vercel, backend en Render.",
         "stack": [
           "React 19",
@@ -547,7 +547,7 @@
       {
         "num": "07",
         "category": "Blog Platform & Content Marketing",
-        "title": "EmprenFactor — Blog de Emprendimiento",
+        "title": "EmprenFactor & Blog de Emprendimiento",
         "description": "Plataforma de contenido full-stack orientada a emprendedores de habla hispana. Desarrollada con React + Vite, incluye sistema de artículos con búsqueda en tiempo real, filtrado dinámico por categorías (Finanzas, Productividad, Marketing Digital, Ideas de Negocio), sección de posts destacados, formulario de contacto con validación y navegación responsiva. Backend respaldado por Firebase (Firestore + reglas de seguridad personalizadas). Integra Google Search Console para trazabilidad SEO y está verificada y desplegada en producción vía Vercel.",
         "stack": [
           "React",
