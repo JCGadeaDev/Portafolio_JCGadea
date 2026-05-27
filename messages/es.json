@@ -453,78 +453,25 @@
       },
       {
         "num": "02",
-        "category": "Real Estate Platform",
-        "title": "Propiedades & Analytics",
-        "description": "Aplicación web progresiva (PWA) para el sector inmobiliario. Permite a los agentes gestionar inventario y a los usuarios filtrar propiedades con algoritmos de búsqueda avanzada. Integré mapas interactivos y un módulo de análisis de precios por metro cuadrado.",
+        "category": "Full-Stack CRUD & API REST",
+        "title": "Movie Vault — Gestor de Películas",
+        "description": "Aplicación full-stack con arquitectura frontend/backend desacoplada para la gestión personal de colecciones de películas. Backend en Node.js + Express desplegado en Render, con API RESTful protegida por Firebase Auth y sistema de roles (Admin: CRUD completo / Viewer: solo lectura). Integración con TMDB API para búsqueda en tiempo real, pósters, sinopsis, director, reparto y ratings. Persistencia en MongoDB Atlas. Frontend en React 19 con diseño dark Netflix-style, filtros avanzados, ordenamiento múltiple, calificación personal por estrellas, notas privadas por película y animaciones skeleton. Deploy independiente: frontend en Vercel, backend en Render.",
         "stack": [
-          "React",
-          "React Router",
-          "Redux Toolkit",
-          "Vite",
-          "Recharts",
-          "Tailwindcss",
-          "Vercel"
+          "React 19",
+          "Node.js",
+          "Express",
+          "MongoDB Atlas",
+          "Firebase Auth",
+          "TMDB API",
+          "Vercel",
+          "Render"
         ],
-        "image": "/assets/work/Realstate.webp",
-        "live": "https://real-state-website-beige.vercel.app/",
-        "github": "https://github.com/JCGadeaDev/RealStateWebsite"
+        "image": "/assets/work/MovieVault.webp",
+        "live": "https://movie-vault-jcd.vercel.app/",
+        "github": "https://github.com/JCGadeaDev/GestordePeliculas.CRUD.Frontend-Backend"
       },
       {
         "num": "03",
-        "category": "Corporate & SEO Strategy",
-        "title": "TechServices & Soluciones TI",
-        "description": "Sitio corporativo de alto rendimiento para una agencia de servicios tecnológicos. Diseñé una experiencia de usuario (UX) centrada en la conversión y la velocidad. Implementé prácticas avanzadas de SEO Semántico y optimización de imágenes, logrando tiempos de carga inferiores a 1.5s. La arquitectura modular permite escalar nuevas secciones de servicios sin deuda técnica.",
-        "stack": [
-          "Next.js 16",
-          "React",
-          "React Icons",
-          "API Fetch",
-          "Resend",
-          "Framer Motion",
-          "SEO Técnico"
-        ],
-        "image": "/assets/work/TechServices.webp",
-        "live": "https://techservicesweb.vercel.app/",
-        "github": "https://github.com/JCGadeaDev/TechServicesWeb"
-      },
-      {
-        "num": "04",
-        "category": "E-Commerce SPA",
-        "title": "City Pizzeria",
-        "description": "Aplicación e-commerce Single Page Application (SPA). Diseñé una arquitectura de estado centralizado nativa con React 19, optimizando el flujo de datos sin depender de librerías externas. El sistema integra un motor de carrito en tiempo real, cálculo dinámico de impuestos (GST) y un pipeline de checkout de 3 etapas con validación estricta mediante formularios controlados. Interfaz totalmente responsiva implementada con React Bootstrap.",
-        "stack": [
-          "React 19",
-          "Bootstrap 5",
-          "JavaScript",
-          "CSS3",
-          "Web Vitals",
-          "Jest Testing"
-        ],
-        "image": "/assets/work/CityPizzeria.webp",
-        "live": "https://citypizzeria.vercel.app/",
-        "github": "https://github.com/JCGadeaDev/CityPizzeria"
-      },
-      {
-        "num": "05",
-        "category": "Blog Platform & Content Marketing",
-        "title": "EmprenFactor — Blog de Emprendimiento",
-        "description": "Plataforma de contenido full-stack orientada a emprendedores de habla hispana. Desarrollada con React + Vite, incluye sistema de artículos con búsqueda en tiempo real, filtrado dinámico por categorías (Finanzas, Productividad, Marketing Digital, Ideas de Negocio), sección de posts destacados, formulario de contacto con validación y navegación responsiva. Backend respaldado por Firebase (Firestore + reglas de seguridad personalizadas). Integra Google Search Console para trazabilidad SEO y está verificada y desplegada en producción vía Vercel.",
-        "stack": [
-          "React",
-          "Vite",
-          "Tailwind CSS",
-          "Firebase",
-          "Firestore",
-          "JavaScript",
-          "Google Search Console",
-          "Vercel"
-        ],
-        "image": "/assets/work/Emprenfactor.webp",
-        "live": "https://emprenfactor.vercel.app/",
-        "github": "https://github.com/JCGadeaDev/Blogspot-de-Emprendimiento"
-      },
-      {
-        "num": "06",
         "category": "FinTech Dashboard & Data Visualization",
         "title": "Panel Finanza Inteligente",
         "description": "Dashboard financiero profesional con integración en tiempo real a Google Sheets como backend dinámico. Construido con Next.js 15, TypeScript y Tailwind CSS, implementa sincronización automática cada 5 segundos, gráficos interactivos de evolución histórica (Recharts), distribución de gastos por categoría, tabla de transacciones con búsqueda y filtrado avanzado, y modal de registro rápido con escritura directa a Google Sheets. UI premium con diseño glassmorphism, gradientes y animaciones fluidas con Framer Motion. Gestión de estado global con Zustand y arquitectura App Router de Next.js 15.",
@@ -543,7 +490,79 @@
         "image": "/assets/work/PanelFinanzas.webp",
         "live": "https://panelfinanzahome.vercel.app/",
         "github": "https://github.com/JCGadeaDev/PanelFinanzaInteligente"
-      }
+      },
+      {
+        "num": "04",
+        "category": "Real Estate Platform",
+        "title": "Propiedades & Analytics",
+        "description": "Aplicación web progresiva (PWA) para el sector inmobiliario. Permite a los agentes gestionar inventario y a los usuarios filtrar propiedades con algoritmos de búsqueda avanzada. Integré mapas interactivos y un módulo de análisis de precios por metro cuadrado.",
+        "stack": [
+          "React",
+          "React Router",
+          "Redux Toolkit",
+          "Vite",
+          "Recharts",
+          "Tailwindcss",
+          "Vercel"
+        ],
+        "image": "/assets/work/Realstate.webp",
+        "live": "https://real-state-website-beige.vercel.app/",
+        "github": "https://github.com/JCGadeaDev/RealStateWebsite"
+      },
+      {
+        "num": "05",
+        "category": "Corporate & SEO Strategy",
+        "title": "TechServices & Soluciones TI",
+        "description": "Sitio corporativo de alto rendimiento para una agencia de servicios tecnológicos. Diseñé una experiencia de usuario (UX) centrada en la conversión y la velocidad. Implementé prácticas avanzadas de SEO Semántico y optimización de imágenes, logrando tiempos de carga inferiores a 1.5s. La arquitectura modular permite escalar nuevas secciones de servicios sin deuda técnica.",
+        "stack": [
+          "Next.js 16",
+          "React",
+          "React Icons",
+          "API Fetch",
+          "Resend",
+          "Framer Motion",
+          "SEO Técnico"
+        ],
+        "image": "/assets/work/TechServices.webp",
+        "live": "https://techservicesweb.vercel.app/",
+        "github": "https://github.com/JCGadeaDev/TechServicesWeb"
+      },
+      {
+        "num": "06",
+        "category": "E-Commerce SPA",
+        "title": "City Pizzeria",
+        "description": "Aplicación e-commerce Single Page Application (SPA). Diseñé una arquitectura de estado centralizado nativa con React 19, optimizando el flujo de datos sin depender de librerías externas. El sistema integra un motor de carrito en tiempo real, cálculo dinámico de impuestos (GST) y un pipeline de checkout de 3 etapas con validación estricta mediante formularios controlados. Interfaz totalmente responsiva implementada con React Bootstrap.",
+        "stack": [
+          "React 19",
+          "Bootstrap 5",
+          "JavaScript",
+          "CSS3",
+          "Web Vitals",
+          "Jest Testing"
+        ],
+        "image": "/assets/work/CityPizzeria.webp",
+        "live": "https://citypizzeria.vercel.app/",
+        "github": "https://github.com/JCGadeaDev/CityPizzeria"
+      },
+      {
+        "num": "07",
+        "category": "Blog Platform & Content Marketing",
+        "title": "EmprenFactor — Blog de Emprendimiento",
+        "description": "Plataforma de contenido full-stack orientada a emprendedores de habla hispana. Desarrollada con React + Vite, incluye sistema de artículos con búsqueda en tiempo real, filtrado dinámico por categorías (Finanzas, Productividad, Marketing Digital, Ideas de Negocio), sección de posts destacados, formulario de contacto con validación y navegación responsiva. Backend respaldado por Firebase (Firestore + reglas de seguridad personalizadas). Integra Google Search Console para trazabilidad SEO y está verificada y desplegada en producción vía Vercel.",
+        "stack": [
+          "React",
+          "Vite",
+          "Tailwind CSS",
+          "Firebase",
+          "Firestore",
+          "JavaScript",
+          "Google Search Console",
+          "Vercel"
+        ],
+        "image": "/assets/work/Emprenfactor.webp",
+        "live": "https://emprenfactor.vercel.app/",
+        "github": "https://github.com/JCGadeaDev/Blogspot-de-Emprendimiento"
+      }     
     ]
   },
   "services": {
