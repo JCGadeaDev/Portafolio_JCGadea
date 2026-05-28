@@ -472,6 +472,28 @@
       },
       {
         "num": "03",
+        "category": "Government BI & Data Engineering",
+        "title": "MEF Panamá & Plataforma de BI Presupuestario",
+        "description": "Plataforma de Business Intelligence end-to-end para la gestión y análisis de la ejecución presupuestaria del sector público panameño. Integra un modelo de datos relacional en SQL Server bajo arquitectura estrella (Star Schema), métricas DAX avanzadas con variación interanual (YoY), DirectQuery y vistas SQL optimizadas para Power BI. Incluye una landing page HTML con sistema de roles simulado (Analista, Director, Ministro), semáforo de ejecución presupuestaria y cobertura de 10 ministerios sobre 3 años fiscales (2022–2024).",
+        "stack": [
+          "SQL Server",
+          "T-SQL",
+          "Star Schema",
+          "Power BI",
+          "DAX",
+          "DirectQuery",
+          "HTML5",
+          "CSS3",
+          "JavaScript",
+          "Excel",
+          "Netlify"
+        ],
+        "image": "/assets/work/MEFPanama.webp",
+        "live": "https://mef-panama-bi.netlify.app",
+        "github": "https://github.com/JCGadeaDev/MEF-Panama-BI"
+      },
+      {
+        "num": "04",
         "category": "FinTech Dashboard & Data Visualization",
         "title": "Panel Finanza Inteligente",
         "description": "Dashboard financiero profesional con integración en tiempo real a Google Sheets como backend dinámico. Construido con Next.js 15, TypeScript y Tailwind CSS, implementa sincronización automática cada 5 segundos, gráficos interactivos de evolución histórica (Recharts), distribución de gastos por categoría, tabla de transacciones con búsqueda y filtrado avanzado, y modal de registro rápido con escritura directa a Google Sheets. UI premium con diseño glassmorphism, gradientes y animaciones fluidas con Framer Motion. Gestión de estado global con Zustand y arquitectura App Router de Next.js 15.",
@@ -492,7 +514,7 @@
         "github": "https://github.com/JCGadeaDev/PanelFinanzaInteligente"
       },
       {
-        "num": "04",
+        "num": "05",
         "category": "Real Estate Platform",
         "title": "Propiedades & Analytics",
         "description": "Aplicación web progresiva (PWA) para el sector inmobiliario. Permite a los agentes gestionar inventario y a los usuarios filtrar propiedades con algoritmos de búsqueda avanzada. Integré mapas interactivos y un módulo de análisis de precios por metro cuadrado.",
@@ -510,7 +532,7 @@
         "github": "https://github.com/JCGadeaDev/RealStateWebsite"
       },
       {
-        "num": "05",
+        "num": "06",
         "category": "Corporate & SEO Strategy",
         "title": "TechServices & Soluciones TI",
         "description": "Sitio corporativo de alto rendimiento para una agencia de servicios tecnológicos. Diseñé una experiencia de usuario (UX) centrada en la conversión y la velocidad. Implementé prácticas avanzadas de SEO Semántico y optimización de imágenes, logrando tiempos de carga inferiores a 1.5s. La arquitectura modular permite escalar nuevas secciones de servicios sin deuda técnica.",
@@ -528,7 +550,7 @@
         "github": "https://github.com/JCGadeaDev/TechServicesWeb"
       },
       {
-        "num": "06",
+        "num": "07",
         "category": "E-Commerce SPA",
         "title": "City Pizzeria",
         "description": "Aplicación e-commerce Single Page Application (SPA). Diseñé una arquitectura de estado centralizado nativa con React 19, optimizando el flujo de datos sin depender de librerías externas. El sistema integra un motor de carrito en tiempo real, cálculo dinámico de impuestos (GST) y un pipeline de checkout de 3 etapas con validación estricta mediante formularios controlados. Interfaz totalmente responsiva implementada con React Bootstrap.",
@@ -545,7 +567,7 @@
         "github": "https://github.com/JCGadeaDev/CityPizzeria"
       },
       {
-        "num": "07",
+        "num": "08",
         "category": "Blog Platform & Content Marketing",
         "title": "EmprenFactor & Blog de Emprendimiento",
         "description": "Plataforma de contenido full-stack orientada a emprendedores de habla hispana. Desarrollada con React + Vite, incluye sistema de artículos con búsqueda en tiempo real, filtrado dinámico por categorías (Finanzas, Productividad, Marketing Digital, Ideas de Negocio), sección de posts destacados, formulario de contacto con validación y navegación responsiva. Backend respaldado por Firebase (Firestore + reglas de seguridad personalizadas). Integra Google Search Console para trazabilidad SEO y está verificada y desplegada en producción vía Vercel.",

@@ -424,7 +424,7 @@
       {
         "num": "01",
         "category": "PaaS Platform & Architecture",
-        "title": "MiBoletoni & Digital Ticketing Platform",
+        "title": "MiBoletoni — Digital Ticketing Platform",
         "description": "Complete PaaS platform for digital ticket management and sales. I designed a scalable architecture that handles real-time traffic spikes. Features dynamic QR code generation, ticket printing for physical point-of-sale, Auth and user roles, payment gateway integration (Fygaro) and a financial administration panel.",
         "stack": [
           "Next.js 16",
@@ -472,6 +472,28 @@
       },
       {
         "num": "03",
+        "category": "Government BI & Data Engineering",
+        "title": "MEF Panama — Budget BI Platform",
+        "description": "End-to-end Business Intelligence platform for the management and analysis of budget execution across Panama's public sector. Integrates a relational data model in SQL Server under Star Schema architecture, advanced DAX metrics with year-over-year (YoY) variance, DirectQuery and SQL views optimized for Power BI. Includes an HTML landing page with a simulated role-based access system (Analyst, Director, Minister), budget execution traffic light indicator and coverage of 10 ministries across 3 fiscal years (2022–2024).",
+        "stack": [
+          "SQL Server",
+          "T-SQL",
+          "Star Schema",
+          "Power BI",
+          "DAX",
+          "DirectQuery",
+          "HTML5",
+          "CSS3",
+          "JavaScript",
+          "Excel",
+          "Netlify"
+        ],
+        "image": "/assets/work/MEFPanama.webp",
+        "live": "https://mef-panama-bi.netlify.app",
+        "github": "https://github.com/JCGadeaDev/MEF-Panama-BI"
+      },
+      {
+        "num": "04",
         "category": "FinTech Dashboard & Data Visualization",
         "title": "Panel Finanza Inteligente",
         "description": "Professional financial dashboard with real-time Google Sheets integration as a dynamic backend. Built with Next.js 15, TypeScript and Tailwind CSS, it features auto-sync every 5 seconds, interactive historical trend charts (Recharts), expense distribution by category, transaction table with advanced search and filtering, and a quick-add modal with direct write to Google Sheets. Premium UI with glassmorphism design, vibrant gradients and smooth animations powered by Framer Motion. Global state management with Zustand and Next.js 15 App Router architecture.",
@@ -492,7 +514,7 @@
         "github": "https://github.com/JCGadeaDev/PanelFinanzaInteligente"
       },
       {
-        "num": "04",
+        "num": "05",
         "category": "Real Estate Platform",
         "title": "Properties & Analytics",
         "description": "Progressive Web App (PWA) for the real estate sector. Enables agents to manage inventory and users to filter properties using advanced search algorithms. Integrated interactive maps and a price-per-square-meter analytics module.",
@@ -510,7 +532,7 @@
         "github": "https://github.com/JCGadeaDev/RealStateWebsite"
       },
       {
-        "num": "05",
+        "num": "06",
         "category": "Corporate & SEO Strategy",
         "title": "TechServices & IT Solutions",
         "description": "High-performance corporate website for a technology services agency. I designed a conversion-focused and speed-optimized user experience (UX). Implemented advanced Semantic SEO and image optimization practices, achieving load times under 1.5s. The modular architecture enables scaling new service sections without technical debt.",
@@ -528,7 +550,7 @@
         "github": "https://github.com/JCGadeaDev/TechServicesWeb"
       },
       {
-        "num": "06",
+        "num": "07",
         "category": "E-Commerce SPA",
         "title": "City Pizzeria",
         "description": "Single Page Application (SPA) e-commerce. I designed a native centralized state architecture with React 19, optimizing data flow without relying on external libraries. The system integrates a real-time cart engine, dynamic GST tax calculation and a 3-stage checkout pipeline with strict validation via controlled forms. Fully responsive interface built with React Bootstrap.",
@@ -545,9 +567,9 @@
         "github": "https://github.com/JCGadeaDev/CityPizzeria"
       },
       {
-        "num": "07",
+        "num": "08",
         "category": "Blog Platform & Content Marketing",
-        "title": "EmprenFactor & Entrepreneurship Blog",
+        "title": "EmprenFactor — Entrepreneurship Blog",
         "description": "Full-stack content platform aimed at Spanish-speaking entrepreneurs. Built with React + Vite, it features a real-time article search engine, dynamic filtering by categories (Finance, Productivity, Digital Marketing, Business Ideas), featured posts section, validated contact form and responsive navigation. Backend powered by Firebase (Firestore + custom security rules). Integrated with Google Search Console for SEO traceability and deployed in production via Vercel.",
         "stack": [
           "React",
