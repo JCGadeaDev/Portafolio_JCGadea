@@ -10,18 +10,19 @@ import {
 } from "react-icons/fa";
 import {
   SiTailwindcss, SiTypescript, SiAstro, SiNotion, SiNextdotjs, SiMysql,
-  SiAsana, SiExpress, SiPostgresql, SiSupabase, SiOracle, SiPrisma,
+  SiAsana, SiExpress, SiPostgresql, SiSupabase, SiPrisma,
   SiPandas, SiNumpy, SiJupyter, SiPostman, SiSwagger, SiVite, SiWebpack,
   SiGithubactions, SiGooglecolab, SiNetlify, SiWix, SiLooker,
   SiGoogleanalytics, SiFirebase, SiGooglecloud, SiShadcnui, SiDotnet, SiBlazor, SiMongodb, SiScikitlearn, SiStreamlit, SiGoogletagmanager,
   SiMeta,  SiSemrush, SiGooglesearchconsole,  SiTerraform, SiNginx, SiCloudflare, SiConfluence, SiMiro, SiLucid,
   SiAnthropic, SiOpenai, SiGooglegemini,SiClaude, SiLangchain, SiHuggingface, SiN8N,
 } from "react-icons/si";
-import { TbSql, TbBrain, TbSparkles  } from "react-icons/tb";
+import { TbSql, TbBrain, TbSparkles, TbRobot  } from "react-icons/tb";
 import { PiMicrosoftExcelLogo } from "react-icons/pi";
 import { VscAzure, VscMcp  } from "react-icons/vsc";
 import { IoLogoVercel } from "react-icons/io5";
 import { SlCursor } from "react-icons/sl";
+import { GrOracle } from "react-icons/gr";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -53,13 +54,14 @@ const skillCategories = [
       { icon: <FaNode />, name: "Node.js" },
       { icon: <SiExpress />, name: "Express" },
       { icon: <SiDotnet />, name: ".NET 8 / C#" },
-      { icon: <SiBlazor />, name: "Blazor" },        
+      { icon: <SiBlazor />, name: "Blazor" },  
+      { icon: <SiPostman />, name: "Postman" },      
       { icon: <SiSwagger />, name: "Swagger" },
       { icon: <TbSql />, name: "SQL Server" },      
       { icon: <SiPostgresql />, name: "PostgreSQL" },
       { icon: <SiSupabase />, name: "Supabase" },
       { icon: <SiFirebase />, name: "Firebase" },
-      { icon: <SiOracle />, name: "Oracle PL/SQL" },
+      { icon: <GrOracle  />, name: "Oracle PL/SQL" },
       { icon: <SiMysql />, name: "MySQL" },
       { icon: <SiPrisma />, name: "Prisma ORM" },
       { icon: <SiMongodb />, name: "MongoDB" },      
