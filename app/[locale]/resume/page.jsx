@@ -15,10 +15,11 @@ import {
   SiGithubactions, SiGooglecolab, SiNetlify, SiWix, SiLooker,
   SiGoogleanalytics, SiFirebase, SiGooglecloud, SiShadcnui, SiDotnet, SiBlazor, SiMongodb, SiScikitlearn, SiStreamlit, SiGoogletagmanager,
   SiMeta,  SiSemrush, SiGooglesearchconsole,  SiTerraform, SiNginx, SiCloudflare, SiConfluence, SiMiro, SiLucid,
+  SiAnthropic, SiOpenai, SiGooglegemini, SlCursor, SiClaude, SiLangchain, SiHuggingface, SiN8N,
 } from "react-icons/si";
-import { TbSql } from "react-icons/tb";
+import { TbSql, TbBrain, TbSparkles  } from "react-icons/tb";
 import { PiMicrosoftExcelLogo } from "react-icons/pi";
-import { VscAzure } from "react-icons/vsc";
+import { VscAzure, VscMcp  } from "react-icons/vsc";
 import { IoLogoVercel } from "react-icons/io5";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
@@ -78,6 +79,23 @@ const skillCategories = [
       { icon: <SiLooker />, name: "Looker Studio" },
       { icon: <SiGoogleanalytics />, name: "Google Analytics" },
       { icon: <SiGoogletagmanager />, name: "Google Tag Manager" },
+    ],
+  },
+  {
+    nameKey: "AI, LLMs & Automation",                          
+    skills: [
+      { icon: <SiAnthropic />, name: "Claude (Anthropic)" },
+      { icon: <SiOpenai />, name: "Codex (OpenAI)" },
+      { icon: <SiGooglegemini />, name: "Gemini (Google)" },
+      { icon: <SlCursor />, name: "Cursor" },
+      { icon: <SiClaude />, name: "Claude Code" },
+      { icon: <VscMcp />, name: "MCP Servers" },
+      { icon: <TbBrain />, name: "Agent Skills" },
+      { icon: <SiLangchain />, name: "LangChain" },
+      { icon: <TbRobot />, name: "Prompt Engineering" },
+      { icon: <SiHuggingface />, name: "Hugging Face" },
+      { icon: <TbSparkles />, name: "AI Pipelines" },
+      { icon: <SiN8N />, name: "n8n Automation" },
     ],
   },
   {

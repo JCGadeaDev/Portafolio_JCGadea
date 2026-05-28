@@ -562,7 +562,7 @@
         "image": "/assets/work/Emprenfactor.webp",
         "live": "https://emprenfactor.vercel.app/",
         "github": "https://github.com/JCGadeaDev/Blogspot-de-Emprendimiento"
-      }     
+      }
     ]
   },
   "services": {
@@ -667,6 +667,46 @@
           {
             "label": "SEO Técnico & Performance Web:",
             "text": "Auditorías de rendimiento y optimización de Core Web Vitals. Estrategia de posicionamiento orgánico con Google Analytics 4, Google Search Console, Google Tag Manager y Meta Pixel. Integración del stack analítico para trazabilidad precisa de eventos y conversiones."
+          }
+        ]
+      },
+      {
+        "num": "06",
+        "title": "Inteligencia Artificial & Automatización con Agentes",
+        "href": "/work",
+        "intro": "Diseño e implemento soluciones de IA aplicada que van más allá del prompt engineering. Construyo agentes autónomos, flujos de automatización inteligente y sistemas MCP que integran modelos de lenguaje con herramientas reales, bases de datos y APIs empresariales — transformando procesos manuales en ecosistemas inteligentes y auditables.",
+        "bullets": [
+          {
+            "label": "Desarrollo con Modelos de Lenguaje (LLMs):",
+            "text": "Integración y orquestación de modelos como Claude (Anthropic), Gemini (Google), Codex (OpenAI) y Antigravity en flujos de trabajo productivos. Desarrollo de aplicaciones AI-powered con manejo de contexto, prompting estructurado y control de outputs para casos de uso enterprise."
+          },
+          {
+            "label": "MCP & Agent Skills:",
+            "text": "Diseño e implementación de servidores MCP (Model Context Protocol) y Agent Skills para extender las capacidades de los modelos con herramientas externas, APIs, bases de datos y sistemas empresariales. Construcción de agentes autónomos capaces de razonar, planificar y ejecutar tareas complejas de extremo a extremo."
+          },
+          {
+            "label": "Automatización Inteligente & Tooling:",
+            "text": "Desarrollo de flujos de automatización con Cursor, Claude Code y entornos agenticos para acelerar ciclos de desarrollo, revisión de código y generación de documentación técnica. Integración de IA en pipelines CI/CD y procesos operativos para reducir fricción y aumentar productividad del equipo."
+          }
+        ]
+      },
+      {
+        "num": "07",
+        "title": "IA Aplicada para Datos & Analytics",
+        "href": "/work",
+        "intro": "Potencio los ecosistemas de datos con inteligencia artificial. Combino ingeniería de datos tradicional con modelos predictivos, procesamiento de lenguaje natural y automatización analítica para convertir datos en decisiones más rápidas, precisas y accionables.",
+        "bullets": [
+          {
+            "label": "Machine Learning & Análisis Predictivo:",
+            "text": "Desarrollo de modelos predictivos y de clasificación con Python (Scikit-learn, Statsmodels, Pandas, NumPy) aplicados a forecasting financiero, segmentación de clientes y detección de anomalías. Modelos desplegados en producción como Web Apps con Streamlit y Plotly para consumo ejecutivo."
+          },
+          {
+            "label": "IA Generativa para Datos & Reportería:",
+            "text": "Integración de LLMs en pipelines analíticos para generación automática de insights, resúmenes ejecutivos y narrativas de datos. Automatización de reportes con lenguaje natural sobre modelos Power BI, SQL Server y Google Sheets — reduciendo el tiempo de análisis manual para equipos de negocio."
+          },
+          {
+            "label": "Data Quality & Automatización con IA:",
+            "text": "Aplicación de técnicas de IA para detección automática de anomalías, validación de calidad de datos y enriquecimiento de datasets en pipelines ETL/ELT. Uso de modelos de lenguaje como asistentes en procesos de Data Engineering: documentación automática de pipelines, generación de queries SQL y revisión de lógica de transformación."
           }
         ]
       }

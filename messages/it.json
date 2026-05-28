@@ -421,102 +421,149 @@
     "prevProject": "Progetto precedente",
     "nextProject": "Progetto successivo",
     "projects": [
-  {
-    "num": "01",
-    "category": "PaaS Platform & Architecture",
-    "title": "MiBoletoni & Piattaforma di Biglietteria Digitale",
-    "description": "Piattaforma PaaS completa per la gestione e la vendita di biglietti digitali. Ho progettato un'architettura scalabile in grado di gestire picchi di traffico in tempo reale. Include generazione di codici QR dinamici, stampa di biglietti per punti vendita fisici, Auth e ruoli utente, integrazione con gateway di pagamento (Fygaro) e un pannello di amministrazione finanziaria.",
-    "stack": [
-      "Next.js 16", "React", "Typescript", "API Resend", "Firebase", "Nodejs",
-      "Fygaro API", "Tailwind CSS", "Shadcn/UI", "Cloudflare", "Framer Motion",
-      "Docker", "GCP", "Google Cloud Run", "Google Cloud Build",
-      "Firebase Cloud Storage", "Firebase Authentication",
-      "Google Authentication", "Google Search Console"
-    ],
-    "image": "/assets/work/MiBoletoni.webp",
-    "live": "https://miboletoni.com/",
-    "github": "https://github.com/JCGadeaDev/MiBoletoNi"
-  },
-  {
-    "num": "02",
-    "category": "Full-Stack CRUD & API REST",
-    "title": "Movie Vault & Gestore di Film",
-    "description": "Applicazione full-stack con architettura frontend/backend disaccoppiata per la gestione personale di collezioni di film. Backend in Node.js + Express distribuito su Render, con API RESTful protetta da Firebase Auth e sistema di ruoli (Admin: CRUD completo / Viewer: sola lettura). Integrazione con TMDB API per ricerca in tempo reale, poster, sinossi, regista, cast e valutazioni. Persistenza dati su MongoDB Atlas. Frontend in React 19 con design dark stile Netflix, filtri avanzati, ordinamento multi-criterio, valutazione personale a stelle, note private per film e animazioni skeleton. Deploy indipendente: frontend su Vercel, backend su Render.",
-    "stack": [
-      "React 19", "Node.js", "Express", "MongoDB Atlas",
-      "Firebase Auth", "TMDB API", "Vercel", "Render"
-    ],
-    "image": "/assets/work/MovieVault.webp",
-    "live": "https://movie-vault-jcd.vercel.app/",
-    "github": "https://github.com/JCGadeaDev/GestordePeliculas.CRUD.Frontend-Backend"
-  },
-  {
-    "num": "03",
-    "category": "FinTech Dashboard & Data Visualization",
-    "title": "Panel Finanza Inteligente",
-    "description": "Dashboard finanziaria professionale con integrazione in tempo reale a Google Sheets come backend dinamico. Sviluppata con Next.js 15, TypeScript e Tailwind CSS, implementa sincronizzazione automatica ogni 5 secondi, grafici interattivi di evoluzione storica (Recharts), distribuzione delle spese per categoria, tabella transazioni con ricerca e filtro avanzato, e modal di registrazione rapida con scrittura diretta su Google Sheets. UI premium con design glassmorphism, gradienti vivaci e animazioni fluide con Framer Motion. Gestione dello stato globale con Zustand e architettura App Router di Next.js 15.",
-    "stack": [
-      "Next.js 15", "TypeScript", "Tailwind CSS", "Recharts", "Zustand",
-      "Framer Motion", "Google Sheets API", "Lucide React",
-      "Google Cloud API", "Vercel"
-    ],
-    "image": "/assets/work/PanelFinanzas.webp",
-    "live": "https://panelfinanzahome.vercel.app/",
-    "github": "https://github.com/JCGadeaDev/PanelFinanzaInteligente"
-  },
-  {
-    "num": "04",
-    "category": "Real Estate Platform",
-    "title": "Proprietà & Analytics",
-    "description": "Progressive Web App (PWA) per il settore immobiliare. Consente agli agenti di gestire l'inventario e agli utenti di filtrare le proprietà tramite algoritmi di ricerca avanzata. Ho integrato mappe interattive e un modulo di analisi del prezzo al metro quadrato.",
-    "stack": [
-      "React", "React Router", "Redux Toolkit", "Vite",
-      "Recharts", "Tailwindcss", "Vercel"
-    ],
-    "image": "/assets/work/Realstate.webp",
-    "live": "https://real-state-website-beige.vercel.app/",
-    "github": "https://github.com/JCGadeaDev/RealStateWebsite"
-  },
-  {
-    "num": "05",
-    "category": "Corporate & SEO Strategy",
-    "title": "TechServices & Soluzioni IT",
-    "description": "Sito web aziendale ad alte prestazioni per un'agenzia di servizi tecnologici. Ho progettato un'esperienza utente (UX) orientata alla conversione e alla velocità. Implementate pratiche avanzate di SEO Semantico e ottimizzazione delle immagini, ottenendo tempi di caricamento inferiori a 1,5 secondi. L'architettura modulare consente di aggiungere nuove sezioni di servizi senza debito tecnico.",
-    "stack": [
-      "Next.js 16", "React", "React Icons", "API Fetch",
-      "Resend", "Framer Motion", "SEO Tecnico"
-    ],
-    "image": "/assets/work/TechServices.webp",
-    "live": "https://techservicesweb.vercel.app/",
-    "github": "https://github.com/JCGadeaDev/TechServicesWeb"
-  },
-  {
-    "num": "06",
-    "category": "E-Commerce SPA",
-    "title": "City Pizzeria",
-    "description": "Applicazione e-commerce Single Page Application (SPA). Ho progettato un'architettura a stato centralizzato nativa con React 19, ottimizzando il flusso dei dati senza dipendenze da librerie esterne. Il sistema integra un motore carrello in tempo reale, calcolo dinamico delle tasse (GST) e un pipeline di checkout in 3 fasi con validazione rigorosa tramite form controllati. Interfaccia completamente responsive sviluppata con React Bootstrap.",
-    "stack": [
-      "React 19", "Bootstrap 5", "JavaScript",
-      "CSS3", "Web Vitals", "Jest Testing"
-    ],
-    "image": "/assets/work/CityPizzeria.webp",
-    "live": "https://citypizzeria.vercel.app/",
-    "github": "https://github.com/JCGadeaDev/CityPizzeria"
-  },
-  {
-    "num": "07",
-    "category": "Blog Platform & Content Marketing",
-    "title": "EmprenFactor & Blog sull'Imprenditoria",
-    "description": "Piattaforma di contenuti full-stack orientata agli imprenditori di lingua spagnola. Sviluppata con React + Vite, include un motore di ricerca articoli in tempo reale, filtro dinamico per categorie (Finanza, Produttività, Marketing Digitale, Idee di Business), sezione post in evidenza, modulo di contatto con validazione e navigazione responsive. Backend alimentato da Firebase (Firestore + regole di sicurezza personalizzate). Integrata con Google Search Console per la tracciabilità SEO e distribuita in produzione tramite Vercel.",
-    "stack": [
-      "React", "Vite", "Tailwind CSS", "Firebase", "Firestore",
-      "JavaScript", "Google Search Console", "Vercel"
-    ],
-    "image": "/assets/work/Emprenfactor.webp",
-    "live": "https://emprenfactor.vercel.app/",
-    "github": "https://github.com/JCGadeaDev/Blogspot-de-Emprendimiento"
-  }
-]
+      {
+        "num": "01",
+        "category": "PaaS Platform & Architecture",
+        "title": "MiBoletoni & Piattaforma di Biglietteria Digitale",
+        "description": "Piattaforma PaaS completa per la gestione e la vendita di biglietti digitali. Ho progettato un'architettura scalabile in grado di gestire picchi di traffico in tempo reale. Include generazione di codici QR dinamici, stampa di biglietti per punti vendita fisici, Auth e ruoli utente, integrazione con gateway di pagamento (Fygaro) e un pannello di amministrazione finanziaria.",
+        "stack": [
+          "Next.js 16",
+          "React",
+          "Typescript",
+          "API Resend",
+          "Firebase",
+          "Nodejs",
+          "Fygaro API",
+          "Tailwind CSS",
+          "Shadcn/UI",
+          "Cloudflare",
+          "Framer Motion",
+          "Docker",
+          "GCP",
+          "Google Cloud Run",
+          "Google Cloud Build",
+          "Firebase Cloud Storage",
+          "Firebase Authentication",
+          "Google Authentication",
+          "Google Search Console"
+        ],
+        "image": "/assets/work/MiBoletoni.webp",
+        "live": "https://miboletoni.com/",
+        "github": "https://github.com/JCGadeaDev/MiBoletoNi"
+      },
+      {
+        "num": "02",
+        "category": "Full-Stack CRUD & API REST",
+        "title": "Movie Vault & Gestore di Film",
+        "description": "Applicazione full-stack con architettura frontend/backend disaccoppiata per la gestione personale di collezioni di film. Backend in Node.js + Express distribuito su Render, con API RESTful protetta da Firebase Auth e sistema di ruoli (Admin: CRUD completo / Viewer: sola lettura). Integrazione con TMDB API per ricerca in tempo reale, poster, sinossi, regista, cast e valutazioni. Persistenza dati su MongoDB Atlas. Frontend in React 19 con design dark stile Netflix, filtri avanzati, ordinamento multi-criterio, valutazione personale a stelle, note private per film e animazioni skeleton. Deploy indipendente: frontend su Vercel, backend su Render.",
+        "stack": [
+          "React 19",
+          "Node.js",
+          "Express",
+          "MongoDB Atlas",
+          "Firebase Auth",
+          "TMDB API",
+          "Vercel",
+          "Render"
+        ],
+        "image": "/assets/work/MovieVault.webp",
+        "live": "https://movie-vault-jcd.vercel.app/",
+        "github": "https://github.com/JCGadeaDev/GestordePeliculas.CRUD.Frontend-Backend"
+      },
+      {
+        "num": "03",
+        "category": "FinTech Dashboard & Data Visualization",
+        "title": "Panel Finanza Inteligente",
+        "description": "Dashboard finanziaria professionale con integrazione in tempo reale a Google Sheets come backend dinamico. Sviluppata con Next.js 15, TypeScript e Tailwind CSS, implementa sincronizzazione automatica ogni 5 secondi, grafici interattivi di evoluzione storica (Recharts), distribuzione delle spese per categoria, tabella transazioni con ricerca e filtro avanzato, e modal di registrazione rapida con scrittura diretta su Google Sheets. UI premium con design glassmorphism, gradienti vivaci e animazioni fluide con Framer Motion. Gestione dello stato globale con Zustand e architettura App Router di Next.js 15.",
+        "stack": [
+          "Next.js 15",
+          "TypeScript",
+          "Tailwind CSS",
+          "Recharts",
+          "Zustand",
+          "Framer Motion",
+          "Google Sheets API",
+          "Lucide React",
+          "Google Cloud API",
+          "Vercel"
+        ],
+        "image": "/assets/work/PanelFinanzas.webp",
+        "live": "https://panelfinanzahome.vercel.app/",
+        "github": "https://github.com/JCGadeaDev/PanelFinanzaInteligente"
+      },
+      {
+        "num": "04",
+        "category": "Real Estate Platform",
+        "title": "Proprietà & Analytics",
+        "description": "Progressive Web App (PWA) per il settore immobiliare. Consente agli agenti di gestire l'inventario e agli utenti di filtrare le proprietà tramite algoritmi di ricerca avanzata. Ho integrato mappe interattive e un modulo di analisi del prezzo al metro quadrato.",
+        "stack": [
+          "React",
+          "React Router",
+          "Redux Toolkit",
+          "Vite",
+          "Recharts",
+          "Tailwindcss",
+          "Vercel"
+        ],
+        "image": "/assets/work/Realstate.webp",
+        "live": "https://real-state-website-beige.vercel.app/",
+        "github": "https://github.com/JCGadeaDev/RealStateWebsite"
+      },
+      {
+        "num": "05",
+        "category": "Corporate & SEO Strategy",
+        "title": "TechServices & Soluzioni IT",
+        "description": "Sito web aziendale ad alte prestazioni per un'agenzia di servizi tecnologici. Ho progettato un'esperienza utente (UX) orientata alla conversione e alla velocità. Implementate pratiche avanzate di SEO Semantico e ottimizzazione delle immagini, ottenendo tempi di caricamento inferiori a 1,5 secondi. L'architettura modulare consente di aggiungere nuove sezioni di servizi senza debito tecnico.",
+        "stack": [
+          "Next.js 16",
+          "React",
+          "React Icons",
+          "API Fetch",
+          "Resend",
+          "Framer Motion",
+          "SEO Tecnico"
+        ],
+        "image": "/assets/work/TechServices.webp",
+        "live": "https://techservicesweb.vercel.app/",
+        "github": "https://github.com/JCGadeaDev/TechServicesWeb"
+      },
+      {
+        "num": "06",
+        "category": "E-Commerce SPA",
+        "title": "City Pizzeria",
+        "description": "Applicazione e-commerce Single Page Application (SPA). Ho progettato un'architettura a stato centralizzato nativa con React 19, ottimizzando il flusso dei dati senza dipendenze da librerie esterne. Il sistema integra un motore carrello in tempo reale, calcolo dinamico delle tasse (GST) e un pipeline di checkout in 3 fasi con validazione rigorosa tramite form controllati. Interfaccia completamente responsive sviluppata con React Bootstrap.",
+        "stack": [
+          "React 19",
+          "Bootstrap 5",
+          "JavaScript",
+          "CSS3",
+          "Web Vitals",
+          "Jest Testing"
+        ],
+        "image": "/assets/work/CityPizzeria.webp",
+        "live": "https://citypizzeria.vercel.app/",
+        "github": "https://github.com/JCGadeaDev/CityPizzeria"
+      },
+      {
+        "num": "07",
+        "category": "Blog Platform & Content Marketing",
+        "title": "EmprenFactor & Blog sull'Imprenditoria",
+        "description": "Piattaforma di contenuti full-stack orientata agli imprenditori di lingua spagnola. Sviluppata con React + Vite, include un motore di ricerca articoli in tempo reale, filtro dinamico per categorie (Finanza, Produttività, Marketing Digitale, Idee di Business), sezione post in evidenza, modulo di contatto con validazione e navigazione responsive. Backend alimentato da Firebase (Firestore + regole di sicurezza personalizzate). Integrata con Google Search Console per la tracciabilità SEO e distribuita in produzione tramite Vercel.",
+        "stack": [
+          "React",
+          "Vite",
+          "Tailwind CSS",
+          "Firebase",
+          "Firestore",
+          "JavaScript",
+          "Google Search Console",
+          "Vercel"
+        ],
+        "image": "/assets/work/Emprenfactor.webp",
+        "live": "https://emprenfactor.vercel.app/",
+        "github": "https://github.com/JCGadeaDev/Blogspot-de-Emprendimiento"
+      }
+    ]
   },
   "services": {
     "sectionLabel": "Servizi",
@@ -620,6 +667,46 @@
           {
             "label": "SEO Tecnico & Performance Web:",
             "text": "Audit delle prestazioni e ottimizzazione dei Core Web Vitals. Strategia di posizionamento organico con Google Analytics 4, Google Search Console, Google Tag Manager e Meta Pixel. Integrazione dello stack analitico per il tracciamento preciso di eventi e conversioni."
+          }
+        ]
+      },
+      {
+        "num": "06",
+        "title": "Intelligenza Artificiale & Automazione con Agenti",
+        "href": "/work",
+        "intro": "Progetto e implemento soluzioni di IA applicata che vanno oltre il prompt engineering. Costruisco agenti autonomi, flussi di automazione intelligente e sistemi MCP che integrano modelli linguistici con strumenti reali, database e API aziendali — trasformando processi manuali in ecosistemi intelligenti e verificabili.",
+        "bullets": [
+          {
+            "label": "Sviluppo con Modelli Linguistici (LLM):",
+            "text": "Integrazione e orchestrazione di modelli come Claude (Anthropic), Gemini (Google), Codex (OpenAI) e Antigravity in flussi di lavoro produttivi. Sviluppo di applicazioni AI-powered con gestione del contesto, prompting strutturato e controllo degli output per casi d'uso enterprise."
+          },
+          {
+            "label": "MCP & Agent Skills:",
+            "text": "Progettazione e implementazione di server MCP (Model Context Protocol) e Agent Skills per estendere le capacità dei modelli con strumenti esterni, API, database e sistemi aziendali. Costruzione di agenti autonomi in grado di ragionare, pianificare ed eseguire attività complesse end-to-end."
+          },
+          {
+            "label": "Automazione Intelligente & Tooling:",
+            "text": "Sviluppo di flussi di automazione con Cursor, Claude Code e ambienti agentici per accelerare cicli di sviluppo, revisione del codice e generazione di documentazione tecnica. Integrazione dell'IA in pipeline CI/CD e processi operativi per ridurre la frizione e aumentare la produttività del team."
+          }
+        ]
+      },
+      {
+        "num": "07",
+        "title": "IA Applicata per Dati & Analytics",
+        "href": "/work",
+        "intro": "Potenzia gli ecosistemi di dati con l'intelligenza artificiale. Combino ingegneria dei dati tradizionale con modelli predittivi, elaborazione del linguaggio naturale e automazione analitica per trasformare i dati in decisioni più rapide, precise e attuabili.",
+        "bullets": [
+          {
+            "label": "Machine Learning & Analisi Predittiva:",
+            "text": "Sviluppo di modelli predittivi e di classificazione con Python (Scikit-learn, Statsmodels, Pandas, NumPy) applicati a forecasting finanziario, segmentazione clienti e rilevamento anomalie. Modelli distribuiti in produzione come Web App con Streamlit e Plotly per il consumo executive."
+          },
+          {
+            "label": "IA Generativa per Dati & Reportistica:",
+            "text": "Integrazione di LLM in pipeline analitiche per la generazione automatica di insight, riepiloghi esecutivi e narrative dei dati. Automazione di report in linguaggio naturale su modelli Power BI, SQL Server e Google Sheets — riducendo il tempo di analisi manuale per i team di business."
+          },
+          {
+            "label": "Data Quality & Automazione con IA:",
+            "text": "Applicazione di tecniche di IA per il rilevamento automatico di anomalie, validazione della qualità dei dati e arricchimento di dataset in pipeline ETL/ELT. Utilizzo di modelli linguistici come assistenti nei processi di Data Engineering: documentazione automatica delle pipeline, generazione di query SQL e revisione della logica di trasformazione."
           }
         ]
       }
