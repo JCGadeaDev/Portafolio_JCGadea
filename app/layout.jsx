@@ -12,32 +12,65 @@ const jetbrainsMono = JetBrains_Mono({
   variable: '--font-jetbrainsMono'
 });
 
-const siteUrl = 'https://portafolio-jc-gadea.vercel.app';
+const siteUrl = 'https://portafolio.jcgadeadev.com';
 
+const title = 'Juan Carlos Gadea | Data Engineer & Full Stack Developer';
+const description =
+  'Ingeniero de datos y desarrollador full stack. Diseño pipelines ETL/ELT y arquitecturas cloud, y construyo aplicaciones con .NET, Angular, React y Next.js sobre Azure y AWS. Python, SQL y Power BI para analítica. Roma, remoto e híbrido.';
 export const metadata = {
   metadataBase: new URL(siteUrl),
-  title: 'Juan Carlos Gadea | Full Stack Developer & Data Analyst',
-  description: 'Professional portfolio of Juan Carlos Gadea, specialist in web development (React, Next.js), data analytics, SEO and project management.',
+  title,
+  description,
+ keywords: [
+  'Data Engineer',
+  'Full Stack Developer',
+  'Solutions Architect',
+  'Cloud Architecture',
+  'ETL',
+  'Python',
+  'SQL',
+  'Power BI',
+  '.NET',
+  'Angular',
+  'React',
+  'Next.js',
+  'Azure',
+  'AWS',
+],
+  authors: [{ name: 'Juan Carlos Gadea Brenes', url: 'https://jcgadeadev.com' }],
+  creator: 'Juan Carlos Gadea Brenes',
   openGraph: {
     type: 'website',
     url: siteUrl,
     siteName: 'Juan Carlos Gadea',
-    title: 'Juan Carlos Gadea | Full Stack Developer & Data Analyst',
-    description: 'Professional portfolio of Juan Carlos Gadea, specialist in web development (React, Next.js), data analytics, SEO and project management.',
+    title,
+    description,
+    locale: 'es_ES',
+    alternateLocale: ['en_US', 'it_IT'],
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Juan Carlos Gadea – Full Stack Developer & Data Analyst',
+        alt: 'Juan Carlos Gadea – Data Engineer & Full Stack Developer',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Juan Carlos Gadea | Full Stack Developer & Data Analyst',
-    description: 'Professional portfolio of Juan Carlos Gadea, specialist in web development (React, Next.js), data analytics, SEO and project management.',
+    title,
+    description,
     images: ['/og-image.png'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 };
 
