@@ -8,17 +8,23 @@
     "hire": "Contattami"
   },
   "home": {
-    "specializations": "Technical Lead | Solutions Architect | Full Stack Developer, Data Analytics & Cloud Engineer",
-    "greeting": "Ciao, Sono",
-    "description": "Cloud Solutions Architect e Technical Lead con oltre 5 anni di esperienza nella progettazione di ecosistemi mission-critical. Specializzato in <b>sviluppo full-stack & architetture scalabili cloud-native</b>, <c>Data Engineering, Analytics & Business Intelligence</c> e <a>trasformazione digitale end-to-end</a>. Unisco ingegneria del software, analisi strategica dei dati e leadership tecnica per consegnare soluzioni ad alto impatto in ambito bancario, governativo, comerciale, finanziario e operativo.",
-    "downloadCV": "Scarica CV"
-  },
+  "availability": "Disponibile · Remoto o ibrido · Italia, UE e LATAM",
+  "specializations": "Data Engineer & Full Stack Developer",
+  "secondaryRoles": "Technical Lead · Solutions Architect · DBA",
+  "greeting": "Ciao, sono",
+  "description": "Progetto <b>architetture e pipeline dati Medallion</b> (ETL/ELT con SQL, Python e SSIS) su SQL Server, PostgreSQL e Oracle, amministro <c>database Oracle su ODA</c> e sviluppo applicazioni full stack con <a>.NET 8, React e Next.js</a> distribuite su Azure e AWS. Oltre 5 anni nel portare dati e software in produzione in banche, pubblica amministrazione, telecomunicazioni e aziende.",
+  "downloadCV": "Scarica il CV"
+},
   "stats": {
-    "performance": "Miglioramento Performance Web",
-    "automation": "Processi Automatizzati",
-    "clients": "Clienti Potenziati",
-    "experience": "Anni di Esperienza"
-  },
+  "experience": "Anni di esperienza",
+  "experienceDetail": "Dati, software e cloud in produzione",
+  "projects": "Progetti propri",
+  "projectsDetail": "Personali e freelance",
+  "learning": "Corsi e certificazioni",
+  "learningDetail": "Formazione continua in dati, cloud e IA",
+  "languages": "Lingue",
+  "languagesDetail": "Spagnolo · Inglese · Italiano"
+},
   "footer": {
     "rights": "Tutti i diritti riservati."
   },
@@ -588,203 +594,194 @@
     ]
   },
   "services": {
-    "sectionLabel": "Servizi",
-    "heading": "Ciò che trasformo",
-    "headingAccent": "in risultati per il tuo business",
-    "items": [
-      {
-        "num": "01",
-        "title": "Ingegneria Full-Stack & Architettura Web",
-        "href": "/work",
-        "intro": "Progetto e sviluppo piattaforme digitali ad alte prestazioni dalle moderne SPA alle architetture enterprise più complesse. Ogni soluzione è concepita secondo i principi della Clean Architecture, orientata a scalare, mantenere e generare valore fin dal primo deploy.",
-        "bullets": [
-          {
-            "label": "Frontend & UI ad Alta Fedeltà:",
-            "text": "Interfacce pixel-perfect con HTML, CSS, React, Next.js, Angular e TypeScript su Tailwind CSS, Shadcn e Bootstrap. Gestione avanzata dello stato con TanStack Query e Zustand. Applicazioni che combinano velocità, accessibilità ed esperienza utente di livello executive."
-          },
-          {
-            "label": "Backend Enterprise:",
-            "text": "API robuste e scalabili con .NET 8 (C#/ASP.NET Core), Spring Boot, Node.js ed Express, applicando i pattern Singleton, Repository e Factory. Integrazione con Azure Service Bus e Worker Services per soluzioni event-driven su transazioni critiche."
-          },
-          {
-            "label": "QA, Sicurezza & Deploy:",
-            "text": "Test esaustivi con Postman e SoapUI. Deploy su Cloudflare, Vercel e Azure App Service con gestione DNS, SSL/HTTPS e audit di sicurezza. Esperienza comprovata nella risoluzione di vulnerabilità critiche in ambienti di produzione."
-          }
-        ]
-      },
-      {
-        "num": "02",
-        "title": "Architettura Cloud & Soluzioni Scalabili",
-        "href": "/work",
-        "intro": "Progetto architetture cloud mission-critical che supportano alta disponibilità, tolleranza ai guasti e crescita sostenuta. Traduco i requisiti di business in infrastrutture resilienti su Azure, AWS e Google Cloud ottimizzate per costo, sicurezza e prestazioni.",
-        "bullets": [
-          {
-            "label": "Architettura Cloud & Alta Disponibilità:",
-            "text": "Progettazione di architetture multi-livello su Azure (App Service, SQL, Service Bus, VPN Gateway, Entra ID), AWS (EC2, S3, RDS) e GCP (Cloud Run). Pattern event-driven, microservizi e soluzioni serverless per ambienti ad alta domanda in ambito bancario, governativo, sistemi elettorali e aviazione."
-          },
-          {
-            "label": "Migrazione & Modernizzazione:",
-            "text": "Migrazione di sistemi legacy on-premise verso architetture cloud-native, eliminando dipendenze obsolete e riducendo i costi operativi. Esperienza in migrazioni complete in settori regolamentati con continuità operativa garantita."
-          },
-          {
-            "label": "Dimensionamento & Proposte Tecniche:",
-            "text": "Elaborazione di proposte architetturali, sizing infrastrutturale e classificazione dei rischi per tier di supporto. Documentazione tecnica executive per gare d'appalto e stakeholder in progetti enterprise ad alto impatto."
-          }
-        ]
-      },
-      {
-        "num": "03",
-        "title": "DevOps, CI/CD & Infrastructure as Code",
-        "href": "/work",
-        "intro": "Elimino la frizione tra il codice e la produzione. Automatizzo il ciclo di vita completo del software tramite pipeline robuste, containerizzazione e gestione riproducibile dell'infrastruttura garantendo rilasci continui, stabili e verificabili.",
-        "bullets": [
-          {
-            "label": "Pipeline CI/CD & Automazione:",
-            "text": "Cicli di consegna continua con GitHub Actions, Cloud Build e Cloud Run verso Vercel e Azure. Flussi collaborativi avanzati con Git/Gitflow in team distribuiti e multidisciplinari."
-          },
-          {
-            "label": "Containerizzazione & Server:",
-            "text": "Standardizzazione con Docker/Compose. Amministrazione di server Linux (Ubuntu) con Nginx come reverse proxy. Infrastructure as Code con Terraform. Dall'ambiente locale alla produzione cloud senza frizioni, in entrambe le direzioni."
-          },
-          {
-            "label": "Sicurezza & Audit DevSecOps:",
-            "text": "Integrazione di pratiche di sicurezza nella pipeline: audit di vulnerabilità, gestione dei segreti e risoluzione di bug critici in ambienti produttivi. Deploy SSISDB e manutenzione di pacchetti ETL in infrastruttura enterprise."
-          }
-        ]
-      },
-      {
-        "num": "04",
-        "title": "Data Intelligence (BI) & Data Engineering",
-        "href": "/work",
-        "intro": "Trasformo dati dispersi in asset strategici. Progetto architetture dati end-to-end dall'ingestione grezza fino al dashboard executive garantendo qualità, tracciabilità e velocità analitica per decisioni informate.",
-        "bullets": [
-          {
-            "label": "Dashboard Executive & BI:",
-            "text": "Cruscotti interattivi in Power BI con modellazione avanzata in DAX, DirectQuery e schema a stella. Visualizzazioni orientate ai KPI di business che accorciano il ciclo decisionale manageriale. Esperienza nella consegna di piattaforme BI per ministeri, istituti bancari e retail."
-          },
-          {
-            "label": "Data Engineering & Architettura Medallion:",
-            "text": "Implementazione di Data Lake con il modello Bronze–Silver–Gold su SQL Server, SSIS e Python. Orchestrazione di oltre 148 pacchetti ETL in progetti enterprise. Esperienza con Microsoft Fabric, Data Warehouse, Data Mart e ambienti Big Data."
-          },
-          {
-            "label": "Data Science & Applicazioni Dati:",
-            "text": "Python (Pandas, NumPy, Scikit-learn, Statsmodels) per analisi predittiva e modellazione finanziaria. Sviluppo di Web App dati con Streamlit e Plotly, distribuite in produzione come strumenti di supporto decisionale per team executive."
-          }
-        ]
-      },
-      {
-        "num": "05",
-        "title": "Consulenza Strategica, Project Management & SEO Tecnico",
-        "href": "/contact",
-        "intro": "Oltre il codice: offro direzione tecnica di alto livello. Traduco requisiti di business in architetture realizzabili, gestisco processi di gara complessi e garantisco che ogni progetto venga consegnato con impatto misurabile, nei tempi e nel budget previsto.",
-        "bullets": [
-          {
-            "label": "Consulenza & Architettura delle Soluzioni:",
-            "text": "Elaborazione di SOW, roadmap tecniche e proposte di dimensionamento infrastrutturale per settori regolamentati. Progettazione di architetture con Visio/Lucidchart/Eraser e formazione tecnica di team interni. Esperienza diretta con BCN, MEF Panama, Dicegsa Nicaragua, La Costeña Airlines e operatori di telecomunicazioni."
-          },
-          {
-            "label": "Project Management Agile:",
-            "text": "Direzione di squad di sviluppo con Scrum e Kanban tramite Jira, Trello, Planner e Notion. Gestione di stakeholder executive, controllo completo del ciclo SDLC e allineamento tra unità di business e team IT in progetti ad alto impatto."
-          },
-          {
-            "label": "SEO Tecnico & Performance Web:",
-            "text": "Audit delle prestazioni e ottimizzazione dei Core Web Vitals. Strategia di posizionamento organico con Google Analytics 4, Google Search Console, Google Tag Manager e Meta Pixel. Integrazione dello stack analitico per il tracciamento preciso di eventi e conversioni."
-          }
-        ]
-      },
-      {
-        "num": "06",
-        "title": "Intelligenza Artificiale & Automazione con Agenti",
-        "href": "/work",
-        "intro": "Progetto e implemento soluzioni di IA applicata che vanno oltre il prompt engineering. Costruisco agenti autonomi, flussi di automazione intelligente e sistemi MCP che integrano modelli linguistici con strumenti reali, database e API aziendali — trasformando processi manuali in ecosistemi intelligenti e verificabili.",
-        "bullets": [
-          {
-            "label": "Sviluppo con Modelli Linguistici (LLM):",
-            "text": "Integrazione e orchestrazione di modelli come Claude (Anthropic), Gemini (Google), Codex (OpenAI) e Antigravity in flussi di lavoro produttivi. Sviluppo di applicazioni AI-powered con gestione del contesto, prompting strutturato e controllo degli output per casi d'uso enterprise."
-          },
-          {
-            "label": "MCP & Agent Skills:",
-            "text": "Progettazione e implementazione di server MCP (Model Context Protocol) e Agent Skills per estendere le capacità dei modelli con strumenti esterni, API, database e sistemi aziendali. Costruzione di agenti autonomi in grado di ragionare, pianificare ed eseguire attività complesse end-to-end."
-          },
-          {
-            "label": "Automazione Intelligente & Tooling:",
-            "text": "Sviluppo di flussi di automazione con Cursor, Claude Code e ambienti agentici per accelerare cicli di sviluppo, revisione del codice e generazione di documentazione tecnica. Integrazione dell'IA in pipeline CI/CD e processi operativi per ridurre la frizione e aumentare la produttività del team."
-          }
-        ]
-      },
-      {
-        "num": "07",
-        "title": "IA Applicata per Dati & Analytics",
-        "href": "/work",
-        "intro": "Potenzia gli ecosistemi di dati con l'intelligenza artificiale. Combino ingegneria dei dati tradizionale con modelli predittivi, elaborazione del linguaggio naturale e automazione analitica per trasformare i dati in decisioni più rapide, precise e attuabili.",
-        "bullets": [
-          {
-            "label": "Machine Learning & Analisi Predittiva:",
-            "text": "Sviluppo di modelli predittivi e di classificazione con Python (Scikit-learn, Statsmodels, Pandas, NumPy) applicati a forecasting finanziario, segmentazione clienti e rilevamento anomalie. Modelli distribuiti in produzione come Web App con Streamlit e Plotly per il consumo executive."
-          },
-          {
-            "label": "IA Generativa per Dati & Reportistica:",
-            "text": "Integrazione di LLM in pipeline analitiche per la generazione automatica di insight, riepiloghi esecutivi e narrative dei dati. Automazione di report in linguaggio naturale su modelli Power BI, SQL Server e Google Sheets — riducendo il tempo di analisi manuale per i team di business."
-          },
-          {
-            "label": "Data Quality & Automazione con IA:",
-            "text": "Applicazione di tecniche di IA per il rilevamento automatico di anomalie, validazione della qualità dei dati e arricchimento di dataset in pipeline ETL/ELT. Utilizzo di modelli linguistici come assistenti nei processi di Data Engineering: documentazione automatica delle pipeline, generazione di query SQL e revisione della logica di trasformazione."
-          }
-        ]
-      }
-    ]
-  },
-  "contact": {
-    "title": "Lavoriamo insieme",
-    "subtitle": "Se hai una domanda, proposta o progetto, compila il modulo e ti risponderò.",
-    "form": {
-      "firstName": "Nome",
-      "lastName": "Cognome",
-      "email": "Indirizzo email",
-      "phone": "Numero di telefono",
-      "selectService": "Seleziona un servizio di interesse",
-      "selectLabel": "I Miei Servizi",
-      "message": "Scrivi il tuo messaggio qui...",
-      "submit": "Invia messaggio",
-      "sending": "Invio in corso...",
-      "success": "Messaggio inviato con successo",
-      "error": "Errore nell'invio del messaggio. Riprova."
+  "sectionLabel": "Servizi",
+  "heading": "Ciò che trasformo",
+  "headingAccent": "in risultati per il tuo business",
+  "items": [
+    {
+      "num": "01",
+      "title": "Data Engineering & Architettura Medallion",
+      "href": "/work",
+      "intro": "Trasformo dati dispersi in asset affidabili. Progetto pipeline e architetture dati end-to-end, dall'ingestione grezza al livello analitico, con qualità, tracciabilità e prestazioni come requisiti di base.",
+      "bullets": [
+        {
+          "label": "Pipeline ETL/ELT & Architettura Medallion:",
+          "text": "Data Lake secondo il modello Bronze–Silver–Gold con SQL Server, SSIS e Python. Orchestrazione di oltre 148 pacchetti ETL in un progetto enterprise, con deploy su SSISDB e manutenzione dei pacchetti in produzione."
+        },
+        {
+          "label": "Data Warehouse, Data Mart & Modellazione:",
+          "text": "Modellazione dimensionale (star schema), Data Warehouse e Data Mart su SQL Server, PostgreSQL e Oracle, pensati per query analitiche veloci e tracciabilità tra i livelli."
+        },
+        {
+          "label": "Ecosistema Dati Cloud:",
+          "text": "Lavoro con l'ecosistema dati di Azure e Databricks e progetto proposte di architettura Medallion su Microsoft Fabric. Formazione continua su SQL, Snowflake e MongoDB per scegliere lo strumento giusto in ogni caso."
+        },
+        {
+          "label": "Master in Big Data e Data Engineering (in corso):",
+          "text": "Master di Formazione Permanente dell'UCM (Universidad Complutense de Madrid), a.a. 2026–27: Apache Spark per pipeline di dati, Apache Kafka ed elaborazione in tempo reale, Data Lakehouse, Cloud Data Engineering su Azure e MLOps."
+        }
+      ]
     },
-    "services": [
-      {
-        "value": "fullstack-arquitectura",
-        "label": "Sviluppo Full-Stack & Architettura Web"
-      },
-      {
-        "value": "cloud-arquitectura",
-        "label": "Architettura Cloud & Soluzioni Scalabili"
-      },
-      {
-        "value": "devops-cicd",
-        "label": "DevOps, CI/CD & Infrastructure as Code"
-      },
-      {
-        "value": "data-bi",
-        "label": "Data Engineering, Analytics & Business Intelligence"
-      },
-      {
-        "value": "consultoria-pm",
-        "label": "Consulenza Strategica, Project Management & SEO Tecnico"
-      },
-      { "value": "otro", "label": "Altro / Richiesta Generale" }
-    ],
-    "info": [
-      {
-        "title": "Telefono / WhatsApp",
-        "description": "(+505)8578-5399 · (+39)351-318-3823"
-      },
-      { "title": "Email", "description": "jcgambeta89@gmail.com" },
-      {
-        "title": "Posizione",
-        "description": "Disponibile per lavoro remoto globale"
-      }
-    ],
-    "availability": "Disponibile per nuovi progetti",
-    "responseTime": "risposta in < 24h"
-  }
+    {
+      "num": "02",
+      "title": "Amministrazione Database (DBA) & Performance",
+      "href": "/work",
+      "intro": "Mantengo i database disponibili, sicuri e veloci. Amministro motori relazionali in ambienti enterprise e ottimizzo query e processi affinché rispondano bene sotto carico reale.",
+      "bullets": [
+        {
+          "label": "Oracle su ODA:",
+          "text": "Amministrazione di database Oracle 19c su Oracle Database Appliance, con RAC, Data Guard e ASM. Ottimizzazione di query e processi in un progetto enterprise."
+        },
+        {
+          "label": "PostgreSQL & SQL Server:",
+          "text": "Amministrazione, progettazione di schemi, indici e tuning delle query su PostgreSQL e SQL Server, individuando e risolvendo i colli di bottiglia."
+        },
+        {
+          "label": "Disponibilità & Documentazione:",
+          "text": "Alta disponibilità e disaster recovery con Data Guard. Documentazione tecnica degli ambienti e supporto ai team di sviluppo per un uso efficiente del database."
+        }
+      ]
+    },
+    {
+      "num": "03",
+      "title": "Business Intelligence, Analytics & Modelli Predittivi",
+      "href": "/work",
+      "intro": "Porto i dati a chi deve decidere. Costruisco dashboard esecutive e modelli analitici che rispondono a domande di business con KPI chiari e dati tracciabili.",
+      "bullets": [
+        {
+          "label": "Dashboard Esecutive & Power BI:",
+          "text": "Dashboard interattive con modellazione DAX, DirectQuery e star schema, orientate ai KPI di business. Piattaforme BI realizzate per organizzazioni di settori diversi."
+        },
+        {
+          "label": "Python per Analisi & Machine Learning:",
+          "text": "Pandas, NumPy, Scikit-learn e Statsmodels per analisi predittiva, forecasting finanziario e segmentazione dei clienti."
+        },
+        {
+          "label": "Applicazioni di Dati:",
+          "text": "Web app di dati con Streamlit e Plotly come strumenti di supporto alle decisioni per i team esecutivi."
+        }
+      ]
+    },
+    {
+      "num": "04",
+      "title": "Ingegneria Full-Stack & Architettura Web",
+      "href": "/work",
+      "intro": "Progetto e costruisco piattaforme digitali ad alte prestazioni, dalle SPA moderne alle architetture enterprise complesse. Ogni soluzione segue i principi della Clean Architecture, pensata per scalare, essere manutenibile e dare valore fin dal primo deploy.",
+      "bullets": [
+        {
+          "label": "Frontend & UI ad Alta Fedeltà:",
+          "text": "Interfacce con HTML, CSS, React, Next.js, Angular e TypeScript su Tailwind CSS, Shadcn e Bootstrap. Gestione dello stato con TanStack Query e Zustand. Applicazioni che uniscono velocità, accessibilità e una buona esperienza utente."
+        },
+        {
+          "label": "Backend Enterprise:",
+          "text": "API robuste e scalabili con .NET 8 (C#/ASP.NET Core), Spring Boot, Node.js ed Express, applicando i pattern Singleton, Repository e Factory. Integrazione con Azure Service Bus e Worker Service per soluzioni event-driven in transazioni critiche."
+        },
+        {
+          "label": "Deploy, Performance & SEO Tecnico:",
+          "text": "Deploy su Cloudflare, Vercel e Azure App Service con DNS, SSL/HTTPS e audit di sicurezza. Ottimizzazione dei Core Web Vitals e analytics con GA4, Search Console e Tag Manager. Test delle API con Postman e SoapUI."
+        }
+      ]
+    },
+    {
+      "num": "05",
+      "title": "Cloud, DevOps & Infrastructure as Code",
+      "href": "/work",
+      "intro": "Progetto architetture cloud resilienti, su Azure, AWS o GCP in base alle esigenze di ogni progetto, ed elimino l'attrito tra codice e produzione: pipeline automatizzate, container e infrastruttura riproducibile.",
+      "bullets": [
+        {
+          "label": "Architettura Cloud:",
+          "text": "Architetture multi-livello su Azure (App Service, SQL, Service Bus, VPN Gateway, Entra ID), AWS (EC2, S3, RDS) e GCP (Cloud Run). Pattern event-driven e serverless per ambienti ad alta richiesta e alta disponibilità."
+        },
+        {
+          "label": "Migrazione, Modernizzazione & Sizing:",
+          "text": "Migrazione di sistemi legacy on-premise verso architetture cloud-native, proposte di architettura, dimensionamento dell'infrastruttura e classificazione del rischio per livello di supporto per gare e stakeholder."
+        },
+        {
+          "label": "CI/CD, Container & IaC:",
+          "text": "GitHub Actions, Cloud Build, Docker/Compose, Terraform e server Linux con Nginx. Flussi Git/Gitflow in team distribuiti, con gestione dei segreti e revisione delle vulnerabilità."
+        }
+      ]
+    },
+    {
+      "num": "06",
+      "title": "AI Applicata & Agenti",
+      "href": "/work",
+      "intro": "Integro l'AI dove porta valore reale: applicazioni con LLM, agenti e automazione, sempre collegate a dati e sistemi reali e con output controllati.",
+      "bullets": [
+        {
+          "label": "LLM, RAG & Estrazione Dati:",
+          "text": "Applicazioni con Claude, Gemini e OpenAI: prompting strutturato, controllo degli output, RAG ed estrazione di dati da immagini e PDF con OCR su PostgreSQL e pgvector."
+        },
+        {
+          "label": "MCP, Agenti & Skills:",
+          "text": "Server MCP e Agent Skills che collegano i modelli ad API, database e sistemi aziendali, e agenti in grado di pianificare ed eseguire attività end-to-end."
+        },
+        {
+          "label": "AI per i Dati & Produttività:",
+          "text": "LLM applicati al lavoro sui dati: documentazione delle pipeline, generazione e revisione di SQL, report in linguaggio naturale e validazione della qualità dei dati. Uso quotidiano di Claude Code e Cursor per accelerare sviluppo e code review."
+        }
+      ]
+    },
+    {
+      "num": "07",
+      "title": "Leadership Tecnica, Consulenza & Project Management",
+      "href": "/contact",
+      "intro": "Oltre al codice, offro direzione tecnica. Traduco i requisiti di business in architetture realizzabili, coordino i team e mantengo ogni progetto entro ambito, tempi e budget.",
+      "bullets": [
+        {
+          "label": "Consulenza & Architettura di Soluzioni:",
+          "text": "SOW, roadmap tecniche e proposte di dimensionamento dell'infrastruttura, con diagrammi in Visio, Lucidchart ed Eraser e formazione dei team interni. Esperienza con clienti di settori diversi."
+        },
+        {
+          "label": "Project Management Agile:",
+          "text": "Guida di team con Scrum e Kanban usando Jira, Trello, Planner e Notion. Gestione degli stakeholder esecutivi e controllo dell'intero SDLC."
+        },
+        {
+          "label": "Leadership Tecnica:",
+          "text": "Mentoring dei team, code review e decisioni architetturali per allineare le unità di business con l'IT."
+        }
+      ]
+    }
+  ]
+},
+  "contact": {
+  "title": "Lavoriamo insieme",
+  "subtitle": "Se hai una domanda, proposta o progetto, compila il modulo e ti risponderò.",
+  "form": {
+    "firstName": "Nome",
+    "lastName": "Cognome",
+    "email": "Indirizzo email",
+    "phone": "Numero di telefono",
+    "selectService": "Seleziona un servizio di interesse",
+    "selectLabel": "I Miei Servizi",
+    "message": "Scrivi il tuo messaggio qui...",
+    "submit": "Invia messaggio",
+    "sending": "Invio in corso...",
+    "success": "Messaggio inviato con successo",
+    "error": "Errore nell'invio del messaggio. Riprova."
+  },
+  "services": [
+    { "value": "data-engineering", "label": "Data Engineering & Architettura Medallion" },
+    { "value": "dba-performance", "label": "Amministrazione Database (DBA) & Performance" },
+    { "value": "bi-analitica", "label": "Business Intelligence, Analytics & Modelli Predittivi" },
+    { "value": "fullstack-web", "label": "Ingegneria Full-Stack & Architettura Web" },
+    { "value": "cloud-devops", "label": "Cloud, DevOps & Infrastructure as Code" },
+    { "value": "ia-agentes", "label": "AI Applicata & Agenti" },
+    { "value": "liderazgo-consultoria", "label": "Leadership Tecnica, Consulenza & Project Management" },
+    { "value": "otro", "label": "Altro / Richiesta Generale" }
+  ],
+  "info": [
+    {
+      "title": "Telefono / WhatsApp",
+      "description": "(+39) 351 318 3823"
+    },
+    { "title": "Email", "description": "jcgambeta89@gmail.com" },
+    {
+      "title": "Posizione",
+      "description": "Roma, Italia · Remoto o ibrido"
+    }
+  ],
+  "availability": "Disponibile per nuovi progetti",
+  "responseTime": "risposta in < 24h"
+}
 }

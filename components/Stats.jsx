@@ -1,48 +1,52 @@
 "use client";
 
 import CountUp from "react-countup";
-import { useTranslations } from 'next-intl';
+import { useTranslations } from "next-intl";
 
 const Stats = () => {
-  const t = useTranslations('stats');
+  const t = useTranslations("stats");
 
   const stats = [
-    { num: 40, suffix: "%", text: t('performance'), isPercentage: true },
-    { num: 50, suffix: "+", text: t('automation'),  isPercentage: false },
-    { num: 15, suffix: "+", text: t('clients'),     isPercentage: false },
-    { num: 5,  suffix: "+", text: t('experience'),  isPercentage: false },
+    { num: 5,  suffix: "+", label: t("experience"), detail: t("experienceDetail") },
+    { num: 12, suffix: "+",  label: t("projects"),   detail: t("projectsDetail") },
+    { num: 40, suffix: "+", label: t("learning"),   detail: t("learningDetail") },
+    { num: 3,  suffix: "",  label: t("languages"),  detail: t("languagesDetail") },
   ];
 
   return (
     <section className="pt-4 pb-12 xl:pt-0 xl:pb-0">
       <div className="container mx-auto">
-        <div className="grid grid-cols-2 xl:grid-cols-4 gap-3 max-w-[80vw] mx-auto xl:max-w-none">
+        {/* gap-px sobre fondo translúcido = divisores finos entre celdas */}
+        <div className="grid grid-cols-2 xl:grid-cols-4 gap-px max-w-[80vw] mx-auto xl:max-w-none rounded-2xl overflow-hidden border border-white/10 bg-white/10">
           {stats.map((item, index) => (
             <div
               key={index}
-              className="relative flex flex-col gap-2 items-center xl:items-start justify-center px-6 py-7 xl:py-8 rounded-xl overflow-hidden group transition-all duration-500 bg-secondary/40 border border-white/5 hover:border-accent/30 hover:bg-secondary/60 backdrop-blur-sm"
+              className="group relative flex flex-col gap-3 px-5 py-5 xl:px-8 xl:py-7 bg-secondary hover:bg-secondary/80 transition-colors duration-300"
             >
-              <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-accent/0 to-transparent group-hover:via-accent/70 transition-all duration-700" />
+              <span className="text-[10px] xl:text-xs uppercase tracking-[0.2em] text-accent/80 font-medium">
+                {item.label}
+              </span>
 
-              <div className="absolute -right-1 -bottom-3 font-black text-[72px] leading-none text-white/[0.028] select-none pointer-events-none tabular-nums group-hover:text-accent/[0.045] transition-colors duration-500">
-                {String(index + 1).padStart(2, "0")}
-              </div>
-
-              <div className="flex items-baseline gap-0.5 relative z-10">
+              <div className="flex items-baseline gap-1">
                 <CountUp
                   end={item.num}
-                  duration={5}
-                  delay={2}
-                  className="text-4xl xl:text-5xl font-black text-white tabular-nums leading-none"
+                  duration={2}
+                  enableScrollSpy
+                  scrollSpyOnce
+                  className="text-4xl xl:text-5xl font-bold text-white tabular-nums leading-none"
                 />
-                <span className="text-xl xl:text-2xl font-black text-accent leading-none pb-0.5">
-                  {item.isPercentage ? "%" : "+"}
-                </span>
+                {item.suffix && (
+                  <span className="text-2xl xl:text-3xl font-bold text-accent leading-none">
+                    {item.suffix}
+                  </span>
+                )}
               </div>
 
-              <p className="text-[10px] xl:text-xs uppercase tracking-widest text-text-muted font-medium leading-snug max-w-[110px] xl:max-w-none text-center xl:text-left relative z-10">
-                {item.text}
+              <p className="text-xs xl:text-[13px] text-text-muted leading-snug">
+                {item.detail}
               </p>
+
+              <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-accent group-hover:w-full transition-all duration-500" />
             </div>
           ))}
         </div>

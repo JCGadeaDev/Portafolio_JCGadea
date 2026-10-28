@@ -7,18 +7,24 @@
     "contact": "contact",
     "hire": "Hire Me"
   },
-  "home": {
-    "specializations": "Technical Lead | Solutions Architect | Full Stack Developer, Data Analytics & Cloud Engineer",
-    "greeting": "Hello, I'm",
-    "description": "Cloud Solutions Architect and Technical Lead with 5+ years of experience designing mission-critical ecosystems. Specialized in <b>full-stack development & scalable cloud-native architectures</b>, <c>Data Engineering, Analytics & Business Intelligence</c> and <a>end-to-end digital transformation</a>. I blend software engineering, strategic data analysis and technical leadership to deliver high-impact solutions across banking, government, sales, finance and operations.",
-    "downloadCV": "Download CV"
-  },
-  "stats": {
-    "performance": "Web Performance Improvement",
-    "automation": "Automated Processes",
-    "clients": "Clients Empowered",
-    "experience": "Years of Experience"
-  },
+ "home": {
+  "availability": "Available · Remote or hybrid · Italy, EU & LATAM",
+  "specializations": "Data Engineer & Full Stack Developer",
+  "secondaryRoles": "Technical Lead · Solutions Architect · DBA",
+  "greeting": "Hello, I'm",
+  "description": "I design <b>Medallion data architectures and pipelines</b> (ETL/ELT with SQL, Python and SSIS) on SQL Server, PostgreSQL and Oracle, administer <c>Oracle databases on ODA</c>, and build full-stack applications with <a>.NET 8, React and Next.js</a> deployed on Azure and AWS. 5+ years taking data and software to production in banking, government, telecom and enterprise.",
+  "downloadCV": "Download CV"
+},
+ "stats": {
+  "experience": "Years of experience",
+  "experienceDetail": "Data, software and cloud in production",
+  "projects": "Own projects",
+  "projectsDetail": "Personal and freelance",
+  "learning": "Courses & certifications",
+  "learningDetail": "Continuous learning in data, cloud and AI",
+  "languages": "Languages",
+  "languagesDetail": "Spanish · English · Italian"
+},
   "footer": {
     "rights": "All rights reserved."
   },
@@ -588,200 +594,194 @@
     ]
   },
   "services": {
-    "sectionLabel": "Services",
-    "heading": "What I transform",
-    "headingAccent": "into results for your business",
-    "items": [
-      {
-        "num": "01",
-        "title": "Full-Stack Engineering & Web Architecture",
-        "href": "/work",
-        "intro": "I design and build high-performance digital platforms from modern SPAs to complex enterprise architectures. Every solution is conceived under Clean Architecture principles, built to scale, maintain, and deliver value from the first deploy.",
-        "bullets": [
-          {
-            "label": "Frontend & High-Fidelity UI:",
-            "text": "Pixel-perfect interfaces with HTML, CSS, React, Next.js, Angular and TypeScript over Tailwind CSS, Shadcn and Bootstrap. Advanced state management with TanStack Query and Zustand. Applications that combine speed, accessibility and executive user experience."
-          },
-          {
-            "label": "Enterprise Backend:",
-            "text": "Robust and scalable APIs with .NET 8 (C#/ASP.NET Core), Spring Boot, Node.js and Express, applying Singleton, Repository and Factory patterns. Integration with Azure Service Bus and Worker Services for event-driven solutions in critical transactions."
-          },
-          {
-            "label": "QA, Security & Deployment:",
-            "text": "Exhaustive testing with Postman and SoapUI. Deployments on Cloudflare, Vercel and Azure App Service with DNS management, SSL/HTTPS and security audits. Proven experience resolving critical vulnerabilities in production environments."
-          }
-        ]
-      },
-      {
-        "num": "02",
-        "title": "Cloud Architecture & Scalable Solutions",
-        "href": "/work",
-        "intro": "I design mission critical cloud architectures that support high availability, fault tolerance and sustained growth. I translate business requirements into resilient infrastructures on Azure, AWS and Google Cloud optimized for cost, security and performance.",
-        "bullets": [
-          {
-            "label": "Cloud Architecture & High Availability:",
-            "text": "Multi-layer architecture design on Azure (App Service, SQL, Service Bus, VPN Gateway, Entra ID), AWS (EC2, S3, RDS) and GCP (Cloud Run). Event-driven patterns, microservices and serverless solutions for high-demand environments in banking, government, electoral systems and aviation."
-          },
-          {
-            "label": "Migration & Modernization:",
-            "text": "Migration of legacy on-premise systems to cloud-native architectures, eliminating obsolete dependencies and reducing operational costs. Experience in full migrations across regulated sectors with guaranteed operational continuity."
-          },
-          {
-            "label": "Sizing & Technical Proposals:",
-            "text": "Development of architecture proposals, infrastructure sizing and risk classification by support tier. Executive technical documentation for bids and stakeholders in high impact enterprise projects."
-          }
-        ]
-      },
-      {
-        "num": "03",
-        "title": "DevOps, CI/CD & Infrastructure as Code",
-        "href": "/work",
-        "intro": "I eliminate the friction between code and production. I automate the complete software lifecycle through robust pipelines, containerization and reproducible infrastructure management ensuring continuous, stable and auditable deliveries.",
-        "bullets": [
-          {
-            "label": "CI/CD Pipelines & Automation:",
-            "text": "Continuous delivery cycles with GitHub Actions, Cloud Build and Cloud Run targeting Vercel and Azure. Advanced collaborative workflows with Git/Gitflow in distributed and multidisciplinary teams."
-          },
-          {
-            "label": "Containerization & Servers:",
-            "text": "Standardization with Docker/Compose. Linux server administration (Ubuntu) with Nginx as reverse proxy. Infrastructure as Code with Terraform. From local environment to cloud production and back without friction."
-          },
-          {
-            "label": "Security & DevSecOps Auditing:",
-            "text": "Integration of security practices into the pipeline: vulnerability audits, secrets management and resolution of critical bugs in production environments. SSISDB deployments and ETL package maintenance in enterprise infrastructure."
-          }
-        ]
-      },
-      {
-        "num": "04",
-        "title": "Data Intelligence (BI) & Data Engineering",
-        "href": "/work",
-        "intro": "I turn scattered data into strategic assets. I design end-to-end data architectures from raw ingestion to the executive dashboard ensuring quality, traceability and analytical speed for informed decision making.",
-        "bullets": [
-          {
-            "label": "Executive Dashboards & BI:",
-            "text": "Interactive dashboards in Power BI with advanced DAX modeling, DirectQuery and star schema. Business KPI-oriented visualizations that shorten managerial decision cycles. Proven experience delivering BI platforms for ministries, banking institutions and retail."
-          },
-          {
-            "label": "Data Engineering & Medallion Architecture:",
-            "text": "Implementation of Data Lakes under the Bronze–Silver–Gold model with SQL Server, SSIS and Python. Orchestration of over 148 ETL packages in enterprise projects. Experience with Microsoft Fabric, Data Warehouse, Data Mart and Big Data environments."
-          },
-          {
-            "label": "Data Science & Data Applications:",
-            "text": "Python (Pandas, NumPy, Scikit-learn, Statsmodels) for predictive analysis and financial modeling. Development of data Web Apps with Streamlit and Plotly, deployed in production as decision-support tools for executive teams."
-          }
-        ]
-      },
-      {
-        "num": "05",
-        "title": "Strategic Consulting, Project Management & Technical SEO",
-        "href": "/contact",
-        "intro": "Beyond the code: I provide high level technical direction. I translate business requirements into viable architectures, manage complex bid processes and ensure every project is delivered with measurable impact, on time and within budget.",
-        "bullets": [
-          {
-            "label": "Consulting & Solutions Architecture:",
-            "text": "Development of SOWs, technical roadmaps and infrastructure sizing proposals for regulated sectors. Architecture design with Visio/Lucidchart/Eraser and technical training for internal teams. Direct experience with BCN, MEF Panama, Dicegsa Nicaragua, La Costeña Airlines and telecom operators."
-          },
-          {
-            "label": "Agile Project Management:",
-            "text": "Leadership of development squads under Scrum and Kanban using Jira, Trello, Planner and Notion. Executive stakeholder management, full SDLC control and alignment between business units and IT teams on high impact projects."
-          },
-          {
-            "label": "Technical SEO & Web Performance:",
-            "text": "Performance audits and Core Web Vitals optimization. Organic positioning strategy with Google Analytics 4, Google Search Console, Google Tag Manager and Meta Pixel. Analytics stack integration for precise event and conversion tracking."
-          }
-        ]
-      },
-      {
-        "num": "06",
-        "title": "Artificial Intelligence & Agent Automation",
-        "href": "/work",
-        "intro": "I design and implement applied AI solutions that go beyond prompt engineering. I build autonomous agents, intelligent automation workflows and MCP systems that integrate language models with real tools, databases and enterprise APIs — transforming manual processes into intelligent, auditable ecosystems.",
-        "bullets": [
-          {
-            "label": "Language Model (LLM) Development:",
-            "text": "Integration and orchestration of models including Claude (Anthropic), Gemini (Google), Codex (OpenAI) and Antigravity in productive workflows. Development of AI-powered applications with context management, structured prompting and output control for enterprise use cases."
-          },
-          {
-            "label": "MCP & Agent Skills:",
-            "text": "Design and implementation of MCP (Model Context Protocol) servers and Agent Skills to extend model capabilities with external tools, APIs, databases and enterprise systems. Construction of autonomous agents capable of reasoning, planning and executing complex end-to-end tasks."
-          },
-          {
-            "label": "Intelligent Automation & Tooling:",
-            "text": "Development of automation workflows with Cursor, Claude Code and agentic environments to accelerate development cycles, code review and technical documentation generation. AI integration into CI/CD pipelines and operational processes to reduce friction and increase team productivity."
-          }
-        ]
-      },
-      {
-        "num": "07",
-        "title": "Applied AI for Data & Analytics",
-        "href": "/work",
-        "intro": "I power data ecosystems with artificial intelligence. I combine traditional data engineering with predictive models, natural language processing and analytical automation to turn data into faster, more precise and actionable decisions.",
-        "bullets": [
-          {
-            "label": "Machine Learning & Predictive Analysis:",
-            "text": "Development of predictive and classification models with Python (Scikit-learn, Statsmodels, Pandas, NumPy) applied to financial forecasting, customer segmentation and anomaly detection. Models deployed in production as Web Apps with Streamlit and Plotly for executive consumption."
-          },
-          {
-            "label": "Generative AI for Data & Reporting:",
-            "text": "Integration of LLMs into analytical pipelines for automatic insight generation, executive summaries and data narratives. Report automation with natural language over Power BI, SQL Server and Google Sheets models — reducing manual analysis time for business teams."
-          },
-          {
-            "label": "Data Quality & AI Automation:",
-            "text": "Application of AI techniques for automatic anomaly detection, data quality validation and dataset enrichment in ETL/ELT pipelines. Use of language models as assistants in Data Engineering processes: automatic pipeline documentation, SQL query generation and transformation logic review."
-          }
-        ]
-      }
-    ]
-  },
-  "contact": {
-    "title": "Let's work together",
-    "subtitle": "If you have a question, proposal, or project, fill out the form and I'll get back to you.",
-    "form": {
-      "firstName": "First name",
-      "lastName": "Last name",
-      "email": "Email address",
-      "phone": "Phone number",
-      "selectService": "Select a service of interest",
-      "selectLabel": "My Services",
-      "message": "Write your message here...",
-      "submit": "Send message",
-      "sending": "Sending...",
-      "success": "Message sent successfully",
-      "error": "Error sending the message. Please try again."
+  "sectionLabel": "Services",
+  "heading": "What I transform",
+  "headingAccent": "into results for your business",
+  "items": [
+    {
+      "num": "01",
+      "title": "Data Engineering & Medallion Architecture",
+      "href": "/work",
+      "intro": "I turn scattered data into reliable assets. I design end-to-end data pipelines and architectures, from raw ingestion to the analytics layer, with quality, traceability and performance as baseline requirements.",
+      "bullets": [
+        {
+          "label": "ETL/ELT Pipelines & Medallion Architecture:",
+          "text": "Data Lakes following the Bronze–Silver–Gold model with SQL Server, SSIS and Python. Orchestration of 148+ ETL packages in an enterprise project, including SSISDB deployments and production package maintenance."
+        },
+        {
+          "label": "Data Warehouse, Data Mart & Modeling:",
+          "text": "Dimensional modeling (star schema), Data Warehouses and Data Marts on SQL Server, PostgreSQL and Oracle, built for fast analytical queries and traceability across layers."
+        },
+        {
+          "label": "Cloud Data Ecosystem:",
+          "text": "Hands-on with the Azure and Databricks data ecosystem, plus Medallion architecture proposals on Microsoft Fabric. Continuous training in SQL, Snowflake and MongoDB to pick the right tool for each case."
+        },
+        {
+          "label": "Master's in Big Data & Data Engineering (in progress):",
+          "text": "Postgraduate continuing-education master's at UCM (Complutense University of Madrid), 2026–27: Apache Spark for data pipelines, Apache Kafka and real-time processing, Data Lakehouses, Cloud Data Engineering on Azure and MLOps."
+        }
+      ]
     },
-    "services": [
-      {
-        "value": "fullstack-arquitectura",
-        "label": "Full-Stack Development & Web Architecture"
-      },
-      {
-        "value": "cloud-arquitectura",
-        "label": "Cloud Architecture & Scalable Solutions"
-      },
-      {
-        "value": "devops-cicd",
-        "label": "DevOps, CI/CD & Infrastructure as Code"
-      },
-      {
-        "value": "data-bi",
-        "label": "Data Engineering, Analytics & Business Intelligence"
-      },
-      {
-        "value": "consultoria-pm",
-        "label": "Strategic Consulting, Project Management & Technical SEO"
-      },
-      { "value": "otro", "label": "Other / General Inquiry" }
-    ],
-    "info": [
-      {
-        "title": "Phone / WhatsApp",
-        "description": "(+505)8578-5399 · (+39)351-318-3823"
-      },
-      { "title": "Email", "description": "jcgambeta89@gmail.com" },
-      { "title": "Location", "description": "Available for global remote work" }
-    ],
-    "availability": "Available for new projects",
-    "responseTime": "response in < 24h"
-  }
+    {
+      "num": "02",
+      "title": "Database Administration (DBA) & Performance",
+      "href": "/work",
+      "intro": "I keep databases available, secure and fast. I administer relational engines in enterprise environments and optimize queries and processes so they perform well under real load.",
+      "bullets": [
+        {
+          "label": "Oracle on ODA:",
+          "text": "Administration of Oracle 19c databases on Oracle Database Appliance, with RAC, Data Guard and ASM. Query and process optimization in an enterprise project."
+        },
+        {
+          "label": "PostgreSQL & SQL Server:",
+          "text": "Administration, schema design, indexing and query tuning on PostgreSQL and SQL Server, finding and resolving bottlenecks."
+        },
+        {
+          "label": "Availability & Documentation:",
+          "text": "High availability and disaster recovery with Data Guard. Technical documentation of environments and support for development teams on efficient database usage."
+        }
+      ]
+    },
+    {
+      "num": "03",
+      "title": "Business Intelligence, Analytics & Predictive Models",
+      "href": "/work",
+      "intro": "I take data to the people who make decisions. I build executive dashboards and analytical models that answer business questions with clear KPIs and traceable data.",
+      "bullets": [
+        {
+          "label": "Executive Dashboards & Power BI:",
+          "text": "Interactive dashboards with DAX modeling, DirectQuery and star schema, built around business KPIs. BI platforms delivered to organizations across different industries."
+        },
+        {
+          "label": "Python for Analysis & Machine Learning:",
+          "text": "Pandas, NumPy, Scikit-learn and Statsmodels for predictive analysis, financial forecasting and customer segmentation."
+        },
+        {
+          "label": "Data Applications:",
+          "text": "Data web apps with Streamlit and Plotly as decision-support tools for executive teams."
+        }
+      ]
+    },
+    {
+      "num": "04",
+      "title": "Full-Stack Engineering & Web Architecture",
+      "href": "/work",
+      "intro": "I design and build high-performance digital platforms, from modern SPAs to complex enterprise architectures. Every solution follows Clean Architecture principles, built to scale, stay maintainable and deliver value from the first deploy.",
+      "bullets": [
+        {
+          "label": "Frontend & High-Fidelity UI:",
+          "text": "Interfaces with HTML, CSS, React, Next.js, Angular and TypeScript on Tailwind CSS, Shadcn and Bootstrap. State management with TanStack Query and Zustand. Applications that combine speed, accessibility and a good user experience."
+        },
+        {
+          "label": "Enterprise Backend:",
+          "text": "Robust, scalable APIs with .NET 8 (C#/ASP.NET Core), Spring Boot, Node.js and Express, applying Singleton, Repository and Factory patterns. Integration with Azure Service Bus and Worker Services for event-driven solutions in critical transactions."
+        },
+        {
+          "label": "Deployment, Performance & Technical SEO:",
+          "text": "Deployments on Cloudflare, Vercel and Azure App Service with DNS, SSL/HTTPS and security audits. Core Web Vitals optimization and analytics with GA4, Search Console and Tag Manager. API testing with Postman and SoapUI."
+        }
+      ]
+    },
+    {
+      "num": "05",
+      "title": "Cloud, DevOps & Infrastructure as Code",
+      "href": "/work",
+      "intro": "I design resilient cloud architectures, on Azure, AWS or GCP depending on what each project needs, and remove the friction between code and production: automated pipelines, containers and reproducible infrastructure.",
+      "bullets": [
+        {
+          "label": "Cloud Architecture:",
+          "text": "Multi-tier architectures on Azure (App Service, SQL, Service Bus, VPN Gateway, Entra ID), AWS (EC2, S3, RDS) and GCP (Cloud Run). Event-driven and serverless patterns for high-demand, high-availability environments."
+        },
+        {
+          "label": "Migration, Modernization & Sizing:",
+          "text": "Migration of legacy on-premise systems to cloud-native architectures, architecture proposals, infrastructure sizing and risk classification by support tier for tenders and stakeholders."
+        },
+        {
+          "label": "CI/CD, Containers & IaC:",
+          "text": "GitHub Actions, Cloud Build, Docker/Compose, Terraform and Linux servers with Nginx. Git/Gitflow workflows in distributed teams, with secrets management and vulnerability reviews."
+        }
+      ]
+    },
+    {
+      "num": "06",
+      "title": "Applied AI & Agents",
+      "href": "/work",
+      "intro": "I bring AI in where it adds real value: LLM applications, agents and automation, always connected to real data and systems, with controlled outputs.",
+      "bullets": [
+        {
+          "label": "LLMs, RAG & Data Extraction:",
+          "text": "Applications with Claude, Gemini and OpenAI: structured prompting, output control, RAG and data extraction from images and PDFs with OCR on PostgreSQL and pgvector."
+        },
+        {
+          "label": "MCP, Agents & Skills:",
+          "text": "MCP servers and Agent Skills that connect models to APIs, databases and enterprise systems, and agents able to plan and carry out tasks end to end."
+        },
+        {
+          "label": "AI for Data & Productivity:",
+          "text": "LLMs applied to data work: pipeline documentation, SQL generation and review, natural-language reporting and data quality validation. Daily use of Claude Code and Cursor to speed up development and code review."
+        }
+      ]
+    },
+    {
+      "num": "07",
+      "title": "Technical Leadership, Consulting & Project Management",
+      "href": "/contact",
+      "intro": "Beyond code, I provide technical direction. I translate business requirements into viable architectures, coordinate teams and keep every project within scope, time and budget.",
+      "bullets": [
+        {
+          "label": "Consulting & Solutions Architecture:",
+          "text": "SOWs, technical roadmaps and infrastructure sizing proposals, with diagrams in Visio, Lucidchart and Eraser and training for internal teams. Experience with clients across different industries."
+        },
+        {
+          "label": "Agile Project Management:",
+          "text": "Leading teams under Scrum and Kanban with Jira, Trello, Planner and Notion. Executive stakeholder management and control of the full SDLC."
+        },
+        {
+          "label": "Technical Leadership:",
+          "text": "Team mentoring, code review and architecture decisions to align business units with IT."
+        }
+      ]
+    }
+  ]
+},
+  "contact": {
+  "title": "Let's work together",
+  "subtitle": "If you have a question, proposal, or project, fill out the form and I'll get back to you.",
+  "form": {
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email address",
+    "phone": "Phone number",
+    "selectService": "Select a service of interest",
+    "selectLabel": "My Services",
+    "message": "Write your message here...",
+    "submit": "Send message",
+    "sending": "Sending...",
+    "success": "Message sent successfully",
+    "error": "Error sending the message. Please try again."
+  },
+  "services": [
+    { "value": "data-engineering", "label": "Data Engineering & Medallion Architecture" },
+    { "value": "dba-performance", "label": "Database Administration (DBA) & Performance" },
+    { "value": "bi-analitica", "label": "Business Intelligence, Analytics & Predictive Models" },
+    { "value": "fullstack-web", "label": "Full-Stack Engineering & Web Architecture" },
+    { "value": "cloud-devops", "label": "Cloud, DevOps & Infrastructure as Code" },
+    { "value": "ia-agentes", "label": "Applied AI & Agents" },
+    { "value": "liderazgo-consultoria", "label": "Technical Leadership, Consulting & Project Management" },
+    { "value": "otro", "label": "Other / General Inquiry" }
+  ],
+  "info": [
+    {
+      "title": "Phone / WhatsApp",
+      "description": "(+39) 351 318 3823"
+    },
+    { "title": "Email", "description": "jcgambeta89@gmail.com" },
+    {
+      "title": "Location",
+      "description": "Rome, Italy · Remote or hybrid"
+    }
+  ],
+  "availability": "Available for new projects",
+  "responseTime": "response in < 24h"
+}
 }
