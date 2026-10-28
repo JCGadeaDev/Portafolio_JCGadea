@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -20,50 +20,73 @@ import Footer from "@/components/Footer";
 
 const iconMap = [<FaWhatsapp key={0} />, <FaEnvelope key={1} />, <FaMapMarkerAlt key={2} />];
 
+const initialForm = {
+  nombre: "", apellido: "", email: "", telefono: "", servicio: "", mensaje: "", website: "",
+};
+
 const Contact = () => {
   const t = useTranslations('contact');
+  const locale = useLocale();
   const infoItems = t.raw('info');
   const serviceItems = t.raw('services');
 
-  const [formData, setFormData] = useState({
-    nombre: "", apellido: "", email: "", telefono: "", servicio: "", mensaje: "",
-  });
+  const [formData, setFormData] = useState(initialForm);
+  const [formKey, setFormKey] = useState(0);
+  const [sending, setSending] = useState(false);
   const [status, setStatus] = useState("");
   const [isSuccess, setIsSuccess] = useState(null);
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
   const handleServiceChange = (value) => {
-    setFormData({ ...formData, servicio: value });
+    setFormData((prev) => ({ ...prev, servicio: value }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (sending) return;
+
+    setSending(true);
     setStatus(t('form.sending'));
     setIsSuccess(null);
 
-    const res = await fetch("/api/send", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        to: "jcgambeta89@gmail.com",
-        name: `${formData.nombre} ${formData.apellido}`,
-        subject: `Nuevo mensaje desde el sitio - ${formData.servicio}`,
-        message: `
-          <b>Nombre:</b> ${formData.nombre} ${formData.apellido}<br/>
-          <b>Email:</b> ${formData.email}<br/>
-          <b>Teléfono:</b> ${formData.telefono}<br/>
-          <b>Servicio:</b> ${formData.servicio}<br/><br/>
-          <b>Mensaje:</b><br/>${formData.mensaje}
-        `,
-      }),
-    });
+    const serviceLabel =
+      serviceItems.find((s) => s.value === formData.servicio)?.label ?? "";
 
-    const data = await res.json();
-    setIsSuccess(data.success);
-    setStatus(data.success ? t('form.success') : t('form.error'));
+    try {
+      const res = await fetch("/api/send", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          firstName: formData.nombre,
+          lastName: formData.apellido,
+          email: formData.email,
+          phone: formData.telefono,
+          service: serviceLabel,
+          message: formData.mensaje,
+          website: formData.website, // honeypot
+          locale,                    // es | en | it
+        }),
+      });
+
+      const data = await res.json().catch(() => ({}));
+      const ok = res.ok && data.success === true;
+
+      setIsSuccess(ok);
+      setStatus(ok ? t('form.success') : t('form.error'));
+
+      if (ok) {
+        setFormData(initialForm);
+        setFormKey((k) => k + 1); // remonta el formulario para limpiar los campos y el select
+      }
+    } catch {
+      setIsSuccess(false);
+      setStatus(t('form.error'));
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
@@ -78,6 +101,7 @@ const Contact = () => {
 
             <div className="w-full xl:w-[58%] order-2 xl:order-none">
               <form
+                key={formKey}
                 onSubmit={handleSubmit}
                 className="flex flex-col gap-6 p-6 md:p-8 glass-card-accent rounded-2xl relative overflow-hidden"
               >
@@ -100,11 +124,22 @@ const Contact = () => {
                 <div className="h-px bg-gradient-to-r from-accent/20 via-accent/10 to-transparent" />
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <Input type="text"  name="nombre"   placeholder={t('form.firstName')} required onChange={handleChange} />
-                  <Input type="text"  name="apellido" placeholder={t('form.lastName')}  required onChange={handleChange} />
-                  <Input type="email" name="email"    placeholder={t('form.email')}     required onChange={handleChange} />
-                  <Input type="tel"   name="telefono" placeholder={t('form.phone')}              onChange={handleChange} />
+                  <Input type="text"  name="nombre"   placeholder={t('form.firstName')} required maxLength={60}  onChange={handleChange} />
+                  <Input type="text"  name="apellido" placeholder={t('form.lastName')}  required maxLength={60}  onChange={handleChange} />
+                  <Input type="email" name="email"    placeholder={t('form.email')}     required maxLength={200} onChange={handleChange} />
+                  <Input type="tel"   name="telefono" placeholder={t('form.phone')}              maxLength={40}  onChange={handleChange} />
                 </div>
+
+                {/* Campo trampa anti-spam: invisible para personas */}
+                <input
+                  type="text"
+                  name="website"
+                  tabIndex={-1}
+                  autoComplete="off"
+                  aria-hidden="true"
+                  className="absolute left-[-9999px] h-0 w-0 opacity-0"
+                  onChange={handleChange}
+                />
 
                 <Select onValueChange={handleServiceChange}>
                   <SelectTrigger className="w-full">
@@ -129,12 +164,18 @@ const Contact = () => {
                   className="h-[160px]"
                   placeholder={t('form.message')}
                   required
+                  maxLength={5000}
                   onChange={handleChange}
                 />
 
                 <div className="flex items-center gap-4">
-                  <Button type="submit" size="md" className="glow-accent-sm hover:glow-accent">
-                    {t('form.submit')}
+                  <Button
+                    type="submit"
+                    size="md"
+                    disabled={sending}
+                    className="glow-accent-sm hover:glow-accent disabled:opacity-60"
+                  >
+                    {sending ? t('form.sending') : t('form.submit')}
                   </Button>
                   {status && (
                     <p className={`text-sm ${isSuccess === true ? "text-accent" : isSuccess === false ? "text-red-400" : "text-text-muted"}`}>
